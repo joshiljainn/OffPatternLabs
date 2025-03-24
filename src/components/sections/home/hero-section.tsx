@@ -74,7 +74,7 @@ export default function HeroSection() {
                   loop
                   muted
                   preload="auto"
-                  className="size-full -scale-x-100 object-cover opacity-50 invert dark:opacity-35 dark:invert-0 dark:lg:opacity-50"
+                  className="size-full -scale-x-100 object-cover opacity-50 invert dark:opacity-35 dark:invert-0 "
                 >
                   <source src="/hero.mp4" type="video/mp4" />
                 </video>
