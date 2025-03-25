@@ -22,6 +22,7 @@ export function ScrollView({
           transition: {
             delay: delay,
             staggerChildren: stagger ? 0.09 : 0,
+            duration: 0.5,
           },
         },
       }}
