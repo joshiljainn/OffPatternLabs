@@ -4,7 +4,7 @@ import { InView } from "./motion-primitives/in-view";
 
 export function ScrollView({
   children,
-  stagger,
+  stagger = false,
   delay = 0,
 }: {
   children: React.ReactNode;
