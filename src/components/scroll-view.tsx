@@ -1,6 +1,6 @@
 "use client";
 
-import { UseInViewOptions } from "motion/react";
+import { UseInViewOptions, motion } from "motion/react";
 import { InView } from "./motion-primitives/in-view";
 
 export function ScrollView({
@@ -34,5 +34,29 @@ export function ScrollView({
     >
       {children}
     </InView>
+  );
+}
+
+export function ScrollViewStaggerWrapper({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <motion.div
+      variants={{
+        hidden: { opacity: 0, scale: 0.8, filter: "blur(10px)" },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          filter: "blur(0px)",
+        },
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 }
