@@ -26,12 +26,10 @@ export default function PortfolioCard({
                 alt={card.title}
               />
               <div className="mt-4">
-                <h3 className="text-title text-base font-medium ">
+                <h3 className="text-title text-2xl font-medium ">
                   {card.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
-                  {card.description}
-                </p>
+                <p className="text-muted-foreground">{card.description}</p>
               </div>
             </a>
           </div>

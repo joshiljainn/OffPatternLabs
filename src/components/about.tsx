@@ -34,7 +34,7 @@ export default function ContentSection() {
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <Zap className="size-4" />
-                <h3 className="text-sm font-medium">Faaast</h3>
+                <h3 className="text-base font-medium">Faaast</h3>
               </div>
               <p className="text-muted-foreground text-sm">
                 It supports an entire helping developers and innovate.
@@ -43,7 +43,7 @@ export default function ContentSection() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Cpu className="size-4" />
-                <h3 className="text-sm font-medium">Powerful</h3>
+                <h3 className="text-base font-medium">Powerful</h3>
               </div>
               <p className="text-muted-foreground text-sm">
                 It supports an entire helping developers and businesses.
@@ -52,7 +52,7 @@ export default function ContentSection() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Lock className="size-4" />
-                <h3 className="text-sm font-medium">Security</h3>
+                <h3 className="text-base font-medium">Security</h3>
               </div>
               <p className="text-muted-foreground text-sm">
                 It supports an helping developers businesses innovate.
