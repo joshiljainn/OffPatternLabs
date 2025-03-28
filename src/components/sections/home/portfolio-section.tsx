@@ -9,32 +9,28 @@ const card = [
     title: "Project 1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "/images/abstract-1.png",
     link: "https://www.google.com",
   },
   {
     title: "Project 2",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "/images/abstract-2.png",
     link: "https://www.google.com",
   },
   {
     title: "Project 3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "/images/abstract-3.png",
     link: "https://www.google.com",
   },
   {
     title: "Project 3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "/images/abstract-4.png",
     link: "https://www.google.com",
   },
 ];
