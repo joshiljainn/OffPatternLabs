@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <PortfolioSection />
       <AboutUsSection />
+      <PortfolioSection />
       <StatsSection />
       <Testimonials />
     </main>

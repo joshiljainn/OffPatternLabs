@@ -1,15 +1,18 @@
 "use client";
 
+import { UseInViewOptions } from "motion/react";
 import { InView } from "./motion-primitives/in-view";
 
 export function ScrollView({
   children,
   stagger = false,
   delay = 0,
+  viewMargin = "0px 0px -200px 0px",
 }: {
   children: React.ReactNode;
   stagger?: boolean;
   delay?: number;
+  viewMargin?: UseInViewOptions["margin"];
 }) {
   return (
     <InView
@@ -26,7 +29,7 @@ export function ScrollView({
           },
         },
       }}
-      viewOptions={{ margin: "0px 0px -200px 0px" }}
+      viewOptions={{ margin: viewMargin }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       {children}
