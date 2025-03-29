@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
+import ContactSection from "@/components/contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         >
           <HeroHeader />
           {children}
+          <ContactSection />
           <FooterSection />
         </ThemeProvider>
       </body>

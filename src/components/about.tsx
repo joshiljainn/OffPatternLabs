@@ -3,7 +3,7 @@ import { ScrollView } from "./scroll-view";
 
 export default function ContentSection() {
   return (
-    <section className="pt-16 md:pt-32" id="about">
+    <section className="py-16 md:py-32" id="about">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
