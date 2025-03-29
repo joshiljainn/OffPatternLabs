@@ -2,43 +2,9 @@ import { CustomCursorElement } from "@/components/custom-cursor-element";
 import { InView } from "@/components/motion-primitives/in-view";
 import { ScrollView, ScrollViewStaggerWrapper } from "@/components/scroll-view";
 import { Badge } from "@/components/ui/badge";
+import { SERVICES_LIST } from "@/content/services";
 import Image from "next/image";
 import Link from "next/link";
-
-const services = [
-  {
-    title: "Product Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-3.png",
-    tags: ["Visual Design", "Dashboard", "UI/UX"],
-    link: "#",
-  },
-  {
-    title: "Motion Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-4.png",
-    tags: ["Animation", "After Effects", "Lottie Animation"],
-    link: "#",
-  },
-  {
-    title: "Branding",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-5.png",
-    tags: ["Branding", "Logo Design", "Illustration", "Typography"],
-    link: "#",
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-1.png",
-    tags: ["Marketing", "Social Media", "Content Creation", "SEO"],
-    link: "#",
-  },
-];
 
 export default function ServicesSection2() {
   return (
@@ -60,9 +26,9 @@ export default function ServicesSection2() {
         </div>
         <div className="mt-12 md:mt-24">
           <div className="space-y-10">
-            {services.map((service, index) => (
+            {SERVICES_LIST.map((service, index) => (
               <div
-                key={service.title}
+                key={service.name}
                 className="group overflow-hidden border-b py-10"
               >
                 <div className="flex gap-10 jsutify-between flex-col lg:flex-row">
@@ -71,7 +37,7 @@ export default function ServicesSection2() {
                       <div className="space-y-4">
                         <ScrollView>
                           <h3 className="text-title text-2xl font-medium">
-                            {service.title}
+                            {service.name}
                           </h3>
                         </ScrollView>
 
@@ -131,12 +97,12 @@ export default function ServicesSection2() {
                         viewOptions={{ margin: "0px 0px -250px 0px" }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
-                        <Link href={service.link}>
+                        <Link href={service.url}>
                           <Image
-                            src={service.image}
-                            alt="team image"
-                            height="720"
-                            width="1080"
+                            src={service.img}
+                            alt={service.name}
+                            height="480"
+                            width="720"
                             loading="lazy"
                             className=" object-cover object-top  transition-all duration-500 w-full  aspect-[16/9]"
                           />

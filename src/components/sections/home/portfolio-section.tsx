@@ -1,39 +1,8 @@
 import PortfolioCard from "@/components/portfolio-card";
-import { ScrollView } from "@/components/scroll-view";
-import { Button } from "@/components/ui/button";
+import { PORTFOLIO_CONTENT } from "@/content/portfolio";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const card = [
-  {
-    title: "Project 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image: "/images/abstract-1.png",
-    link: "https://www.google.com",
-  },
-  {
-    title: "Project 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image: "/images/abstract-2.png",
-    link: "https://www.google.com",
-  },
-  {
-    title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image: "/images/abstract-3.png",
-    link: "https://www.google.com",
-  },
-  {
-    title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    image: "/images/abstract-4.png",
-    link: "https://www.google.com",
-  },
-];
 export default function PortfolioSection() {
   return (
     <section className="py-16 md:py-32">
@@ -48,9 +17,9 @@ export default function PortfolioSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-          {card.map((card, index) => (
+          {PORTFOLIO_CONTENT.map((item, index) => (
             <div key={index} className={index % 2 === 1 ? "md:mt-20" : ""}>
-              <PortfolioCard card={card} />
+              <PortfolioCard card={item} />
             </div>
           ))}
         </div>

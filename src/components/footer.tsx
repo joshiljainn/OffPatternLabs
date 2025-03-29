@@ -3,33 +3,7 @@ import { Logo } from "@/components/logo";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ScrollView } from "./scroll-view";
-
-const links = [
-  {
-    title: "Features",
-    href: "#",
-  },
-  {
-    title: "Solution",
-    href: "#",
-  },
-  {
-    title: "Customers",
-    href: "#",
-  },
-  {
-    title: "Pricing",
-    href: "#",
-  },
-  {
-    title: "Help",
-    href: "#",
-  },
-  {
-    title: "About",
-    href: "#",
-  },
-];
+import { FOOTER_LINKS } from "@/content/footer";
 
 export default function FooterSection() {
   return (
@@ -46,7 +20,7 @@ export default function FooterSection() {
         </ScrollView>
         <ScrollView stagger delay={0.1}>
           <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-            {links.map((link, index) => (
+            {FOOTER_LINKS.map((link, index) => (
               <div key={link.title}>
                 <motion.div
                   variants={{

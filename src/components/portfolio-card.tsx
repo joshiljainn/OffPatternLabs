@@ -6,10 +6,10 @@ export default function PortfolioCard({
   card,
 }: {
   card: {
-    title: string;
+    name: string;
     description: string;
-    image: string;
-    link: string;
+    img: string;
+    url: string;
   };
 }) {
   return (
@@ -19,15 +19,17 @@ export default function PortfolioCard({
       >
         <ScrollView>
           <div className="group hover:scale-105 transition-all duration-500 ">
-            <a href={card.link} target="_blank" rel="noreferrer">
-              <img
+            <a href={card.url} target="_blank" rel="noreferrer">
+              <Image
                 className=" w-full grayscale-25 hover:grayscale-0 rounded-md object-cover object-top  transition-all duration-500  "
-                src={card.image}
-                alt={card.title}
+                height="480"
+                width="720"
+                src={card.img}
+                alt={card.name}
               />
               <div className="mt-4">
                 <h3 className="text-title text-2xl font-medium ">
-                  {card.title}
+                  {card.name}
                 </h3>
                 <p className="text-muted-foreground">{card.description}</p>
               </div>
