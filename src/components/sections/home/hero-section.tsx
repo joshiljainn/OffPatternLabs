@@ -84,7 +84,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 -z-10 size-full "></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                <AnimatedGroup variants={transitionVariants}>
+                {/* <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#link"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
@@ -105,15 +105,15 @@ export default function HeroSection() {
                       </div>
                     </div>
                   </Link>
-                </AnimatedGroup>
+                </AnimatedGroup> */}
 
                 <TextEffect
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                  className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Modern Solutions for Customer Engagement
+                  Designs That Captivate, Brands That Shine.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -123,8 +123,9 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Highly customizable components for building modern websites
-                  and applications that look and feel the way you mean it.
+                  At Lume Studio, we blend creativity and strategy to craft
+                  stunning websites, striking visuals, and unforgettable brand
+                  experiences that set you apart.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -151,7 +152,7 @@ export default function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">Start Building</span>
+                        <span className="text-nowrap">Get in Touch</span>
                       </Link>
                     </Button>
                   </div>
@@ -163,7 +164,7 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Request a demo</span>
+                      <span className="text-nowrap">Our Services</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>

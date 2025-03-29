@@ -13,14 +13,15 @@ export default function ServicesSection2() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Tailus UI in numbers
+              Design That Works for You
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              Gemini is evolving to be more than just the models. It supports an
-              entire to the APIs and platforms helping developers and businesses
-              innovate.
+              At Lume Studio, we create designs that are more than just visually
+              appealing. They&apos;re built to solve problems, connect with
+              audience, and drive results. <br /> Whether you’re starting fresh
+              or refining your existing identity, <br /> we’ve got you covered.
             </p>
           </ScrollView>
         </div>
@@ -31,8 +32,8 @@ export default function ServicesSection2() {
                 key={service.name}
                 className="group overflow-hidden border-b py-10"
               >
-                <div className="flex gap-10 jsutify-between flex-col lg:flex-row">
-                  <div className="self-end">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+                  <div className="self-end lg:col-span-2">
                     <div className="flex flex-col gap-8 ">
                       <div className="space-y-4">
                         <ScrollView>
@@ -65,7 +66,7 @@ export default function ServicesSection2() {
                       </ScrollView>
                     </div>
                   </div>
-                  <div className="w-full lg:w-3/2">
+                  <div className=" lg:col-span-3">
                     <CustomCursorElement
                       cursor={
                         <div className="text-zinc-950 text-lg font-medium">
@@ -94,7 +95,10 @@ export default function ServicesSection2() {
                             },
                           },
                         }}
-                        viewOptions={{ margin: "0px 0px -250px 0px" }}
+                        viewOptions={{
+                          margin: "0px 0px -250px 0px",
+                          once: true,
+                        }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
                         <Link href={service.url}>

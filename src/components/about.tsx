@@ -1,5 +1,30 @@
-import { Cpu, Lock, Sparkles, Zap } from "lucide-react";
+import { Circle, Cpu, Lock, Sparkles, Zap } from "lucide-react";
 import { ScrollView } from "./scroll-view";
+import Image from "next/image";
+
+const ourPrinciples = [
+  {
+    title: "Creativity with Purpose",
+    description:
+      "Our designs aren’t just pretty; they’re built to solve problems and make an impact.",
+  },
+  {
+    title: "Collaboration is Key",
+    description:
+      "We work with you, not just for you. Great ideas come from teamwork.",
+  },
+
+  {
+    title: "Honest & Transparent",
+    description:
+      "No confusing jargon or hidden fees. Just clear communication and real results.",
+  },
+  {
+    title: "Details Matter",
+    description:
+      "The little things make a big difference. We sweat the small stuff, so you don’t have to.",
+  },
+];
 
 export default function ContentSection() {
   return (
@@ -13,61 +38,37 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              Lyra is evolving to be more than just the models. It supports an
-              entire ecosystem — from products to the APIs and platforms helping
-              developers and businesses innovate.
+              Lume Studio was born from a simple idea—great design should do
+              more than just look good; it should make an impact. What started
+              as a passion for creativity turned into a full-fledged design
+              agency dedicated to helping brands tell their stories, connect
+              with audiences, and stand out in a crowded world.
             </p>
           </ScrollView>
         </div>
         <ScrollView>
-          <img
-            className="rounded-(--radius) grayscale"
-            src="https://images.unsplash.com/photo-1530099486328-e021101a494a?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          <Image
+            className="rounded-(--radius) grayscale-75 object-cover aspect-[16/9] w-full"
+            src="/images/office.jpeg"
             alt="team image"
-            height=""
-            width=""
+            height="480"
+            width="720"
             loading="lazy"
           />
         </ScrollView>
         <ScrollView>
           <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
-            <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <Zap className="size-4" />
-                <h3 className="text-base font-medium">Faaast</h3>
+            {ourPrinciples.map((principle, index) => (
+              <div className="space-y-3" key={index}>
+                <div className="flex items-center gap-2">
+                  <Circle className="size-4" />
+                  <h3 className="text-sm font-medium">{principle.title}</h3>
+                </div>
+                <p className="text-muted-foreground text-sm">
+                  {principle.description}
+                </p>
               </div>
-              <p className="text-muted-foreground text-sm">
-                It supports an entire helping developers and innovate.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <Cpu className="size-4" />
-                <h3 className="text-base font-medium">Powerful</h3>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                It supports an entire helping developers and businesses.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <Lock className="size-4" />
-                <h3 className="text-base font-medium">Security</h3>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                It supports an helping developers businesses innovate.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <Sparkles className="size-4" />
-
-                <h3 className="text-sm font-medium">AI Powered</h3>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                It supports an helping developers businesses innovate.
-              </p>
-            </div>
+            ))}
           </div>
         </ScrollView>
       </div>
