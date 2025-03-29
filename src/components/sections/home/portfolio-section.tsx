@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function PortfolioSection() {
   return (
-    <section className="py-16 md:py-32">
+    <section className="py-16 md:py-32" id="portfolio">
       <div className="mx-auto max-w-5xl space-y-12 px-6">
         <div className="relative z-10 grid items-center gap-4 md:grid-cols-2 md:gap-12">
           <h2 className="text-4xl font-semibold">
