@@ -45,8 +45,10 @@ export default function FullVersionSection() {
             as="p"
             className="mx-auto mt-6 max-w-2xl text-pretty text-lg"
           >
-            Tailwindcss highly customizable components for building modern
-            websites and applications that look and feel the way you mean it.
+            Built with Next.js, Tailwind, and Motion Primitives — a fast,
+            elegant site featuring a smooth portfolio, a powerful CMS preview,
+            and thoughtful features designed to elevate creative work. Full
+            experience launching soon.
           </TextEffect>
 
           <AnimatedGroup
