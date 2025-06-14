@@ -63,7 +63,11 @@ export default function FullVersionSection() {
             }}
             className="mt-12"
           >
-            <form action="" className="mx-auto max-w-sm">
+            <form
+              action={process.env.NEXT_PUBLIC_WAIT_LIST_API}
+              className="mx-auto max-w-sm"
+              method="POST"
+            >
               <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.5rem)] border pr-2 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
                 <Mail className="pointer-events-none absolute inset-y-0 left-4 my-auto size-4" />
 
@@ -71,6 +75,7 @@ export default function FullVersionSection() {
                   placeholder="Your mail address"
                   className="h-12 w-full bg-transparent pl-12 focus:outline-none"
                   type="email"
+                  name="email"
                 />
 
                 <div className="md:pr-1.5 lg:pr-0">
@@ -79,7 +84,7 @@ export default function FullVersionSection() {
                     size="sm"
                     className="rounded-(--radius)"
                   >
-                    <span className="hidden md:block">Get Started</span>
+                    <span className="hidden md:block">Join Now!</span>
                     <SendHorizonal
                       className="relative mx-auto size-5 md:hidden"
                       strokeWidth={2}
