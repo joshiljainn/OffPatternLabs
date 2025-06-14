@@ -78,6 +78,7 @@ export default function FullVersionSection() {
                   className="h-12 w-full bg-transparent pl-12 focus:outline-none"
                   type="email"
                   name="email"
+                  required
                 />
 
                 <div className="md:pr-1.5 lg:pr-0">
