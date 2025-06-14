@@ -44,4 +44,4 @@ MIT
 
 ## Full version
 
-For the full version, go to https://template.kohi.studio/lume
+For the full version, go to https://lume.kohi.studio/full-version
