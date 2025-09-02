@@ -33,16 +33,12 @@ export default function ContentSection() {
         <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-balance text-4xl font-medium lg:text-5xl">
-              About Us
+              Who Am I?
             </h2>
           </ScrollView>
           <ScrollView>
             <p>
-              Lume Studio was born from a simple idea—great design should do
-              more than just look good; it should make an impact. What started
-              as a passion for creativity turned into a full-fledged design
-              agency dedicated to helping brands tell their stories, connect
-              with audiences, and stand out in a crowded world.
+              I’m Joshil – a builder, student, and explorer. I’ve worked on growth and execution across different domains, and now I’m diving into the export world. Instead of selling a polished service, I want to work hands-on with a small group of exporters, learn the ropes, and support you with whatever needs to be done to grow your export channel.
             </p>
           </ScrollView>
         </div>

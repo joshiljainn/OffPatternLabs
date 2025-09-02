@@ -105,7 +105,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Designs That Captivate, Brands That Shine.
+                  Let's Build Your Export Channel – Together.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -115,9 +115,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  At Lume Studio, we blend creativity and strategy to craft
-                  stunning websites, striking visuals, and unforgettable brand
-                  experiences that set you apart.
+                  I'll help you handle the heavy lifting of exports at a fraction of the cost, while learning and growing with you.
                 </TextEffect>
 
                 <AnimatedGroup
