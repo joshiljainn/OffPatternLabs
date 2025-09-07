@@ -28,7 +28,7 @@ export default function Testimonials() {
               <CardContent>
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <p className="text-xl font-medium">
-                    Because I'm on a mission to learn, I'll work at a cost that is a fraction of what agencies would charge. This is a win-win experiment for both of us. The value you receive will be far greater than your investment.
+                    Because I&apos;m on a mission to learn, I&apos;ll work at a cost that is a fraction of what agencies would charge. This is a win-win experiment for both of us. The value you receive will be far greater than your investment.
                   </p>
                 </blockquote>
               </CardContent>

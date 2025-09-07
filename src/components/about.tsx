@@ -38,7 +38,7 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-            For years, I've been a 0 to 1 builder and a generalist, helping startups and businesses with their go-to-market strategies and outreach efforts. My journey has been driven by an insatiable curiosity for growth, marketing, and the challenge of building something from nothing. I'm now applying this hands-on, executional mindset to a new and exciting space: the export industry. I believe the best way to master a new domain is by doing the work—and that's what I'm here to do with you.
+            For years, I&apos;ve been a 0 to 1 builder and a generalist, helping startups and businesses with their go-to-market strategies and outreach efforts. My journey has been driven by an insatiable curiosity for growth, marketing, and the challenge of building something from nothing. I&apos;m now applying this hands-on, executional mindset to a new and exciting space: the export industry. I believe the best way to master a new domain is by doing the work—and that&apos;s what I&apos;m here to do with you.
 
 
             </p>

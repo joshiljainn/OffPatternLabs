@@ -18,7 +18,7 @@ export default function ServicesSection2() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-            I don't offer rigid services or theoretical plans. I offer a hands-on partnership to build your export channel from the ground up, tackling whatever needs to be done to achieve real growth in global markets. I will roll up my sleeves and do what needs to be done            </p>
+            I don&apos;t offer rigid services or theoretical plans. I offer a hands-on partnership to build your export channel from the ground up, tackling whatever needs to be done to achieve real growth in global markets. I will roll up my sleeves and do what needs to be done            </p>
           </ScrollView>
         </div>
         <div className="mt-12 md:mt-24">

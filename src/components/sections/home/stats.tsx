@@ -14,7 +14,7 @@ export default function StatsSection() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-            My work isn't measured by a large firm's history. It's measured by my personal promises to you. This is my direct commitment to your success.
+            My work isn&apos;t measured by a large firm&apos;s history. It&apos;s measured by my personal promises to you. This is my direct commitment to your success.
 
 
             </p>
@@ -61,7 +61,7 @@ export default function StatsSection() {
               className="space-y-4"
             >
               <div className="text-5xl font-bold">My Guiding Principle</div>
-              <p>My career is built on the love of startups and the passion for creating something meaningful, bigger than myself. I'll bring that same builder mindset to your export channel.</p>
+              <p>My career is built on the love of startups and the passion for creating something meaningful, bigger than myself. I&apos;ll bring that same builder mindset to your export channel.</p>
             </motion.div>
           </div>
         </ScrollView>

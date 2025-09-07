@@ -17,12 +17,12 @@ export default function FeaturesSection() {
             <div className="md:pr-6 lg:pr-0">
               <ScrollView>
                 <h2 className="text-4xl font-semibold lg:text-5xl">
-                  Let's Start Building.
+                  Let&apos;s Start Building.
                 </h2>
               </ScrollView>
               <ScrollView>
                 <p className="mt-6">
-                  Ready to move from idea to action? I'm eager to learn about your business and begin working with you to find your first international clients. Send me a message, and let's start a conversation.
+                  Ready to move from idea to action? I&apos;m eager to learn about your business and begin working with you to find your first international clients. Send me a message, and let&apos;s start a conversation.
                 </p>
               </ScrollView>
             </div>
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
                   href="https://wa.link/xv4xgp"
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-4 py-2"
                 >
-                  Let's Start a Conversation on WhatsApp
+                  Let&apos;s Start a Conversation on WhatsApp
                 </Link>
               </div>
             </ScrollView>
