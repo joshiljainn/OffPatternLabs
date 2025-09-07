@@ -7,7 +7,7 @@ const members = [
   {
     name: "Joshil Jain",
     role: "Founder",
-    avatar: "profile.jpg",
+    avatar: "Profile.jpg",
     link: "https://www.linkedin.com/in/joshiljain/",
   },
   {
