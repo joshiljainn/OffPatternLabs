@@ -12,7 +12,7 @@ export const NAV_LINKS = [
     href: "#services",
   },
   {
-    name: "Portfolio",
+    name: "How It Works",
     href: "#portfolio",
   },
 ];

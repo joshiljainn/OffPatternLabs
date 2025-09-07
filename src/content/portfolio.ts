@@ -1,44 +1,44 @@
 export const PORTFOLIO_CONTENT = [
   {
-    name: "GreenScape Landscaping",
+    name: "Finding New Markets",
     description:
-      "Modern landing page for a landscaping company featuring service showcases, before/after galleries, and instant quote requests.",
-    img: "/images/portfolio/eco.jpg",
+      "Finding your first international client can be a struggle. I'll handle the market research to identify the most viable countries for your product, giving you a clear roadmap for expansion.",
+    img: "/images/portfolio/1.png",
     url: "#",
   },
   {
-    name: "Starlight Prom Nights",
+    name: "Getting Attention from Buyers",
     description:
-      "Vibrant promotional page for high school prom parties with ticket booking, photo galleries, and theme selection.",
-    img: "/images/portfolio/event.jpg",
+      "Finding your first international client can be a struggle. I'll handle the market research to identify the most viable countries for your product, giving you a clear roadmap for expansion.",
+    img: "/images/portfolio/2.png",
     url: "#",
   },
   {
-    name: "Prestige College of Arts",
+    name: "Wasting Time on Repetitive Tasks",
     description:
-      "Elegant academic landing page with program highlights, virtual campus tours, and application portals.",
-    img: "/images/portfolio/art.jpg",
+      "Don't let manual processes slow you down. I can manage your CRM and handle account management to streamline your daily operations.",
+    img: "/images/portfolio/3.png",
     url: "#",
   },
   {
-    name: "CycleSpot Rentals",
+    name: "Stagnant Growth",
     description:
-      "Bike rental platform with location-based availability, pricing calculators, and secure online bookings.",
-    img: "/images/portfolio/bike.jpg",
+      "Growth isn’t an accident; it’s a process. I’ll focus on optimizing your systems and figuring out what drives your business forward to ensure consistent growth.",
+    img: "/images/portfolio/6.png",
     url: "#",
   },
   {
-    name: "Bella Cucina Restaurant",
+    name: "Navigating Uncharted Territory",
     description:
-      "Appetizing restaurant landing page with menu displays, reservation system, and chef's specials highlights.",
-    img: "/images/portfolio/resturant.jpg",
+      "Starting an export channel from scratch can feel daunting. I bring a 0 to 1 builder mindset to the partnership, helping you create a system from the ground up.",
+    img: "/images/portfolio/4.png",
     url: "#",
   },
   {
-    name: "SereneMind Meditation",
+    name: "Lack of a Partner",
     description:
-      "Calming meditation app interface with guided session timers, progress tracking, and relaxation music integration.",
-    img: "/images/portfolio/meditation.jpg",
+      "The right support is essential. This is a win-win partnership—you get a committed, hands-on partner who does the work, and I get to learn the industry with you.",
+    img: "/images/portfolio/5.png",
     url: "#",
   },
 ];

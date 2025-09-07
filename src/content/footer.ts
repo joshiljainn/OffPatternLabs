@@ -8,7 +8,7 @@ export const FOOTER_LINKS = [
     href: "#about",
   },
   {
-    title: "Team",
+    title: "Me",
     href: "#team",
   },
   {
@@ -16,11 +16,11 @@ export const FOOTER_LINKS = [
     href: "#services",
   },
   {
-    title: "Portfolio",
+    title: "How it works",
     href: "#portfolio",
   },
   {
-    title: "Testimonials",
+    title: "Common Questions",
     href: "#testimonials",
   },
 ];

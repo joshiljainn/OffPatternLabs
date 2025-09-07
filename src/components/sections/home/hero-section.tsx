@@ -115,7 +115,8 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  I'll help you handle the heavy lifting of exports at a fraction of the cost, while learning and growing with you.
+                  I'll handle the day-to-day execution and heavy lifting. You get a dedicated growth partner at a fraction of the cost, and I get to learn your industry hands-on.
+                  
                 </TextEffect>
 
                 <AnimatedGroup
@@ -134,42 +135,24 @@ export default function HeroSection() {
                 >
                   <div
                     key={1}
-                    className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
+                    className="relative"
                   >
-                    <Button
-                      asChild
-                      size="lg"
-                      className="rounded-xl px-5 text-base"
-                    >
-                      <Link
-                        href="https://github.com/haramishra/lume-studio-next"
-                        target="_black"
+                    <Link href="https://wa.link/xv4xgp" target="_blank">
+                      <button 
+                        type="button" 
+                        className="inline-flex items-center justify-center rounded-lg border border-transparent bg-black text-white shadow-xs hover:bg-gray-900 px-6 py-3 text-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+                        style={{
+                          minWidth: '140px',
+                          maxWidth: '100%',
+                          whiteSpace: 'nowrap'
+                        }}
                       >
-                        <svg
-                          className="size-6"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                          />
-                        </svg>
-                        <span className="text-nowrap">Github</span>
-                      </Link>
-                    </Button>
-                  </div>
-                  <Button
-                    key={2}
-                    asChild
-                    size="lg"
-                    variant="ghost"
-                    className="h-10.5 rounded-xl px-5"
-                  >
-                    <Link href="/full-version">
-                      <span className="text-nowrap">Full Version</span>
+                        <span className="bg-black text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-gray-900">
+                          WORK WITH ME (ONLY 5 SPOTS)
+                        </span>
+                      </button>
                     </Link>
-                  </Button>
+                  </div>
                 </AnimatedGroup>
               </div>
             </div>

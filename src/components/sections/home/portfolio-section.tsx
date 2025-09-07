@@ -12,11 +12,10 @@ export default function PortfolioSection() {
       <div className="mx-auto max-w-5xl space-y-12 px-6">
         <div className="relative z-10 grid items-center gap-4 md:grid-cols-2 md:gap-12">
           <h2 className="text-4xl font-semibold">
-            The Lyra ecosystem brings together our models
+          Solving Your Export Challenges
           </h2>
           <p className="max-w-sm sm:ml-auto">
-            Empower your team with workflows that adapt to your needs, whether
-            you prefer git synchronization or a AI Agents interface.
+          Every exporter faces unique hurdles, from finding new buyers to handling complex logistics. My job is to take on that heavy lifting. Here are some common problems I can solve for you.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">

@@ -38,8 +38,8 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Logo />
-              </Link>
+          <img src="/logo/6.svg" alt="OffPattern Labs Logo" className="h-8 w-auto" />
+          </Link>
 
               <button
                 onClick={() => setMenuState(!menuState)}
@@ -92,24 +92,6 @@ export const HeroHeader = () => {
                     <span>Login</span>
                   </Link>
                 </Button> */}
-                <Button
-                  asChild
-                  size="sm"
-                  className={cn(isScrolled && "lg:hidden")}
-                >
-                  <Link href="/full-version">
-                    <span>Full Version</span>
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
-                >
-                  <Link href="/full-version">
-                    <span>Join waitlist</span>
-                  </Link>
-                </Button>
               </div>
             </div>
           </div>

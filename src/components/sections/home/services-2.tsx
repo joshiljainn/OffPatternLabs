@@ -13,16 +13,12 @@ export default function ServicesSection2() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Design That Works for You
+            What I Can Help With
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              At Lume Studio, we create designs that are more than just visually
-              appealing. They&apos;re built to solve problems, connect with
-              audience, and drive results. <br /> Whether you’re starting fresh
-              or refining your existing identity, <br /> we’ve got you covered.
-            </p>
+            I don't offer rigid services or theoretical plans. I offer a hands-on partnership to build your export channel from the ground up, tackling whatever needs to be done to achieve real growth in global markets. I will roll up my sleeves and do what needs to be done            </p>
           </ScrollView>
         </div>
         <div className="mt-12 md:mt-24">

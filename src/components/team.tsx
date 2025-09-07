@@ -5,39 +5,39 @@ import { ScrollView } from "./scroll-view";
 
 const members = [
   {
-    name: "Liam Brown",
-    role: "Founder - CEO",
-    avatar: "https://alt.tailus.io/images/team/member-one.webp",
+    name: "Joshil Jain",
+    role: "Founder",
+    avatar: "/profile.jpg",
+    link: "https://www.linkedin.com/in/joshiljain/",
+  },
+  {
+    name: "Go-to-Market Strategy",
+    role: "The 0 to 1 Builder",
+    avatar: "/Go-to-Market Plan/1.png",
     link: "#",
   },
   {
-    name: "Elijah Jones",
-    role: "Co-Founder - CTO",
-    avatar: "https://alt.tailus.io/images/team/member-two.webp",
+    name: "Global Outreach",
+    role: "Outbound Demand Generation",
+    avatar: "/Go-to-Market Plan/2.png",
     link: "#",
   },
   {
-    name: "Isabella Garcia",
-    role: "Sales Manager",
-    avatar: "https://alt.tailus.io/images/team/member-three.webp",
+    name: "Partnerships",
+    role: "Strategic Alliances",
+    avatar: "/Go-to-Market Plan/3.png",
     link: "#",
   },
   {
-    name: "Henry Lee",
-    role: "UX Engeneer",
-    avatar: "https://alt.tailus.io/images/team/member-four.webp",
+    name: "Growth & Marketing",
+    role: "Hands-on Execution",
+    avatar: "/Go-to-Market Plan/4.png",
     link: "#",
   },
   {
-    name: "Ava Williams",
-    role: "Interaction Designer",
-    avatar: "https://alt.tailus.io/images/team/member-five.webp",
-    link: "#",
-  },
-  {
-    name: "Olivia Miller",
-    role: "Visual Designer",
-    avatar: "https://alt.tailus.io/images/team/member-six.webp",
+    name: "Market Research",
+    role: "Data-Driven Insights",
+    avatar: "/Go-to-Market Plan/5.png",
     link: "#",
   },
 ];
@@ -50,19 +50,17 @@ export default function TeamSection() {
     >
       <div className="mx-auto max-w-5xl border-t px-6">
         <span className="text-caption -ml-6 -mt-3.5 block w-max bg-gray-50 px-6 dark:bg-gray-950">
-          Team
+          Why Us?
         </span>
         <ScrollView>
           <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
             <div className="sm:w-2/5">
-              <h2 className="text-3xl font-bold sm:text-4xl">Our dream team</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl">My Core Competencies</h2>
             </div>
 
             <div className="mt-6 sm:mt-0">
               <p>
-                During the working process, we perform regular fitting with the
-                client because he is the only person who can feel whether a new
-                suit fits or not.
+              My professional background has made me a generalist who loves figuring things out. I have a proven track record of hands-on execution across various industries, including e-commerce, SaaS, and marketing. I bring the ability to build, execute, and grow—a skill set I am now applying to the export industry to help you succeed.
               </p>
             </div>
           </div>
@@ -83,7 +81,7 @@ export default function TeamSection() {
                     }}
                   >
                     <img
-                      className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
+                      className="h-96 w-full rounded-md object-contain object-top grayscale-0 transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
                       src={member.avatar}
                       alt="team member"
                       width="826"
@@ -105,7 +103,7 @@ export default function TeamSection() {
                           className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100"
                         >
                           {" "}
-                          Linktree
+                          LinkedIn
                         </Link>
                       </div>
                     </div>

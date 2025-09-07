@@ -4,25 +4,25 @@ import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Creativity with Purpose",
+    title: "Hands-On Support",
     description:
-      "Our designs aren’t just pretty; they’re built to solve problems and make an impact.",
+      "I’ll roll up my sleeves and do what needs to be done—research, outreach, market building, and coordination.",
   },
   {
-    title: "Collaboration is Key",
+    title: "Ridiculously Affordable",
     description:
-      "We work with you, not just for you. Great ideas come from teamwork.",
+      "Because I’m learning, I’ll charge a fraction of what agencies or consultants would, ensuring you get immense value.",
   },
 
   {
-    title: "Honest & Transparent",
+    title: "Only 5 Exporters",
     description:
-      "No confusing jargon or hidden fees. Just clear communication and real results.",
+      "I’m limiting my work to a maximum of five clients to ensure I can give each of you my full focus and attention.",
   },
   {
-    title: "Details Matter",
+    title: "Mutual Growth",
     description:
-      "The little things make a big difference. We sweat the small stuff, so you don’t have to.",
+      "You get a dedicated partner who helps with the heavy lifting, and I get to learn the ropes of your industry directly with you.",
   },
 ];
 
@@ -38,14 +38,16 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              I’m Joshil – a builder, student, and explorer. I’ve worked on growth and execution across different domains, and now I’m diving into the export world. Instead of selling a polished service, I want to work hands-on with a small group of exporters, learn the ropes, and support you with whatever needs to be done to grow your export channel.
+            For years, I've been a 0 to 1 builder and a generalist, helping startups and businesses with their go-to-market strategies and outreach efforts. My journey has been driven by an insatiable curiosity for growth, marketing, and the challenge of building something from nothing. I'm now applying this hands-on, executional mindset to a new and exciting space: the export industry. I believe the best way to master a new domain is by doing the work—and that's what I'm here to do with you.
+
+
             </p>
           </ScrollView>
         </div>
         <ScrollView>
           <Image
-            className="rounded-(--radius) grayscale-75 object-cover aspect-[16/9] w-full"
-            src="/images/office.jpeg"
+            className="rounded-(--radius) grayscale-35 object-cover aspect-[16/9] w-full"
+            src="/guiding-philosophy.png"
             alt="team image"
             height="480"
             width="720"

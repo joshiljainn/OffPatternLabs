@@ -1,58 +1,58 @@
 export const SERVICES_LIST = [
   {
-    name: "UI/UX & Web Design",
+    name: "Market & Strategy",
     tags: [
-      "Figma",
-      "Wireframing",
-      "Prototyping",
-      "Responsive Design",
-      "User Testing",
+      "Market research",
+      "Buyer identification",
+      "GTM strategy"
     ],
     img: "/images/abstract-1.png",
     url: "#",
     description:
-      "End-to-end digital design from wireframes to polished interfaces. We create intuitive, visually appealing experiences for websites and apps, backed by user research and iterative testing.",
+      "Before a single product is shipped, a solid plan is needed. I'll help you find new opportunities and build a clear path forward. My work begins with a comprehensive Go-to-Market (GTM) strategy, ensuring we don't just start working—we build with a purpose. I'll handle the foundational research so you can focus on building your business."
+,
   },
   {
-    name: "Brand Identity Design",
+    name: "Digital & Outreach",
     tags: [
-      "Logo Design",
-      "Brand Guidelines",
-      "Visual Identity",
-      "Typography",
-      "Color Theory",
+      "Outbound demand generation",
+      "Strategic outreach",
+      "Email marketing",
+      "Social media"
     ],
     img: "/images/abstract-2.png",
     url: "#",
     description:
-      "Comprehensive branding packages including logos, style guides, and asset kits. We craft cohesive visual identities that communicate your brand’s essence across all touchpoints.",
+      "I bring a modern, digital-first approach to a traditional industry. My focus is on creating a strong digital presence that helps you connect with new partners. I have direct experience with outbound demand generation and strategic outreach campaigns, ensuring your message reaches the right people to help you build valuable partnerships."
+
+,
   },
   {
-    name: "SEO & Website Audits",
+    name: "Execution & Logistics",
     tags: [
-      "Technical SEO",
-      "Keyword Strategy",
-      "On-Page Optimization",
-      "Analytics",
-      "Performance Tuning",
+      "CRM management",
+      "Account management",
+      "Documentation",
+      "Logistics coordination"
     ],
     img: "/images/abstract-3.png",
     url: "#",
     description:
-      "Data-driven SEO audits and optimizations to improve rankings. We analyze technical health, content gaps, and backlink profiles to drive organic growth.",
+      "Your success relies on the details. I will roll up my sleeves and help with the day-to-day tasks that are essential for a smooth operation. My experience includes managing CRMs like HubSpot and handling outreach and account management on both the customer and deal owner side."
+,
   },
   {
-    name: "Social Media Marketing",
+    name: "Growth & Optimization",
     tags: [
-      "Meta Ads",
-      "Instagram Reels",
-      "Content Strategy",
-      "Community Management",
-      "Performance Tracking",
+      "Process optimization",
+      "Identifying opportunities",
+      "Analytics",
+      "Performance tracking"
     ],
     img: "/images/abstract-5.png",
     url: "#",
     description:
-      "Full-service social media management—from organic content creation to paid campaigns. We build engaging narratives and measurable strategies tailored to each platform.",
+      "Once your channel is running, my work is not done. I will focus on optimizing your processes to ensure you are consistently growing and reaching new milestones. I love figuring things out, so I'll be focused on identifying new opportunities and improving your processes to drive continuous growth. My work is not just about doing, but about optimizing."
+,
   },
 ];
