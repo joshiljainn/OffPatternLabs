@@ -14,14 +14,15 @@ export default function StatsSection() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-            My work isn&apos;t measured by a large firm&apos;s history. It&apos;s measured by my personal promises to you. This is my direct commitment to your success.
+            My work isn't measured by a large firm's history. It's measured by my personal promises to you. This is my direct commitment to your success.
 
 
             </p>
           </ScrollView>
         </div>
         <ScrollView stagger delay={0.04}>
-        <div className="grid gap-12 divide-y *:text-justify md:grid-cols-3 md:gap-16 md:divide-x md:divide-y-0">        <motion.div
+        <div className="grid gap-12 divide-y *:text-left md:grid-cols-3 md:gap-16 md:divide-x md:divide-y-0">
+        <motion.div
               variants={{
                 hidden: { opacity: 0, scale: 0.8, filter: "blur(10px)" },
                 visible: {
@@ -33,7 +34,7 @@ export default function StatsSection() {
               className="space-y-4"
             >
               <div className="text-5xl font-bold">Dedicated Partner</div>
-              <p>You won&apos;t be handed off to a junior team. You&apos;ll work directly with me every step of the way, ensuring our partnership is personal and focused.</p>
+              <p>You won’t be handed off to a junior team. You'll work directly with me every step of the way, ensuring our partnership is personal and focused.</p>
             </motion.div>
             <motion.div
               variants={{
@@ -61,7 +62,7 @@ export default function StatsSection() {
               className="space-y-4"
             >
               <div className="text-5xl font-bold">My Guiding Principle</div>
-              <p>My career is built on the love of startups and the passion for creating something meaningful, bigger than myself. I&apos;ll bring that same builder mindset to your export channel.</p>
+              <p>My career is built on the love of startups and the passion for creating something meaningful, bigger than myself. I'll bring that same builder mindset to your export channel.</p>
             </motion.div>
           </div>
         </ScrollView>
