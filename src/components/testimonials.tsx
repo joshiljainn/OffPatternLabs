@@ -14,7 +14,7 @@ export default function Testimonials() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              This is a unique opportunity, so it's natural to have questions. Here are the answers to the ones I hear most often.
+              This is a unique opportunity, so it&apos;s natural to have questions. Here are the answers to the ones I hear most often.
             </p>
           </ScrollView>
         </div>
@@ -48,7 +48,7 @@ export default function Testimonials() {
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <h3 className="text-lg font-bold">Is this a consultancy or an agency?</h3>
                   <p>
-                    No. This is a hands-on partnership. You're not paying for a report—you’re getting a partner who executes the work.
+                    No. This is a hands-on partnership. You&apos;re not paying for a report—you’re getting a partner who executes the work.
                   </p>
                 </blockquote>
               </CardContent>

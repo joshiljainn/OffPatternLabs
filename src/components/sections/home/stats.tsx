@@ -33,7 +33,7 @@ export default function StatsSection() {
               className="space-y-4"
             >
               <div className="text-5xl font-bold">Dedicated Partner</div>
-              <p>You won’t be handed off to a junior team. You'll work directly with me every step of the way, ensuring our partnership is personal and focused.</p>
+              <p>You won&apos;t be handed off to a junior team. You&apos;ll work directly with me every step of the way, ensuring our partnership is personal and focused.</p>
             </motion.div>
             <motion.div
               variants={{
