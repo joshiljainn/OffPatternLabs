@@ -7,37 +7,37 @@ const members = [
   {
     name: "Joshil Jain",
     role: "Founder",
-    avatar: "/profile.jpg",
+    avatar: "profile.jpg",
     link: "https://www.linkedin.com/in/joshiljain/",
   },
   {
     name: "Go-to-Market Strategy",
     role: "The 0 to 1 Builder",
-    avatar: "/Go-to-Market Plan/1.png",
+    avatar: "Go-to-Market Plan/1.png",
     link: "#",
   },
   {
     name: "Global Outreach",
     role: "Outbound Demand Generation",
-    avatar: "/Go-to-Market Plan/2.png",
+    avatar: "Go-to-Market Plan/2.png",
     link: "#",
   },
   {
     name: "Partnerships",
     role: "Strategic Alliances",
-    avatar: "/Go-to-Market Plan/3.png",
+    avatar: "Go-to-Market Plan/3.png",
     link: "#",
   },
   {
     name: "Growth & Marketing",
     role: "Hands-on Execution",
-    avatar: "/Go-to-Market Plan/4.png",
+    avatar: "Go-to-Market Plan/4.png",
     link: "#",
   },
   {
     name: "Market Research",
     role: "Data-Driven Insights",
-    avatar: "/Go-to-Market Plan/5.png",
+    avatar: "Go-to-Market Plan/5.png",
     link: "#",
   },
 ];
