@@ -47,7 +47,7 @@ export default function ContentSection() {
         <ScrollView>
           <Image
             className="rounded-(--radius) grayscale-35 object-cover aspect-[16/9] w-full"
-            src="/guiding-philosophy.png"
+            src="guiding-philosophy.png"
             alt="team image"
             height="480"
             width="720"

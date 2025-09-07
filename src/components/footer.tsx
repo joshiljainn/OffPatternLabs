@@ -15,7 +15,7 @@ export default function FooterSection() {
             aria-label="go home"
             className="mx-auto block size-fit"
           >
-          <img src="/logo/3.svg" alt="OffPattern Labs Logo" className="h-100 w-auto" />
+          <img src="logo/3.svg" alt="OffPattern Labs Logo" className="h-100 w-auto" />
           </Link>
         </ScrollView>
         <ScrollView stagger delay={0.1}>

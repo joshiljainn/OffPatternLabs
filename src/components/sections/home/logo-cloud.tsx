@@ -4,15 +4,15 @@ import Image from "next/image";
 export default function LogoCloud() {
   // Define the logos from the Professional Experience folder in public directory
   const logos = [
-    { src: "/Professional Experience/BITS_Pilani-Logo.svg.png", alt: "BITS Pilani Logo" },
-    { src: "/Professional Experience/cashfloio_logo.jpeg", alt: "Cashfloio Logo" },
-    { src: "/Professional Experience/Havells_Logo.svg.png", alt: "Havells Logo" },
-    { src: "/Professional Experience/IIMR.jpeg", alt: "IIMR Logo" },
-    { src: "/Professional Experience/images.png", alt: "Images Logo" },
-    { src: "/Professional Experience/Mezink.png", alt: "Mezink Logo" },
-    { src: "/Professional Experience/Refold.svg", alt: "Refold Logo", size: "size-16" }, // Larger size for Refold
-    { src: "/Professional Experience/the-university-of-sydney-vector-logo.png", alt: "University of Sydney Logo", size: "size-16" }, // Larger size for University of Sydney
-    { src: "/Professional Experience/1.svg", alt: "1 Logo" },
+    { src: "Professional Experience/BITS_Pilani-Logo.svg.png", alt: "BITS Pilani Logo" },
+    { src: "Professional Experience/cashfloio_logo.jpeg", alt: "Cashfloio Logo" },
+    { src: "Professional Experience/Havells_Logo.svg.png", alt: "Havells Logo" },
+    { src: "Professional Experience/IIMR.jpeg", alt: "IIMR Logo" },
+    { src: "Professional Experience/images.png", alt: "Images Logo" },
+    { src: "Professional Experience/Mezink.png", alt: "Mezink Logo" },
+    { src: "Professional Experience/Refold.svg", alt: "Refold Logo", size: "size-16" }, // Larger size for Refold
+    { src: "Professional Experience/the-university-of-sydney-vector-logo.png", alt: "University of Sydney Logo", size: "size-16" }, // Larger size for University of Sydney
+    { src: "Professional Experience/1.svg", alt: "1 Logo" },
   ];
 
   return (

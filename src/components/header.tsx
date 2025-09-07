@@ -38,7 +38,7 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-          <img src="/logo/6.svg" alt="OffPattern Labs Logo" className="h-8 w-auto" />
+          <img src="logo/6.svg" alt="OffPattern Labs Logo" className="h-8 w-auto" />
           </Link>
 
               <button
