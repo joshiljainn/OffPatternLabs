@@ -30,7 +30,7 @@ const transitionVariants = {
 };
 
 export default function HeroSection() {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (videoRef.current) {
