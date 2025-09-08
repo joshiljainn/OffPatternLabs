@@ -21,6 +21,7 @@ export default function StatsSection() {
           </ScrollView>
         </div>
         <ScrollView stagger delay={0.04}>
+          
         <div className="grid gap-12 divide-y *:text-left md:grid-cols-3 md:gap-16 md:divide-x md:divide-y-0">
         <motion.div
               variants={{
@@ -31,7 +32,7 @@ export default function StatsSection() {
                   filter: "blur(0px)",
                 },
               }}
-              className="space-y-4"
+              className="space-y-4 min-h-[14rem]"
             >
               <div className="text-5xl font-bold">Dedicated Partner</div>
               <p>You won’t be handed off to a junior team. You'll work directly with me every step of the way, ensuring our partnership is personal and focused.</p>
@@ -45,7 +46,7 @@ export default function StatsSection() {
                   filter: "blur(0px)",
                 },
               }}
-              className="space-y-4"
+              className="space-y-4 min-h-[14rem]"
             >
               <div className="text-5xl font-bold">Maximum Clients</div>
               <p>I can only work with a handful of exporters at a time to ensure you get my unwavering focus and full attention.</p>
@@ -59,7 +60,7 @@ export default function StatsSection() {
                   filter: "blur(0px)",
                 },
               }}
-              className="space-y-4"
+              className="space-y-4 min-h-[14rem]"
             >
               <div className="text-5xl font-bold">My Guiding Principle</div>
               <p>My career is built on the love of startups and the passion for creating something meaningful, bigger than myself. I'll bring that same builder mindset to your export channel.</p>

@@ -33,44 +33,21 @@ export default function HeroSection() {
       <div className="overflow-hidden min-h-screen">
         <section>
           <div className="relative pt-24 md:pt-36">
-          <div className="h-screen xl:h-auto absolute inset-2 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] dark:border-white/5">
-            <video
-              autoPlay
-              loop
-              muted
-              preload="auto"
-              className="size-full -scale-x-100 object-cover opacity-50 invert-0 dark:opacity-35 dark:invert "
-            >
-              <source src="/hero-light.mp4" type="video/mp4" />
-            </video>
-          </div>
+            <div className="h-screen xl:h-auto absolute inset-2 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] dark:border-white/5">
+              <video
+                autoPlay
+                loop
+                muted
+                preload="auto"
+                className="size-full -scale-x-100 object-cover opacity-50 invert-0 dark:opacity-35 dark:invert "
+              >
+                <source src="/hero-light.mp4" type="video/mp4" />
+              </video>
+            </div>
 
             <div className="absolute inset-0 -z-10 size-full "></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                {/* <AnimatedGroup variants={transitionVariants}>
-                  <Link
-                    href="#link"
-                    className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-                  >
-                    <span className="text-foreground text-sm">
-                      Introducing Support for AI Models
-                    </span>
-                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
-
-                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </AnimatedGroup> */}
-
                 <TextEffect
                   preset="fade-in-blur"
                   speedSegment={0.3}
@@ -88,7 +65,6 @@ export default function HeroSection() {
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
                   I&apos;ll handle the day-to-day execution and heavy lifting. You get a dedicated growth partner at a fraction of the cost, and I get to learn your industry hands-on.
-                  
                 </TextEffect>
 
                 <AnimatedGroup
@@ -109,20 +85,14 @@ export default function HeroSection() {
                     key={1}
                     className="relative"
                   >
-                    <Link href="https://wa.link/xv4xgp" target="_blank">
-                      <button 
-                        type="button" 
-                        className="inline-flex items-center justify-center rounded-lg border border-transparent bg-black text-white shadow-xs hover:bg-gray-900 px-6 py-3 text-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95"
-                        style={{
-                          minWidth: '140px',
-                          maxWidth: '100%',
-                          whiteSpace: 'nowrap'
-                        }}
-                      >
-                        <span className="bg-black text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-gray-900">
-                          WORK WITH ME (ONLY 5 SPOTS)
-                        </span>
-                      </button>
+                    <Link
+                      href="https://wa.link/xv4xgp"
+                      target="_blank"
+                      className="inline-flex items-center justify-center rounded-lg border border-transparent bg-black text-white shadow-xs hover:bg-gray-900 px-6 py-3 text-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+                    >
+                      <span className="bg-black text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-gray-900">
+                        WORK WITH ME (ONLY 5 SPOTS)
+                      </span>
                     </Link>
                   </div>
                 </AnimatedGroup>
