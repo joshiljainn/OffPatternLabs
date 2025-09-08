@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,6 +28,14 @@ const transitionVariants = {
 };
 
 export default function HeroSection() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
+
   return (
     <>
       <div className="overflow-hidden min-h-screen">
@@ -35,6 +43,7 @@ export default function HeroSection() {
           <div className="relative pt-24 md:pt-36">
             <div className="h-screen xl:h-auto absolute inset-2 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] dark:border-white/5">
               <video
+                ref={videoRef}
                 autoPlay
                 loop
                 muted
