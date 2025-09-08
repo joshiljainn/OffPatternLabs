@@ -89,7 +89,7 @@ export default function HeroSection() {
                       },
                     },
                     ...transitionVariants,
-                  }}
+                  } as const}
                   className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
                 >
                   <div
