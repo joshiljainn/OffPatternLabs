@@ -8,7 +8,7 @@ const projects = [
     description: "Built and ran ad systems reaching 2L+ spend, 15x return, with performance creatives and event funnels.",
   },
   {
-    title: "Savera (Home & Décor Brand)",
+    title: "Home & Décor Brand",
     description: "Set up complete D2C system — website, creative direction, ads, and logistics workflows.",
   },
   {
