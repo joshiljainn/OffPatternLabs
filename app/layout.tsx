@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   creator: "OffPattern Labs",
   publisher: "OffPattern Labs",
   metadataBase: new URL("https://offpatternlabs.com"),
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   alternates: {
     canonical: "/",
   },

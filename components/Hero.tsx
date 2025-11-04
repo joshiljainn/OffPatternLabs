@@ -2,17 +2,46 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center section-padding">
-      <div className="container-custom w-full">
+    <section className="relative min-h-[90vh] flex items-center section-padding overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-background.png"
+          alt="OffPattern Labs"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+
+      <div className="container-custom w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-4xl"
         >
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-12"
+          >
+            <Image
+              src="/logo.svg"
+              alt="OffPattern Labs"
+              width={200}
+              height={60}
+              className="w-48 md:w-56 h-auto"
+              priority
+            />
+          </motion.div>
+
           {/* Headline */}
           <h1 className="text-balance mb-6">
             We turn good products into brands that sell online.
