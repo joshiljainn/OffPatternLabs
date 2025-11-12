@@ -7,6 +7,13 @@
     @apply border-foreground/10;
   }
 
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
   html {
     @apply scroll-smooth;
   }
@@ -60,4 +67,17 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* GPU-friendly transforms for horizontal scroll */
+.will-change-transform {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure sticky positioning works */
+.sticky {
+  left: 0;
+  right: 0;
 }

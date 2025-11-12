@@ -67,7 +67,7 @@ export default function HowItWorks() {
   // Track scroll progress for this section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start start", "end end"], // start when section top hits top
+    offset: ["start start", "end end"],
   });
 
   // Move horizontally as user scrolls vertically
@@ -78,9 +78,9 @@ export default function HowItWorks() {
   );
 
   return (
-    <section ref={sectionRef} className="relative h-[500vh]">
-      {/* Sticky full viewport container */}
-      <div className="sticky top-0 h-screen w-screen overflow-hidden bg-background">
+    <section ref={sectionRef} className="relative">
+      {/* Sticky viewport container */}
+      <div className="sticky top-0 left-0 h-screen w-screen overflow-hidden bg-background">
         {/* Title */}
         <div className="absolute top-8 md:top-12 left-0 right-0 z-30 text-center px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground">
@@ -88,15 +88,15 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        {/* Horizontal motion container */}
+        {/* Horizontal motion container with exact width */}
         <motion.div
-          style={{ x }}
-          className="flex h-full w-[500vw] will-change-transform" // explicit width!
+          style={{ x, width: `${scenes.length * 100}vw` }}
+          className="flex h-full will-change-transform"
         >
           {scenes.map((scene) => (
             <div
               key={scene.id}
-              className={`flex-shrink-0 w-screen h-screen flex items-center justify-center ${scene.bgColor}`}
+              className={`flex-shrink-0 min-w-[100vw] h-screen flex items-center justify-center ${scene.bgColor}`}
             >
               <div className="max-w-4xl mx-auto px-6 text-center">
                 <p className="text-sm uppercase tracking-widest text-foreground/40 mb-6">
@@ -127,7 +127,7 @@ export default function HowItWorks() {
             {scenes.map((_, i) => {
               const progressSegment = useTransform(
                 scrollYProgress,
-                [i / (scenes.length - 1), (i + 1) / (scenes.length - 1)],
+                [i / scenes.length, (i + 1) / scenes.length],
                 [0, 1]
               );
 
@@ -149,6 +149,9 @@ export default function HowItWorks() {
           </p>
         </div>
       </div>
+
+      {/* Spacer to control scroll length precisely */}
+      <div style={{ height: `${scenes.length * 100}vh` }} />
     </section>
   );
 }
