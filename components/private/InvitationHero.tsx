@@ -44,8 +44,8 @@ export default function InvitationHero() {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-balance leading-tight">
-            Turn Your Products into Daily Online Sales —<br />
-            <span className="text-accent">Get 50+ Orders a Month</span> Without Touching Ads or Tech.
+            We've built sales systems that work.<br />
+            <span className="text-accent">Now we're doing it free</span> — until you profit.
           </h1>
 
           {/* Subheadline */}
