@@ -62,39 +62,41 @@ const scenes = [
 ];
 
 export default function HowItWorks() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
+  // Track scroll progress of this section only
   const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
+    target: sectionRef,
+    offset: ["start end", "end start"]
   });
 
+  // Map scroll progress to horizontal translation
   const x = useTransform(
     scrollYProgress,
-    [0, 1],
-    ["0%", `-${(scenes.length - 1) * 100}%`]
+    [0, 0.2, 0.8, 1],
+    ["0%", "0%", `-${(scenes.length - 1) * 100}%`, `-${(scenes.length - 1) * 100}%`]
   );
 
   return (
-    <div ref={containerRef} className="relative h-[500vh] bg-background">
-      {/* Sticky viewport - this stays fixed while scrolling */}
-      <div className="sticky top-0 left-0 w-screen h-screen overflow-hidden">
+    <div ref={sectionRef} className="relative h-[500vh]">
+      {/* Sticky container that stays in viewport */}
+      <div className="sticky top-0 h-screen w-full overflow-hidden bg-background">
         {/* Fixed Title */}
-        <div className="absolute top-6 md:top-12 left-0 right-0 z-30 text-center px-4">
+        <div className="absolute top-8 md:top-12 left-0 right-0 z-30 text-center px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground">
             How It Feels to Go Online with OffPattern.
           </h2>
         </div>
 
-        {/* Horizontal scrolling scenes container */}
+        {/* Horizontal scenes container */}
         <motion.div
           style={{ x }}
-          className="flex h-full w-full"
+          className="absolute inset-0 flex will-change-transform"
         >
-          {scenes.map((scene, index) => (
+          {scenes.map((scene) => (
             <div
               key={scene.id}
-              className={`flex-shrink-0 w-screen h-screen flex items-center justify-center ${scene.bgColor}`}
+              className={`flex-shrink-0 w-full h-full flex items-center justify-center ${scene.bgColor}`}
             >
               <div className="max-w-4xl mx-auto px-6 text-center">
                 {/* Scene number */}
@@ -125,13 +127,16 @@ export default function HowItWorks() {
           ))}
         </motion.div>
 
-        {/* Progress indicator - fixed at bottom */}
+        {/* Progress indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30">
           <div className="flex gap-2 mb-3">
             {scenes.map((_, i) => {
+              const segmentStart = 0.2 + (i * 0.6) / scenes.length;
+              const segmentEnd = 0.2 + ((i + 1) * 0.6) / scenes.length;
+
               const segmentProgress = useTransform(
                 scrollYProgress,
-                [i / scenes.length, (i + 1) / scenes.length],
+                [segmentStart, segmentEnd],
                 [0, 1]
               );
 
