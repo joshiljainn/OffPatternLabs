@@ -62,15 +62,15 @@ const scenes = [
 ];
 
 export default function HowItWorks() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  // scroll range measured on this wrapper
+  // full scroll range = all scenes combined
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: scrollRef,
     offset: ["start start", "end end"],
   });
 
-  // translate horizontally across full width
+  // horizontal translation for the track
   const x = useTransform(
     scrollYProgress,
     [0, 1],
@@ -78,24 +78,17 @@ export default function HowItWorks() {
   );
 
   return (
-    <>
-      {/* 1️⃣ Invisible scroll area controls how long you scroll */}
-      <div
-        ref={containerRef}
-        style={{ height: `${scenes.length * 100}vh` }}
-        className="relative"
-      ></div>
-
-      {/* 2️⃣ Fixed viewport layer that never leaves screen */}
-      <div className="fixed top-0 left-0 w-screen h-screen overflow-hidden bg-background z-[20]">
+    <section ref={scrollRef} className="relative" style={{ height: `${scenes.length * 100}vh` }}>
+      {/* fixed viewport layer */}
+      <div className="fixed top-0 left-0 h-screen w-screen overflow-hidden bg-background z-20">
         <motion.div
-          style={{ x, width: `${scenes.length * 100}vw` }}
-          className="flex h-full will-change-transform"
+          style={{ x }}
+          className="flex h-full w-[500vw] will-change-transform"
         >
           {scenes.map((scene) => (
             <div
               key={scene.id}
-              className={`flex-shrink-0 min-w-[100vw] h-screen flex items-center justify-center ${scene.bgColor}`}
+              className={`flex-shrink-0 w-screen h-screen flex items-center justify-center ${scene.bgColor}`}
             >
               <div className="max-w-4xl mx-auto px-6 text-center">
                 <p className="text-sm uppercase tracking-widest text-foreground/40 mb-6">
@@ -120,16 +113,13 @@ export default function HowItWorks() {
           ))}
         </motion.div>
 
-        {/* Progress bar */}
+        {/* progress indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30">
           <div className="flex gap-2 mb-3">
             {scenes.map((_, i) => {
-              const segmentProgress = useTransform(
-                scrollYProgress,
-                [i / scenes.length, (i + 1) / scenes.length],
-                [0, 1]
-              );
-
+              const start = i / scenes.length;
+              const end = (i + 1) / scenes.length;
+              const progressSegment = useTransform(scrollYProgress, [start, end], [0, 1]);
               return (
                 <div
                   key={i}
@@ -137,17 +127,15 @@ export default function HowItWorks() {
                 >
                   <motion.div
                     className="h-full bg-accent origin-left"
-                    style={{ scaleX: segmentProgress }}
+                    style={{ scaleX: progressSegment }}
                   />
                 </div>
               );
             })}
           </div>
-          <p className="text-xs text-center text-foreground/50">
-            Scroll to continue
-          </p>
+          <p className="text-xs text-center text-foreground/50">Scroll to continue</p>
         </div>
       </div>
-    </>
+    </section>
   );
 }
