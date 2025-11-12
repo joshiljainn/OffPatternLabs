@@ -48,7 +48,7 @@ export default function HowItWorks() {
         <div className="relative">
           <div
             ref={scrollRef}
-            className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide"
+            className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {steps.map((step, index) => (
@@ -94,12 +94,6 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 }
