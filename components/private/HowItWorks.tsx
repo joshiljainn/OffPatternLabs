@@ -64,79 +64,70 @@ const scenes = [
 export default function HowItWorks() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  // Track scroll progress of this section only
+  // Track scroll progress for this section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"]
+    offset: ["start start", "end end"], // start when section top hits top
   });
 
-  // Map scroll progress to horizontal translation
+  // Move horizontally as user scrolls vertically
   const x = useTransform(
     scrollYProgress,
-    [0, 0.2, 0.8, 1],
-    ["0%", "0%", `-${(scenes.length - 1) * 100}%`, `-${(scenes.length - 1) * 100}%`]
+    [0, 1],
+    ["0%", `-${(scenes.length - 1) * 100}%`]
   );
 
   return (
-    <div ref={sectionRef} className="relative h-[500vh]">
-      {/* Sticky container that stays in viewport */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden bg-background">
-        {/* Fixed Title */}
+    <section ref={sectionRef} className="relative h-[500vh]">
+      {/* Sticky full viewport container */}
+      <div className="sticky top-0 h-screen w-screen overflow-hidden bg-background">
+        {/* Title */}
         <div className="absolute top-8 md:top-12 left-0 right-0 z-30 text-center px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground">
             How It Feels to Go Online with OffPattern.
           </h2>
         </div>
 
-        {/* Horizontal scenes container */}
+        {/* Horizontal motion container */}
         <motion.div
           style={{ x }}
-          className="absolute inset-0 flex will-change-transform"
+          className="flex h-full w-[500vw] will-change-transform" // explicit width!
         >
           {scenes.map((scene) => (
             <div
               key={scene.id}
-              className={`flex-shrink-0 w-full h-full flex items-center justify-center ${scene.bgColor}`}
+              className={`flex-shrink-0 w-screen h-screen flex items-center justify-center ${scene.bgColor}`}
             >
               <div className="max-w-4xl mx-auto px-6 text-center">
-                {/* Scene number */}
                 <p className="text-sm uppercase tracking-widest text-foreground/40 mb-6">
                   {scene.id} / {scenes.length}
                 </p>
-
-                {/* Scene title */}
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-foreground">
                   {scene.title}
                 </h3>
-
-                {/* Scene text */}
                 <div className="space-y-4 md:space-y-6 mb-12">
                   {scene.text.map((line, i) => (
-                    <p key={i} className="text-lg md:text-2xl lg:text-3xl font-light leading-relaxed text-foreground/80">
+                    <p
+                      key={i}
+                      className="text-lg md:text-2xl lg:text-3xl font-light leading-relaxed text-foreground/80"
+                    >
                       {line}
                     </p>
                   ))}
                 </div>
-
-                {/* Emoji */}
-                <div className="text-6xl md:text-7xl">
-                  {scene.emoji}
-                </div>
+                <div className="text-6xl md:text-7xl">{scene.emoji}</div>
               </div>
             </div>
           ))}
         </motion.div>
 
-        {/* Progress indicator */}
+        {/* Progress bar */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30">
           <div className="flex gap-2 mb-3">
             {scenes.map((_, i) => {
-              const segmentStart = 0.2 + (i * 0.6) / scenes.length;
-              const segmentEnd = 0.2 + ((i + 1) * 0.6) / scenes.length;
-
-              const segmentProgress = useTransform(
+              const progressSegment = useTransform(
                 scrollYProgress,
-                [segmentStart, segmentEnd],
+                [i / (scenes.length - 1), (i + 1) / (scenes.length - 1)],
                 [0, 1]
               );
 
@@ -147,7 +138,7 @@ export default function HowItWorks() {
                 >
                   <motion.div
                     className="h-full bg-accent origin-left"
-                    style={{ scaleX: segmentProgress }}
+                    style={{ scaleX: progressSegment }}
                   />
                 </div>
               );
@@ -158,6 +149,6 @@ export default function HowItWorks() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
