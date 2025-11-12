@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function PrivateInvitation() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="relative">
       <InvitationHero />
       <PainSection />
       <DreamOutcome />
