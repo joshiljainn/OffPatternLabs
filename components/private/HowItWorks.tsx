@@ -1,84 +1,99 @@
 "use client";
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
-const scenes = [
-  { id: 1, title: "Before OffPattern", text: ["You make great products.", "But online? It's quiet.", "No sales you can count on."], bg: "#f3f4f6", emoji: "📦" },
-  { id: 2, title: "We Step In", text: ["We set up your system —", "site, ads, tracking.", "No fees. No risk."], bg: "#fafafa", emoji: "🚀" },
-  { id: 3, title: "The Build", text: ["Launch goes live.", "Ads start running.", "Orders start pinging in."], bg: "#ffffff", emoji: "💻" },
-  { id: 4, title: "The Results", text: ["You're selling daily.", "You pay only when you profit.", "Finally a system that works."], bg: "#fff7ed", emoji: "📈" },
-  { id: 5, title: "The Future", text: ["Scale. Repeat. Grow.", "That's what OffPattern builds.", "Let's make your brand next."], bg: "#ffedd5", emoji: "🌟" },
+const steps = [
+  {
+    number: "1",
+    title: "Brand Setup",
+    description: "We design your site, pages, and ads — zero cost.",
+    detail: "Full website, product pages, checkout flow, and ad creatives ready to launch.",
+  },
+  {
+    number: "2",
+    title: "Launch & Learn",
+    description: "We test small campaigns to find what converts.",
+    detail: "Smart testing across Meta and Google to identify your winning formula.",
+  },
+  {
+    number: "3",
+    title: "Scale & Earn",
+    description: "You start getting sales. Then we get paid.",
+    detail: "We scale what works. You keep growing. We win together.",
+  },
 ];
 
 export default function HowItWorks() {
-  const triggerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: triggerRef,
-    offset: ["start start", "end end"],
-  });
-
-  // horizontal movement smoothed
-  const rawX = useTransform(scrollYProgress, [0, 1], ["0%", `-${(scenes.length - 1) * 100}%`]);
-  const x = useSpring(rawX, { stiffness: 120, damping: 20 });
-
-  // simple fade in/out for the fixed layer
-  const opacity = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [0, 1, 1, 0]);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={triggerRef} style={{ height: `${scenes.length * 100}vh` }} className="relative">
-      {/* fixed viewport */}
-      <motion.div
-        style={{ opacity }}
-        className="fixed top-0 left-0 w-screen h-screen overflow-hidden z-[50]"
-      >
+    <section id="how-it-works" className="section-padding bg-foreground text-background overflow-hidden">
+      <div className="container-custom">
+        {/* Title */}
         <motion.div
-          style={{ x, width: `${scenes.length * 100}vw` }}
-          className="flex h-full will-change-transform"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 text-center"
         >
-          {scenes.map((scene) => (
-            <div
-              key={scene.id}
-              style={{ backgroundColor: scene.bg }}
-              className="flex-shrink-0 w-screen h-screen flex items-center justify-center"
-            >
-              <div className="max-w-4xl mx-auto px-6 text-center">
-                <p className="text-sm uppercase tracking-widest text-neutral-500 mb-6">
-                  {scene.id} / {scenes.length}
-                </p>
-                <h3 className="text-3xl md:text-4xl font-semibold mb-8 text-gray-900">
-                  {scene.title}
-                </h3>
-                <div className="space-y-4 md:space-y-6 mb-12 text-gray-700">
-                  {scene.text.map((t, i) => (
-                    <p key={i} className="text-lg md:text-2xl leading-relaxed">
-                      {t}
-                    </p>
-                  ))}
-                </div>
-                <div className="text-6xl md:text-7xl">{scene.emoji}</div>
-              </div>
-            </div>
-          ))}
+          <h2 className="mb-6 text-4xl md:text-5xl">Here's How We Do It</h2>
+          <p className="text-xl text-background/70 max-w-2xl mx-auto">
+            Simple. Clear. Results-focused.
+          </p>
         </motion.div>
 
-        {/* progress bar */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30">
-          <div className="flex gap-2 mb-3">
-            {scenes.map((_, i) => {
-              const start = i / scenes.length;
-              const end = (i + 1) / scenes.length;
-              const seg = useTransform(scrollYProgress, [start, end], [0, 1]);
-              return (
-                <div key={i} className="w-8 h-1 bg-gray-300 rounded-full overflow-hidden">
-                  <motion.div className="h-full bg-black origin-left" style={{ scaleX: seg }} />
+        {/* Horizontal Scroll Container */}
+        <div className="relative">
+          <div
+            ref={scrollRef}
+            className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {steps.map((step, index) => (
+              <motion.div
+                key={step.number}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="flex-shrink-0 w-[90%] md:w-[400px] snap-center"
+              >
+                <div className="h-full p-10 border-2 border-background/20 rounded-3xl hover:border-background/40 transition-all bg-foreground/50 backdrop-blur">
+                  {/* Number */}
+                  <div className="text-7xl font-bold text-background/20 mb-6">
+                    {step.number}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-semibold mb-4">{step.title}</h3>
+
+                  {/* Description */}
+                  <p className="text-lg text-background/80 mb-4 leading-relaxed">
+                    {step.description}
+                  </p>
+
+                  {/* Detail */}
+                  <p className="text-sm text-background/60 leading-relaxed">
+                    {step.detail}
+                  </p>
                 </div>
-              );
-            })}
+              </motion.div>
+            ))}
           </div>
-          <p className="text-xs text-gray-500 text-center">Scroll to continue</p>
+
+          {/* Scroll indicator */}
+          <div className="mt-8 flex justify-center gap-2">
+            {steps.map((_, index) => (
+              <div
+                key={index}
+                className="w-2 h-2 rounded-full bg-background/30"
+              />
+            ))}
+          </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
