@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function InvitationHero() {
   return (
-    <section className="relative min-h-[95vh] flex items-center section-padding overflow-hidden">
+    <section className="relative min-h-[95vh] flex items-center section-padding overflow-visible">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
