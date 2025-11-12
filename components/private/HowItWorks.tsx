@@ -78,9 +78,16 @@ export default function HowItWorks() {
   );
 
   return (
-    <section ref={sectionRef} className="relative">
+    <section ref={sectionRef} className="relative overflow-visible">
       {/* Sticky viewport container */}
-      <div className="sticky top-0 left-0 h-screen w-screen overflow-hidden bg-background">
+      <div
+        className="sticky top-0 left-0 h-screen w-screen bg-background"
+        style={{
+          overflow: "visible",
+          transform: "none",
+          willChange: "auto",
+        }}
+      >
         {/* Title */}
         <div className="absolute top-8 md:top-12 left-0 right-0 z-30 text-center px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground">
