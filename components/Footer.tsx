@@ -26,7 +26,7 @@ export default function Footer() {
               LinkedIn
             </Link>
             <Link
-              href="https://wa.me/8076958506?text=Hi,%20I%20would%20like%20to%20know%20more."
+              href="https://wa.me/918076958506?text=Hi,%20I%20would%20like%20to%20know%20more."
               target="_blank"
               rel="noopener noreferrer"
               className="text-background/70 hover:text-background transition-colors"
