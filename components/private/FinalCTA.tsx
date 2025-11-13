@@ -31,7 +31,7 @@ export default function FinalCTA() {
 
           {/* CTA Button */}
           <Link
-            href="https://wa.me/8076958506?text=Hi,%20I'm%20interested%20in%20the%20Founders'%20Growth%20Program."
+            href="https://wa.me/918076958506?text=Hi,%20I'm%20interested%20in%20the%20Founders'%20Growth%20Program."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-5 bg-background text-foreground rounded-full font-semibold text-lg hover:bg-background/90 transition-all duration-300 hover:scale-[1.02]"
