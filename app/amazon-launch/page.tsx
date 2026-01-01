@@ -27,7 +27,9 @@ export default function AmazonLaunchPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
-                                href="#contact"
+                                href="https://wa.me/918076958506?text=Hi,%20I'm%20interested%20in%20your%20Amazon%20launch%20service."
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="button-primary"
                             >
                                 Get My Amazon Store Built
