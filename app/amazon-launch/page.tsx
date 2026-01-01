@@ -188,30 +188,7 @@ export default function AmazonLaunchPage() {
                 </div>
             </section>
 
-            {/* SECTION 7 — TIMELINE */}
-            <section className="py-24 border-t border-neutral-100">
-                <div className="container-custom">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Timeline</h2>
-                    <div className="max-w-4xl mx-auto relative">
-                        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-neutral-200 -translate-y-1/2 hidden md:block" />
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                            {[
-                                { day: "Day 1", task: "Product intake" },
-                                { day: "Day 2–3", task: "Images + listing created" },
-                                { day: "Day 4–5", task: "Upload & review" },
-                                { day: "Day 6–7", task: "Go live (subject to Amazon approvals)" }
-                            ].map((item, i) => (
-                                <div key={i} className="relative bg-white md:bg-transparent p-6 md:p-0 rounded-xl border md:border-0 border-neutral-200 text-center z-10">
-                                    <div className="w-4 h-4 bg-black rounded-full mx-auto mb-4 hidden md:block ring-4 ring-white" />
-                                    <div className="font-bold text-lg mb-1">{item.day}</div>
-                                    <div className="text-neutral-600 text-sm">{item.task}</div>
-                                </div>
-                            ))}
-                        </div>
-                        <p className="text-center text-xs text-neutral-400 mt-12">* Approval timelines depend on Amazon, not us.</p>
-                    </div>
-                </div>
-            </section>
+
 
             {/* SECTION 8 — FAQ */}
             <section className="py-24 bg-neutral-50">
