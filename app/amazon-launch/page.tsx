@@ -241,43 +241,12 @@ export default function AmazonLaunchPage() {
                         </p>
 
                         <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 mb-12 text-left">
-                            <h3 className="text-lg font-bold mb-6 text-center">Book a Free Launch Call</h3>
-                            {/* Simple Form UI - Non-functional for now */}
                             <form className="space-y-4">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium mb-1 text-neutral-700">Name</label>
-                                    <input type="text" id="name" className="w-full p-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-black focus:border-transparent outline-none" placeholder="Your Name" />
-                                </div>
-                                <div>
-                                    <label htmlFor="business" className="block text-sm font-medium mb-1 text-neutral-700">Business Name</label>
-                                    <input type="text" id="business" className="w-full p-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-black focus:border-transparent outline-none" placeholder="Your Business" />
-                                </div>
-                                <div>
-                                    <label htmlFor="phone" className="block text-sm font-medium mb-1 text-neutral-700">Phone</label>
-                                    <input type="tel" id="phone" className="w-full p-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-black focus:border-transparent outline-none" placeholder="+91 98765 43210" />
-                                </div>
-                                <div>
-                                    <label htmlFor="product" className="block text-sm font-medium mb-1 text-neutral-700">Product Category</label>
-                                    <select id="product" className="w-full p-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-black focus:border-transparent outline-none bg-white">
-                                        <option value="">Select a category...</option>
-                                        <option value="apparel">Apparel / Clothing</option>
-                                        <option value="home">Home & Kitchen</option>
-                                        <option value="beauty">Beauty / Personal Care</option>
-                                        <option value="electronics">Electronics</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <button type="button" className="w-full button-primary mt-4">
-                                    Book Call
-                                </button>
-                                <div className="text-center mt-3">
-                                    <span className="text-sm text-neutral-500">or</span>
-                                </div>
                                 <Link
                                     href="https://wa.me/918076958506?text=Hi,%20I'm%20interested%20in%20your%20Amazon%20launch%20service."
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full button-secondary mt-2 flex items-center justify-center gap-2"
+                                    className="w-full button-primary flex items-center justify-center gap-2"
                                 >
                                     Chat on WhatsApp
                                 </Link>
