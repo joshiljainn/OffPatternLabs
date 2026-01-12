@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-foreground/10;
-  }
+
 
   html,
   body {
