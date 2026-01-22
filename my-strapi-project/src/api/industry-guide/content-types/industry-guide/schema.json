@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_guides",
+  "info": {
+    "singularName": "industry-guide",
+    "pluralName": "industry-guides",
+    "displayName": "IndustryGuide",
+    "description": "Directory of Voice AI Agents for various industries"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "industry": {
+      "type": "string",
+      "required": true
+    },
+    "pain_point": {
+      "type": "text"
+    },
+    "solution_hook": {
+      "type": "blocks"
+    },
+    "recommended_tool": {
+      "type": "string"
+    },
+    "affiliate_link": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "industry"
+    }
+  }
+}
