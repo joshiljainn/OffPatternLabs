@@ -17,27 +17,27 @@ export default function WhoThisIsFor() {
                         <li className="flex gap-4">
                             <span className="text-green-600 font-bold">01/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Founders Seeking Exits</h4>
+                                <h4 className="font-medium text-gray-900">The Burned-Out Editor</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    You've built a solid product but are tired of operating it. You want a clean, cash exit to a team that will respect your work.
+                                    You built a 10k+ list but haven't sent an email in 6 months. You feel guilty, but you just don't have the energy to write anymore.
                                 </p>
                             </div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-green-600 font-bold">02/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Operators Wanting Ownership</h4>
+                                <h4 className="font-medium text-gray-900">The "Hobbyist" Expert</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    You know how to grow businesses but hate starting from zero. You want to buy cash flow, not build a job.
+                                    You write incredible content but have $0 revenue. You hate sales, sponsorships, and "business stuff." You just want to create.
                                 </p>
                             </div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-green-600 font-bold">03/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Capital Allocators</h4>
+                                <h4 className="font-medium text-gray-900">The Academic / Researcher</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    You have capital but no deal flow. You want exposure to high-yield digital assets without becoming a full-time operator.
+                                    You have a loyal following of smart readers, but you don't know how to monetize them without feeling "salesy" or cheap.
                                 </p>
                             </div>
                         </li>
@@ -53,27 +53,27 @@ export default function WhoThisIsFor() {
                         <li className="flex gap-4">
                             <span className="text-red-500 font-bold">01/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Get-Rich-Quick Seekers</h4>
+                                <h4 className="font-medium text-gray-900">Spammers & Scrapers</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    This is long-term asset ownership. If you're looking for overnight 10x returns or "passive income" without work, look elsewhere.
+                                    If you built your list by scraping emails or buying data, we can't help you. We only work with organic, opted-in audiences.
                                 </p>
                             </div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-red-500 font-bold">02/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Hype Chasers</h4>
+                                <h4 className="font-medium text-gray-900">Tiny Lists (&lt;1k Subs)</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    We don't buy crypto signals, dropshipping fads, or businesses built on loopholes. We buy foundational value.
+                                    We love you, but the economics don't work yet. Keep writing, keep growing, and come back when you hit 1,000 true fans.
                                 </p>
                             </div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-red-500 font-bold">03/</span>
                             <div>
-                                <h4 className="font-medium text-gray-900">Disengaged Owners</h4>
+                                <h4 className="font-medium text-gray-900">Control Freaks</h4>
                                 <p className="text-sm text-gray-600 mt-1">
-                                    Even "passive" investors need to understand what they own. If you don't care about the asset, you aren't the right partner.
+                                    If you want us to operate, you have to let us operate. We need creative freedom to test headlines, offers, and formats.
                                 </p>
                             </div>
                         </li>

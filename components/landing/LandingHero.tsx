@@ -8,32 +8,33 @@ export default function LandingHero() {
                 OffPattern Labs
             </p>
             <h1 className="text-4xl md:text-5xl font-serif font-medium leading-tight text-gray-900 mb-6">
-                We Buy, Operate, and Scale <br className="hidden md:block" />
-                Profitable Niche Internet Businesses.
+                We Turn Dormant Newsletters <br className="hidden md:block" />
+                Into Cash Flow Assets.
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                Most internet businesses are either burnt out or undervalued. We provide
-                a clean exit for founders and a rigorous operating platform for growth.
-                No hype. No flip-n-ship. Just long-term cash flow engineering.
+                Don't let your list decay. We operate, monetize, and scale your publication
+                so you don't have to. You keep ownership (or sell to us).
+                <br />
+                <span className="text-sm mt-2 block opacity-80">No upfront cost. We only make money when you do.</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
-                    href="/#contact"
+                    href="#audit"
                     className="bg-black text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors"
                 >
-                    Sell Your Business
+                    Get A Free List Audit
                 </Link>
                 <Link
-                    href="/#how-it-works"
+                    href="#how-it-works"
                     className="border border-gray-300 px-8 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors"
                 >
-                    See How We Operate
+                    See The Economics
                 </Link>
             </div>
 
             <p className="mt-8 text-sm text-gray-400">
-                Acquiring SaaS, Content Sites, and Digital Tools doing $500k - $5M ARR.
+                Partnering with Substacks, Beehiivs, and WordPress blogs with 5k+ subscribers.
             </p>
         </section>
     );

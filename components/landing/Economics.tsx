@@ -15,24 +15,24 @@ export default function Economics() {
                         </h3>
                         <div className="space-y-6">
                             <div className="flex justify-between border-b border-gray-200 pb-2">
-                                <span className="text-gray-600">Target Deal Size</span>
-                                <span className="font-medium text-gray-900">$50k - $500k</span>
+                                <span className="text-gray-600">Our Revenue Share</span>
+                                <span className="font-medium text-gray-900">30% - 50%</span>
                             </div>
                             <div className="flex justify-between border-b border-gray-200 pb-2">
-                                <span className="text-gray-600">Revenue Range (ARR)</span>
-                                <span className="font-medium text-gray-900">$20k - $200k</span>
+                                <span className="text-gray-600">Your Upfront Cost</span>
+                                <span className="font-medium text-gray-900">$0.00</span>
                             </div>
                             <div className="flex justify-between border-b border-gray-200 pb-2">
-                                <span className="text-gray-600">Target Margins</span>
-                                <span className="font-medium text-gray-900">40% - 90%</span>
+                                <span className="text-gray-600">Target List Size</span>
+                                <span className="font-medium text-gray-900">5k - 100k Subs</span>
                             </div>
                             <div className="flex justify-between border-b border-gray-200 pb-2">
-                                <span className="text-gray-600">Time to Close</span>
-                                <span className="font-medium text-gray-900">30 - 60 Days</span>
+                                <span className="text-gray-600">Exclusivity Period</span>
+                                <span className="font-medium text-gray-900">6 - 12 Months</span>
                             </div>
                         </div>
                         <p className="mt-8 text-sm text-gray-500 italic">
-                            *These are typical ranges for our primary acquisitions. Larger deals are considered on a case-by-case basis.
+                            *We operate on a "Sweat Equity" model. We put in the work to grow revenue, and we split the upside. If we don't grow it, you don't pay.
                         </p>
                     </div>
 
@@ -42,15 +42,15 @@ export default function Economics() {
                         </h3>
                         <div className="space-y-6">
                             <div>
-                                <h4 className="font-medium text-gray-900 mb-1">Risks Are Real</h4>
+                                <h4 className="font-medium text-gray-900 mb-1">What We Handle (The Hard Stuff)</h4>
                                 <p className="text-sm text-gray-600">
-                                    Platform dependency (Google/Amazon updates), key-person risk, and market shifts are real threats. We diligence heavily to mitigate these, but they never disappear.
+                                    Sponsorship sales, affiliate deal negotiation, cross-promotion, technical email deliverability, and automated sequences.
                                 </p>
                             </div>
                             <div>
-                                <h4 className="font-medium text-gray-900 mb-1">Your Involvement</h4>
+                                <h4 className="font-medium text-gray-900 mb-1">What You Maintain</h4>
                                 <p className="text-sm text-gray-600">
-                                    This is not a "set it and forget it" passive income stream like a dividend stock. It requires oversight, strategic input, or a dedicated operator (which we provide or source).
+                                    Full ownership of the asset. Creative control (optional). The relationship with your audience. We are the engine; you are the driver.
                                 </p>
                             </div>
                         </div>

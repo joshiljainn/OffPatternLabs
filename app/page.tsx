@@ -8,6 +8,7 @@ import WhyDifferent from "@/components/landing/WhyDifferent";
 import Education from "@/components/landing/Education";
 import TrustSignals from "@/components/landing/TrustSignals";
 import PrimaryCTA from "@/components/landing/PrimaryCTA";
+import NewsletterAudit from "@/components/NewsletterAudit";
 import FAQSection from "@/components/landing/FAQSection";
 import Closing from "@/components/landing/Closing";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <WhyDifferent />
       <Education />
       <TrustSignals />
+      <NewsletterAudit />
       <PrimaryCTA />
       <FAQSection />
       <Closing />

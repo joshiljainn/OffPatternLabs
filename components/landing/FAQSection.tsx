@@ -3,24 +3,24 @@ import React from "react";
 export default function FAQSection() {
     const faqs = [
         {
-            q: "How is this different from Flippa or Empire Flippers?",
-            a: "They are marketplaces; they want volume. We are a private investment & operating firm; we want quality. We don't list thousands of deals. We curate or acquire a handful of high-conviction assets.",
+            q: "Do I lose control of my editorial voice?",
+            a: "No. You retain full creative control. We handle the 'business' side—sponsorships, growth, and operations. We only intervene in content if you explicitly ask for editorial strategy.",
         },
         {
-            q: "What if I have never bought a business before?",
-            a: "That is exactly why we exist. We handle the sourcing, diligence, and negotiation. You can partner with us as a capital partner, or we can guide you through your first acquisition as an advisor.",
+            q: "How does the revenue share work?",
+            a: "We integrate our sponsorship network and affiliate deals. We take a % of the *new* revenue we generate. If we don't increase your earnings, we don't get paid.",
         },
         {
-            q: "How do you make money?",
-            a: "We invest our own capital, we take equity in deals we facilitate, or we charge a flat success fee for advisory. We are incentivized by long-term asset performance, not just closing fees.",
+            q: "What if I want to sell the newsletter later?",
+            a: "We are your natural buyer. Since we already operate it, we can offer a fair valuation without a 3-month diligence process. Or, we can help you sell it to a third party for a higher multiple.",
         },
         {
-            q: "What are the risks?",
-            a: "The biggest risk is traffic volatility (algorithm updates) and platform dependency. We mitigate this by buying assets with minimal churn, diversified traffic, and long operating history (3+ years).",
+            q: "I have 2,000 subscribers. Is that enough?",
+            a: "It depends on the niche. For B2B/Finance, yes. For general lifestyle, we usually look for 5k+. Submit your URL for a free audit, and we'll tell you honestly.",
         },
         {
-            q: "How involved do I need to be?",
-            a: "If you invest with us, it can be largely passive. If you buy an asset yourself with our help, you should expect to spend 5-10 hours a week on operations unless you hire a dedicated operator.",
+            q: "What platforms do you work with?",
+            a: "We specialize in Substack, Beehiiv, and ConvertKit. We can also work with custom WordPress setups, but the integration takes a bit longer.",
         },
     ];
 

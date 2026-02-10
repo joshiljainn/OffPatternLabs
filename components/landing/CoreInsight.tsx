@@ -26,31 +26,31 @@ export default function CoreInsight() {
 
             <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="font-serif text-xl mb-3">The Builder's Trap</h3>
+                    <h3 className="font-serif text-xl mb-3">The Solopreneur Grind</h3>
                     <ul className="space-y-3 text-gray-600 text-sm">
                         <li className="flex items-start">
-                            <span className="mr-2 text-red-500">×</span> 90% failure rate in first 3 years
+                            <span className="mr-2 text-red-500">×</span> Endless content creation treadmill
                         </li>
                         <li className="flex items-start">
-                            <span className="mr-2 text-red-500">×</span> Years of zero revenue
+                            <span className="mr-2 text-red-500">×</span> 90% of revenue relies on YOU
                         </li>
                         <li className="flex items-start">
-                            <span className="mr-2 text-red-500">×</span> Constant search for product-market fit
+                            <span className="mr-2 text-red-500">×</span> Burnout is a matter of "when", not "if"
                         </li>
                     </ul>
                 </div>
 
                 <div className="bg-gray-900 p-6 rounded-lg text-white">
-                    <h3 className="font-serif text-xl mb-3">The Buyer's Advantage</h3>
+                    <h3 className="font-serif text-xl mb-3">The Operator Model</h3>
                     <ul className="space-y-3 text-gray-300 text-sm">
                         <li className="flex items-start">
-                            <span className="mr-2 text-green-400">✓</span> Day 1 profitability
+                            <span className="mr-2 text-green-400">✓</span> Revenue decoupled from writing time
                         </li>
                         <li className="flex items-start">
-                            <span className="mr-2 text-green-400">✓</span> Proven customer base
+                            <span className="mr-2 text-green-400">✓</span> Automated sponsorship systems
                         </li>
                         <li className="flex items-start">
-                            <span className="mr-2 text-green-400">✓</span> Focus on growth, not survival
+                            <span className="mr-2 text-green-400">✓</span> Asset value increases even if you sleep
                         </li>
                     </ul>
                 </div>
