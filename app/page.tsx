@@ -14,7 +14,8 @@ import Closing from "@/components/landing/Closing";
 
 export default function Home() {
   return (
-    <main className="bg-white text-gray-900 min-h-screen">
+    /* z-10 master wrapper — guaranteed to float above z-0 video */
+    <main className="relative z-10 w-full flex flex-col items-center min-h-screen bg-transparent">
       <LandingHero />
       <CoreInsight />
       <WhatWeDoSection />

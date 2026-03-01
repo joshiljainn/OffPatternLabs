@@ -1,25 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "OffPattern Labs - D2C Marketing & Digital Growth Systems for Indian Brands",
-  description: "We turn good products into brands that sell online. OffPattern Labs builds digital systems that help real-world businesses reach real customers — from website to ads to growth.",
+  title: "OffPattern Labs - We Operate Your Newsletter. You Get Paid.",
+  description: "We turn dormant newsletters into cash flow assets. OffPattern Labs operates, monetizes, and scales your publication — no upfront cost, shared upside.",
   keywords: [
-    "D2C marketing agency India",
-    "Shopify setup India",
-    "Performance marketing for small brands",
-    "Digital launch services for manufacturers",
-    "Ads for Indian brands",
-    "Brand growth systems",
-    "D2C growth agency",
-    "Ecommerce marketing India"
+    "newsletter monetization",
+    "dormant newsletter revival",
+    "newsletter acquisition",
+    "newsletter operator",
+    "passive income newsletter",
+    "Substack monetization",
+    "Beehiiv monetization",
+    "micro-acquisition newsletters",
+    "OffPattern Labs",
   ],
   authors: [{ name: "Joshil Jain" }],
   creator: "OffPattern Labs",
@@ -38,8 +32,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://offpatternlabs.com",
     siteName: "OffPattern Labs",
-    title: "OffPattern Labs - Digital Growth Systems for Indian Brands",
-    description: "We help small Indian brands and manufacturers go online with Shopify stores, creatives, ads, and full growth systems.",
+    title: "OffPattern Labs — We Operate Your Newsletter. You Get Paid.",
+    description: "Turn your dormant list into a cash-flowing asset. We operate, monetize, and grow your newsletter — no upfront cost.",
     images: [
       {
         url: "/og-image.png",
@@ -51,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffPattern Labs - Digital Growth Systems for Indian Brands",
-    description: "We help small Indian brands and manufacturers go online with Shopify stores, creatives, ads, and full growth systems.",
+    title: "OffPattern Labs — We Operate Your Newsletter. You Get Paid.",
+    description: "Turn your dormant list into a cash-flowing asset. No upfront cost, shared upside.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -68,6 +62,8 @@ export const metadata: Metadata = {
   },
 };
 
+import GlobalVideoBackground from "@/components/GlobalVideoBackground";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,7 +73,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "OffPattern Labs",
-    "description": "We help small Indian brands and manufacturers go online with Shopify stores, creatives, ads, and full growth systems.",
+    "description": "We turn dormant newsletters into cash flow assets. We operate, monetize, and scale your publication.",
     "url": "https://offpatternlabs.com",
     "founder": {
       "@type": "Person",
@@ -95,14 +91,19 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" style={{ background: "transparent" }}>
       <head>
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
-      <body className="font-sans">
+      <body style={{ background: "transparent" }}>
+        {/* Global scroll-scrubbed video — fixed z-0 wrapper behind all z-10 content */}
+        <GlobalVideoBackground />
         {children}
       </body>
     </html>

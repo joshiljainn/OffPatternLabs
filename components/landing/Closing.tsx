@@ -3,32 +3,22 @@ import Link from "next/link";
 
 export default function Closing() {
     return (
-        <footer className="py-20 px-6 bg-white border-t border-gray-100 text-center">
-            <div className="max-w-2xl mx-auto">
-                <h2 className="font-serif text-2xl text-gray-900 mb-6">
-                    "The best time to plant a tree was 20 years ago. <br />
-                    The second best time is now."
+        <footer className="py-12 md:py-20 px-4 pb-16 bg-transparent">
+            <div className="w-full max-w-5xl mx-auto bg-[#FDFBF7] border-2 border-[#111] shadow-[8px_8px_0px_#111] rounded-[24px] p-8 md:p-16 relative z-10 text-center">
+                <h2 className="font-display font-bold mb-4" style={{ color: "#0B132B", fontSize: "clamp(1.4rem, 3vw, 2rem)" }}>
+                    &ldquo;The best time to plant a tree was 20 years ago.
+                    <br />The second best time is now.&rdquo;
                 </h2>
-                <p className="text-gray-500 mb-12 italic">
-                    — Chinese Proverb
-                </p>
-
-                <p className="text-gray-600 mb-8 leading-relaxed block">
+                <p className="mb-12 italic text-sm" style={{ color: "#0B132B", opacity: 0.5 }}>— Chinese Proverb</p>
+                <p className="mb-8 leading-relaxed max-w-xl mx-auto" style={{ color: "#0B132B", opacity: 0.75 }}>
                     Ownership is the only path to true sovereignty. Stop renting your time. Start owning assets.
                 </p>
-
-                <Link
-                    href="/#contact"
-                    className="text-black font-medium border-b-2 border-black hover:text-gray-600 hover:border-gray-600 transition-all pb-1"
-                >
-                    Start Your Journey &rarr;
-                </Link>
-
-                <div className="mt-20 text-xs text-gray-300">
-                    &copy; {new Date().getFullYear()} OffPattern Labs. All Rights Reserved.
-                    <div className="mt-2 space-x-4">
-                        <Link href="/original" className="hover:text-gray-500">Legacy Site</Link>
-                        <Link href="/privacy" className="hover:text-gray-500">Privacy</Link>
+                <Link href="/#contact" className="btn-retro-orange">Start Your Journey →</Link>
+                <div className="mt-16 text-xs space-y-2" style={{ color: "#0B132B", opacity: 0.3 }}>
+                    <p>&copy; {new Date().getFullYear()} OffPattern Labs. All Rights Reserved.</p>
+                    <div className="flex gap-4 justify-center">
+                        <Link href="/original" className="hover:opacity-70 transition-opacity">Legacy Site</Link>
+                        <Link href="/privacy" className="hover:opacity-70 transition-opacity">Privacy</Link>
                     </div>
                 </div>
             </div>
