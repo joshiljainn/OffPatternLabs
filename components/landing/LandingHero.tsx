@@ -1,14 +1,32 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function LandingHero() {
+    const [niche, setNiche] = useState("");
+    const [subscribers, setSubscribers] = useState("");
+    const [status, setStatus] = useState("");
+
+    const handleAuditClick = (e: React.MouseEvent) => {
+        // If they filled anything, pre-fill WhatsApp. 
+        // Otherwise, just scroll to the audit section.
+        if (niche || subscribers || status) {
+            e.preventDefault();
+            const message = `Hi! I'd like to get an audit for my newsletter. Here are some details from your hero section:
+      
+Niche: ${niche || "Not specified"}
+Subscribers: ${subscribers || "Not specified"}
+Status: ${status || "Not specified"}`;
+
+            const whatsappUrl = `https://wa.me/918076958506?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, "_blank");
+        }
+    };
+
     return (
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-transparent px-4 py-24">
-
             {/* ── Floating Pill Navigation ───────────────────────────────── */}
             <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 bg-[#FDFBF7] rounded-full border-2 border-black shadow-[4px_4px_0px_#111] px-6 py-3 flex justify-between items-center">
-
                 {/* Logo — uses img tag with text fallback via onError */}
                 <img
                     src="/logo.svg"
@@ -75,7 +93,7 @@ export default function LandingHero() {
                     <span className="font-semibold" style={{ opacity: 1 }}>No upfront cost.</span>
                 </p>
 
-                {/* Pill Input Row */}
+                {/* Pill Input Row Restored */}
                 <div
                     className="w-full bg-white border-2 border-black rounded-full px-4 py-3 flex flex-col sm:flex-row items-center gap-3"
                     style={{ boxShadow: "4px 4px 0px #111", maxWidth: "700px" }}
@@ -84,11 +102,14 @@ export default function LandingHero() {
                         type="text"
                         placeholder="Your newsletter niche…"
                         className="flex-1 bg-transparent outline-none text-sm font-medium placeholder:text-[#0B132B]/40 text-[#0B132B] px-2 w-full sm:w-auto"
+                        value={niche}
+                        onChange={(e) => setNiche(e.target.value)}
                     />
                     <div className="w-full sm:w-px sm:h-6 h-px bg-black/10" />
                     <select
-                        defaultValue=""
                         className="flex-1 bg-transparent outline-none text-sm font-medium text-[#0B132B] cursor-pointer w-full sm:w-auto px-2"
+                        value={subscribers}
+                        onChange={(e) => setSubscribers(e.target.value)}
                     >
                         <option value="" disabled>Subscribers…</option>
                         <option value="1k-5k">1,000 – 5,000</option>
@@ -98,15 +119,21 @@ export default function LandingHero() {
                     </select>
                     <div className="w-full sm:w-px sm:h-6 h-px bg-black/10" />
                     <select
-                        defaultValue=""
                         className="flex-1 bg-transparent outline-none text-sm font-medium text-[#0B132B] cursor-pointer w-full sm:w-auto px-2"
+                        value={status}
+                        onChange={(e) => setStatus(e.target.value)}
                     >
                         <option value="" disabled>Status…</option>
                         <option value="dormant">Dormant (3+ months)</option>
                         <option value="active">Active, not monetized</option>
                         <option value="monetized">Monetized, want to scale</option>
                     </select>
-                    <Link href="#audit" className="btn-retro-orange whitespace-nowrap" style={{ padding: "0.65rem 1.4rem" }}>
+                    <Link
+                        href="#audit"
+                        onClick={handleAuditClick}
+                        className="btn-retro-orange whitespace-nowrap"
+                        style={{ padding: "0.65rem 1.4rem" }}
+                    >
                         Get My Audit →
                     </Link>
                 </div>
