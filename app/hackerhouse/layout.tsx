@@ -8,5 +8,15 @@ export default function HackerHouseLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <html lang="en" style={{ background: "transparent" }}>
+      <body style={{ background: "transparent" }}>
+        <style dangerouslySetInnerHTML={{ __html: `
+          [class*="fixed inset-0"] { display: none !important; }
+          video { display: none !important; }
+        ` }} />
+        {children}
+      </body>
+    </html>
+  );
 }
