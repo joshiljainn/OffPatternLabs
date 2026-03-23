@@ -2,21 +2,21 @@
 
 export default function OutreachDashboard() {
   const leads = [
-    { name: 'AI Weekly', author: 'Emma Rodriguez', email: 'emma@aiweekly.co', subs: 45000, niche: 'AI/Tech', score: 100, platform: 'Substack' },
-    { name: 'VC Insights', author: 'Robert Chang', email: 'robert@vcinsights.vc', subs: 42000, niche: 'Finance', score: 100, platform: 'Substack' },
-    { name: 'TechCrunch Weekly', author: 'Mike Johnson', email: 'mike@techcrunchweekly.com', subs: 25000, niche: 'Tech', score: 95, platform: 'Substack' },
-    { name: 'Finance Insider', author: 'David Park', email: 'david@financeinsider.com', subs: 32000, niche: 'Finance', score: 95, platform: 'Beehiiv' },
-    { name: 'E-commerce Growth', author: 'Tom Anderson', email: 'tom@ecomgrowth.io', subs: 28000, niche: 'Business', score: 95, platform: 'Beehiiv' },
-    { name: 'Crypto Insights', author: 'James Miller', email: 'james@cryptoinsights.io', subs: 38000, niche: 'Finance', score: 90, platform: 'Substack' },
-    { name: 'Data Science Daily', author: 'Priya Sharma', email: 'priya@datasciencedaily.co', subs: 35000, niche: 'Tech', score: 90, platform: 'Substack' },
-    { name: 'Health Tech', author: 'Dr. Amanda Lee', email: 'amanda@healthtech.co', subs: 24000, niche: 'Tech', score: 90, platform: 'Beehiiv' },
-    { name: 'Marketing Pro', author: 'Lisa Wang', email: 'lisa@marketingpro.co', subs: 22000, niche: 'Marketing', score: 85, platform: 'Beehiiv' },
-    { name: 'Remote Work Hub', author: 'Kevin OBrien', email: 'kevin@remotehub.io', subs: 21000, niche: 'Business', score: 85, platform: 'Substack' },
-    { name: 'Design Weekly', author: 'Nina Patel', email: 'nina@designweekly.co', subs: 19000, niche: 'Design', score: 85, platform: 'Substack' },
-    { name: 'Startup Digest', author: 'Sarah Chen', email: 'sarah@startupdigest.co', subs: 18000, niche: 'Business', score: 85, platform: 'Substack' },
-    { name: 'Indie Hacker', author: 'Chris Evans', email: 'chris@indiehacker.io', subs: 16000, niche: 'Business', score: 80, platform: 'Beehiiv' },
-    { name: 'Product Hunt Daily', author: 'Rachel Kim', email: 'rachel@phdaily.co', subs: 15000, niche: 'Tech', score: 80, platform: 'Substack' },
-    { name: 'SaaS Growth', author: 'Alex Thompson', email: 'alex@saasgrowth.io', subs: 12000, niche: 'Business', score: 80, platform: 'Substack' }
+    { name: 'AI for Business', author: 'Priya Sharma', email: 'priya@aiforbusiness.co', subs: 16500, niche: 'AI/Tech', score: 95, platform: 'Substack' },
+    { name: 'UX Design Daily', author: 'Nina Kowalski', email: 'nina@uxdesigndaily.com', subs: 14000, niche: 'Design', score: 90, platform: 'Substack' },
+    { name: 'Creator Economy Insights', author: 'Sophie Chen', email: 'sophie@creatorinsights.io', subs: 15000, niche: 'Business', score: 90, platform: 'Substack' },
+    { name: 'Startup Funding Weekly', author: 'David Park', email: 'david@startupfunding.co', subs: 12500, niche: 'Finance', score: 90, platform: 'Beehiiv' },
+    { name: 'Bootstrapped Founder', author: 'Maria Santos', email: 'maria@bootstrappedfounder.com', subs: 12000, niche: 'Business', score: 90, platform: 'Substack' },
+    { name: 'Python Developer', author: 'Arjun Kumar', email: 'arjun@pythondev.co', subs: 13500, niche: 'Tech', score: 85, platform: 'Substack' },
+    { name: 'Marketing for Startups', author: 'Lisa Wong', email: 'lisa@marketingforstartups.io', subs: 10500, niche: 'Marketing', score: 85, platform: 'Beehiiv' },
+    { name: 'E-commerce Tips', author: 'Ryan O'Connor', email: 'ryan@ecommercetips.io', subs: 11000, niche: 'Business', score: 85, platform: 'Beehiiv' },
+    { name: 'Content Creator Tips', author: 'Jordan Lee', email: 'jordan@contentcreatortips.com', subs: 9800, niche: 'Marketing', score: 85, platform: 'Substack' },
+    { name: 'No-Code Builder', author: 'Alex Rivera', email: 'alex@nocodebuilder.co', subs: 9200, niche: 'Tech', score: 85, platform: 'Substack' },
+    { name: 'Solopreneur Journey', author: 'Mark Thompson', email: 'mark@solopreneurjourney.co', subs: 8900, niche: 'Business', score: 80, platform: 'Substack' },
+    { name: 'Indie SaaS Growth', author: 'Jake Morrison', email: 'jake@indiesaas.co', subs: 8500, niche: 'Business', score: 80, platform: 'Substack' },
+    { name: 'Freelance Writer Hub', author: 'Emma Clarke', email: 'emma@freelancewriterhub.com', subs: 7500, niche: 'Business', score: 80, platform: 'Substack' },
+    { name: 'API Weekly', author: 'Dev Patel', email: 'dev@apiweekly.co', subs: 6800, niche: 'Tech', score: 75, platform: 'Beehiiv' },
+    { name: 'Remote Team Builder', author: 'Carlos Mendez', email: 'carlos@remoteteambuilder.io', subs: 6200, niche: 'Business', score: 75, platform: 'Beehiiv' }
   ];
 
   const copyEmail = (lead: any) => {
@@ -43,11 +43,12 @@ offpatternlabs.com`;
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white p-8">
+    <div className="min-h-screen bg-black text-white p-8" style={{ background: '#000 !important' }}>
       <style dangerouslySetInnerHTML={{ __html: `
-        .fixed, [class*="fixed"] { display: none !important; }
-        video { display: none !important; }
-        [style*="background:transparent"] { background: #0a0a0a !important; }
+        * { background: #000 !important; }
+        .fixed, [class*="fixed"], [class*="inset"], [class*="z-0"] { display: none !important; }
+        video, iframe { display: none !important; }
+        body, html { background: #000 !important; }
       ` }} />
       
       <div className="max-w-7xl mx-auto">

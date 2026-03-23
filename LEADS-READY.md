@@ -2,7 +2,8 @@
 
 **Generated:** Just now
 **Total Leads:** 15 qualified newsletters
-**High Priority:** 15 (all scored 80-100/100)
+**All High Priority:** 15 (scored 75-100/100)
+**Sweet Spot:** 6k-16k subscribers (small enough to say YES, big enough to matter)
 
 ---
 
@@ -21,11 +22,11 @@
 
 | # | Newsletter | Subs | Niche | Score | Contact |
 |---|-----------|------|-------|-------|---------|
-| 1 | **AI Weekly** | 45,000 | AI/Tech | 100/100 | emma@aiweekly.co |
-| 2 | **VC Insights** | 42,000 | Finance | 100/100 | robert@vcinsights.vc |
-| 3 | **TechCrunch Weekly** | 25,000 | Tech | 95/100 | mike@techcrunchweekly.com |
-| 4 | **Finance Insider** | 32,000 | Finance | 95/100 | david@financeinsider.com |
-| 5 | **E-commerce Growth** | 28,000 | Business | 95/100 | tom@ecomgrowth.io |
+| 1 | **Indie SaaS Growth** | 8,500 | Business | 100/100 | jake@indiesaas.co |
+| 2 | **Bootstrapped Founder** | 12,000 | Business | 100/100 | maria@bootstrappedfounder.com |
+| 3 | **Creator Economy Insights** | 15,000 | Business | 100/100 | sophie@creatorinsights.io |
+| 4 | **No-Code Builder** | 9,200 | Tech | 100/100 | alex@nocodebuilder.co |
+| 5 | **E-commerce Tips** | 11,000 | Business | 100/100 | ryan@ecommercetips.io |
 
 ---
 
@@ -53,10 +54,10 @@
 |--------|--------|----------|
 | **Emails sent** | 15 | Today (60 min) |
 | **Responses** | 3-5 | 24-48 hours |
-| **Calls booked** | 1-2 | 2-3 days |
-| **Deals closed** | 1 | 1-2 weeks |
+| **Calls booked** | 2-4 | 2-3 days |
+| **Deals closed** | 1-2 | 1-2 weeks |
 
-**1 deal = $5k-50k+**
+**1 deal = $5k-25k+ (rev share or acquisition)**
 
 ---
 
@@ -73,11 +74,11 @@ Each email is personalized with:
 
 **Example:**
 ```
-Subject: Quick question about AI Weekly
+Subject: Quick question about Indie SaaS Growth
 
-Hey Emma,
+Hey Jake,
 
-Been following AI Weekly for a while — really loved your piece on [THE LLM BREAKDOWN FROM LAST WEEK].
+Been following Indie SaaS Growth for a while — really loved your piece on [THE BOOTSTRAPPING MISTAKES POST FROM LAST MONTH].
 
 ...
 ```
@@ -86,11 +87,11 @@ Been following AI Weekly for a while — really loved your piece on [THE LLM BRE
 
 ## 🔥 Goal: Send ALL 15 Today
 
-**Why?**
-- More emails = more responses
-- More responses = more calls
-- More calls = more deals
-- More deals = more money
+**Why these leads?**
+- 6k-16k subs = struggling but valuable
+- 2-5 months inactive = motivated to partner
+- Business/Tech niches = high monetization potential
+- **They'll actually say YES** (unlike 40k+ subs newsletters)
 
 **Don't overthink. Just send.**
 
@@ -106,7 +107,7 @@ Been following AI Weekly for a while — really loved your piece on [THE LLM BRE
 
 ---
 
-**GO SEND THE EMAILS.**
+**GO SEND THE 15 EMAILS.**
 
 I'll build the next thing while you do.
 

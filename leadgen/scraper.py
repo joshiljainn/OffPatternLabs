@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 OffPattern Labs - AI Lead Generator
-Scrapes Substack, Beehiiv, Twitter for dormant newsletters
-Outputs: CSV with top 100 qualified leads + personalized outreach
+Generates SMALLER newsletter leads (5k-20k subs) that will ACTUALLY say YES to rev share
+Big newsletters (40k+) won't partner. Small struggling ones will.
 """
 
 import csv
@@ -20,173 +20,172 @@ OUTREACH_CSV = OUTPUT_DIR / "outreach.csv"
 class LeadGenerator:
     """Generate qualified newsletter leads with personalized outreach."""
     
-    # Sample data - in production this would be live scraped
-    # For MVP, we use curated list of real dormant newsletters
+    # SMALLER newsletters (5k-20k subs) - these founders are STRUGGLING and will say YES
     SAMPLE_LEADS = [
         {
-            'newsletter_name': 'TechCrunch Weekly',
-            'author_name': 'Mike Johnson',
-            'email': 'mike@techcrunchweekly.com',
+            'newsletter_name': 'Indie SaaS Growth',
+            'author_name': 'Jake Morrison',
+            'email': 'jake@indiesaas.co',
             'platform': 'Substack',
-            'url': 'https://techcrunchweekly.substack.com',
-            'subscribers': 25000,
-            'last_post_days_ago': 120,
-            'niche': 'Tech',
-            'estimated_value': '$75,000'
-        },
-        {
-            'newsletter_name': 'Startup Digest',
-            'author_name': 'Sarah Chen',
-            'email': 'sarah@startupdigest.co',
-            'platform': 'Substack',
-            'url': 'https://startupdigest.substack.com',
-            'subscribers': 18000,
-            'last_post_days_ago': 90,
+            'url': 'https://indiesaas.substack.com',
+            'subscribers': 8500,
+            'last_post_days_ago': 95,
             'niche': 'Business',
-            'estimated_value': '$54,000'
+            'estimated_value': '$25,000'
         },
         {
-            'newsletter_name': 'Finance Insider',
-            'author_name': 'David Park',
-            'email': 'david@financeinsider.com',
-            'platform': 'Beehiiv',
-            'url': 'https://financeinsider.beehiiv.com',
-            'subscribers': 32000,
-            'last_post_days_ago': 150,
-            'niche': 'Finance',
-            'estimated_value': '$96,000'
-        },
-        {
-            'newsletter_name': 'AI Weekly',
-            'author_name': 'Emma Rodriguez',
-            'email': 'emma@aiweekly.co',
+            'newsletter_name': 'Bootstrapped Founder',
+            'author_name': 'Maria Santos',
+            'email': 'maria@bootstrappedfounder.com',
             'platform': 'Substack',
-            'url': 'https://aiweekly.substack.com',
-            'subscribers': 45000,
-            'last_post_days_ago': 60,
-            'niche': 'AI/Tech',
-            'estimated_value': '$135,000'
-        },
-        {
-            'newsletter_name': 'SaaS Growth',
-            'author_name': 'Alex Thompson',
-            'email': 'alex@saasgrowth.io',
-            'platform': 'Substack',
-            'url': 'https://saasgrowth.substack.com',
+            'url': 'https://bootstrappedfounder.substack.com',
             'subscribers': 12000,
-            'last_post_days_ago': 180,
+            'last_post_days_ago': 120,
             'niche': 'Business',
             'estimated_value': '$36,000'
         },
         {
-            'newsletter_name': 'Marketing Pro',
-            'author_name': 'Lisa Wang',
-            'email': 'lisa@marketingpro.co',
+            'newsletter_name': 'API Weekly',
+            'author_name': 'Dev Patel',
+            'email': 'dev@apiweekly.co',
             'platform': 'Beehiiv',
-            'url': 'https://marketingpro.beehiiv.com',
-            'subscribers': 22000,
-            'last_post_days_ago': 95,
-            'niche': 'Marketing',
-            'estimated_value': '$66,000'
-        },
-        {
-            'newsletter_name': 'Crypto Insights',
-            'author_name': 'James Miller',
-            'email': 'james@cryptoinsights.io',
-            'platform': 'Substack',
-            'url': 'https://cryptoinsights.substack.com',
-            'subscribers': 38000,
-            'last_post_days_ago': 200,
-            'niche': 'Finance',
-            'estimated_value': '$114,000'
-        },
-        {
-            'newsletter_name': 'Product Hunt Daily',
-            'author_name': 'Rachel Kim',
-            'email': 'rachel@phdaily.co',
-            'platform': 'Substack',
-            'url': 'https://phdaily.substack.com',
-            'subscribers': 15000,
-            'last_post_days_ago': 75,
+            'url': 'https://apiweekly.beehiiv.com',
+            'subscribers': 6800,
+            'last_post_days_ago': 80,
             'niche': 'Tech',
+            'estimated_value': '$20,000'
+        },
+        {
+            'newsletter_name': 'Creator Economy Insights',
+            'author_name': 'Sophie Chen',
+            'email': 'sophie@creatorinsights.io',
+            'platform': 'Substack',
+            'url': 'https://creatorinsights.substack.com',
+            'subscribers': 15000,
+            'last_post_days_ago': 140,
+            'niche': 'Business',
             'estimated_value': '$45,000'
         },
         {
-            'newsletter_name': 'E-commerce Growth',
-            'author_name': 'Tom Anderson',
-            'email': 'tom@ecomgrowth.io',
-            'platform': 'Beehiiv',
-            'url': 'https://ecomgrowth.beehiiv.com',
-            'subscribers': 28000,
+            'newsletter_name': 'No-Code Builder',
+            'author_name': 'Alex Rivera',
+            'email': 'alex@nocodebuilder.co',
+            'platform': 'Substack',
+            'url': 'https://nocodebuilder.substack.com',
+            'subscribers': 9200,
             'last_post_days_ago': 110,
-            'niche': 'Business',
-            'estimated_value': '$84,000'
+            'niche': 'Tech',
+            'estimated_value': '$27,000'
         },
         {
-            'newsletter_name': 'Design Weekly',
-            'author_name': 'Nina Patel',
-            'email': 'nina@designweekly.co',
-            'platform': 'Substack',
-            'url': 'https://designweekly.substack.com',
-            'subscribers': 19000,
-            'last_post_days_ago': 85,
-            'niche': 'Design',
-            'estimated_value': '$57,000'
-        },
-        {
-            'newsletter_name': 'VC Insights',
-            'author_name': 'Robert Chang',
-            'email': 'robert@vcinsights.vc',
-            'platform': 'Substack',
-            'url': 'https://vcinsights.substack.com',
-            'subscribers': 42000,
-            'last_post_days_ago': 140,
-            'niche': 'Finance',
-            'estimated_value': '$126,000'
-        },
-        {
-            'newsletter_name': 'Indie Hacker',
-            'author_name': 'Chris Evans',
-            'email': 'chris@indiehacker.io',
+            'newsletter_name': 'E-commerce Tips',
+            'author_name': 'Ryan OConnor',
+            'email': 'ryan@ecommercetips.io',
             'platform': 'Beehiiv',
-            'url': 'https://indiehacker.beehiiv.com',
-            'subscribers': 16000,
+            'url': 'https://ecommercetips.beehiiv.com',
+            'subscribers': 11000,
+            'last_post_days_ago': 75,
+            'niche': 'Business',
+            'estimated_value': '$33,000'
+        },
+        {
+            'newsletter_name': 'Freelance Writer Hub',
+            'author_name': 'Emma Clarke',
+            'email': 'emma@freelancewriterhub.com',
+            'platform': 'Substack',
+            'url': 'https://freelancewriterhub.substack.com',
+            'subscribers': 7500,
+            'last_post_days_ago': 150,
+            'niche': 'Business',
+            'estimated_value': '$22,000'
+        },
+        {
+            'newsletter_name': 'Python Developer',
+            'author_name': 'Arjun Kumar',
+            'email': 'arjun@pythondev.co',
+            'platform': 'Substack',
+            'url': 'https://pythondev.substack.com',
+            'subscribers': 13500,
+            'last_post_days_ago': 90,
+            'niche': 'Tech',
+            'estimated_value': '$40,000'
+        },
+        {
+            'newsletter_name': 'Marketing for Startups',
+            'author_name': 'Lisa Wong',
+            'email': 'lisa@marketingforstartups.io',
+            'platform': 'Beehiiv',
+            'url': 'https://marketingforstartups.beehiiv.com',
+            'subscribers': 10500,
+            'last_post_days_ago': 100,
+            'niche': 'Marketing',
+            'estimated_value': '$31,000'
+        },
+        {
+            'newsletter_name': 'Solopreneur Journey',
+            'author_name': 'Mark Thompson',
+            'email': 'mark@solopreneurjourney.co',
+            'platform': 'Substack',
+            'url': 'https://solopreneurjourney.substack.com',
+            'subscribers': 8900,
             'last_post_days_ago': 130,
             'niche': 'Business',
-            'estimated_value': '$48,000'
+            'estimated_value': '$26,000'
         },
         {
-            'newsletter_name': 'Data Science Daily',
-            'author_name': 'Priya Sharma',
-            'email': 'priya@datasciencedaily.co',
+            'newsletter_name': 'UX Design Daily',
+            'author_name': 'Nina Kowalski',
+            'email': 'nina@uxdesigndaily.com',
             'platform': 'Substack',
-            'url': 'https://datasciencedaily.substack.com',
-            'subscribers': 35000,
-            'last_post_days_ago': 70,
-            'niche': 'Tech',
-            'estimated_value': '$105,000'
+            'url': 'https://uxdesigndaily.substack.com',
+            'subscribers': 14000,
+            'last_post_days_ago': 85,
+            'niche': 'Design',
+            'estimated_value': '$42,000'
         },
         {
-            'newsletter_name': 'Remote Work Hub',
-            'author_name': 'Kevin OBrien',
-            'email': 'kevin@remotehub.io',
-            'platform': 'Substack',
-            'url': 'https://remotehub.substack.com',
-            'subscribers': 21000,
+            'newsletter_name': 'Remote Team Builder',
+            'author_name': 'Carlos Mendez',
+            'email': 'carlos@remoteteambuilder.io',
+            'platform': 'Beehiiv',
+            'url': 'https://remoteteambuilder.beehiiv.com',
+            'subscribers': 6200,
             'last_post_days_ago': 160,
             'niche': 'Business',
-            'estimated_value': '$63,000'
+            'estimated_value': '$18,000'
         },
         {
-            'newsletter_name': 'Health Tech',
-            'author_name': 'Dr. Amanda Lee',
-            'email': 'amanda@healthtech.co',
+            'newsletter_name': 'AI for Business',
+            'author_name': 'Priya Sharma',
+            'email': 'priya@aiforbusiness.co',
+            'platform': 'Substack',
+            'url': 'https://aiforbusiness.substack.com',
+            'subscribers': 16500,
+            'last_post_days_ago': 70,
+            'niche': 'AI/Tech',
+            'estimated_value': '$49,000'
+        },
+        {
+            'newsletter_name': 'Content Creator Tips',
+            'author_name': 'Jordan Lee',
+            'email': 'jordan@contentcreatortips.com',
+            'platform': 'Substack',
+            'url': 'https://contentcreatortips.substack.com',
+            'subscribers': 9800,
+            'last_post_days_ago': 115,
+            'niche': 'Marketing',
+            'estimated_value': '$29,000'
+        },
+        {
+            'newsletter_name': 'Startup Funding Weekly',
+            'author_name': 'David Park',
+            'email': 'david@startupfunding.co',
             'platform': 'Beehiiv',
-            'url': 'https://healthtech.beehiiv.com',
-            'subscribers': 24000,
-            'last_post_days_ago': 100,
-            'niche': 'Tech',
-            'estimated_value': '$72,000'
+            'url': 'https://startupfunding.beehiiv.com',
+            'subscribers': 12500,
+            'last_post_days_ago': 105,
+            'niche': 'Finance',
+            'estimated_value': '$37,000'
         }
     ]
     
@@ -194,33 +193,33 @@ class LeadGenerator:
         """Score lead 0-100 based on value."""
         score = 0
         
-        # Subscriber count (30 points)
+        # Subscriber count (30 points) - sweet spot: 8k-20k
         subs = lead['subscribers']
-        if subs >= 40000:
+        if 8000 <= subs <= 20000:
             score += 30
-        elif subs >= 25000:
+        elif 5000 <= subs < 8000:
             score += 25
-        elif subs >= 15000:
-            score += 20
-        elif subs >= 5000:
+        elif subs > 20000:
+            score += 20  # Too big, less likely to say yes
+        else:
             score += 15
         
-        # Months inactive (30 points) - sweet spot: 2-6 months
+        # Months inactive (30 points) - sweet spot: 2-5 months
         months = lead['last_post_days_ago'] / 30
-        if 2 <= months <= 6:
+        if 2 <= months <= 5:
             score += 30
-        elif 6 < months <= 12:
+        elif 5 < months <= 8:
             score += 25
-        elif months > 12:
-            score += 15
+        elif months > 8:
+            score += 20
         elif months < 2:
             score += 10
         
         # Niche value (25 points)
         niche = lead['niche'].lower()
-        if any(n in niche for n in ['finance', 'ai', 'tech', 'business']):
+        if any(n in niche for n in ['ai', 'tech', 'business', 'finance']):
             score += 25
-        elif any(n in niche for n in ['marketing', 'saas', 'crypto']):
+        elif any(n in niche for n in ['marketing', 'saas', 'ecommerce']):
             score += 20
         else:
             score += 15
@@ -248,7 +247,7 @@ I run OffPattern Labs. We revive dormant newsletters like yours ({lead['subscrib
 
 Based on your list size and niche, you're probably sitting on a ${lead['estimated_value']} asset. If you're even 1% curious, I can send over a free valuation.
 
-Worth a chat?
+Worth a 15-min chat?
 
 — Joshil
 joshil@offpatternlabs.com
@@ -260,7 +259,7 @@ P.S. No pressure. Even if you're not interested, knowing what you're sitting on 
 
 Hey {lead['author_name'].split()[0]},
 
-{lead['newsletter_name']} is 🔥. With {lead['subscribers']:,} subscribers in {lead['niche']}, you're probably leaving $5k-15k/month on the table.
+{lead['newsletter_name']} is 🔥. With {lead['subscribers']:,} subscribers in {lead['niche']}, you're probably leaving $2k-8k/month on the table.
 
 Not because your content isn't great — it is. But because monetization is a full-time job.
 
@@ -279,15 +278,15 @@ joshil@offpatternlabs.com
 
 P.S. If you're happy with where things are, no worries at all. Just figured I'd ask.""",
 
-            f"""Subject: Acquisition interest in {lead['newsletter_name']}
+            f"""Subject: Partnership opportunity for {lead['newsletter_name']}
 
 Hey {lead['author_name'].split()[0]},
 
-I'll be direct: {lead['newsletter_name']} is exactly the kind of asset we look for at OffPattern Labs.
+I'll be direct: {lead['newsletter_name']} is exactly the kind of newsletter we look for at OffPattern Labs.
 
-{lead['niche']} newsletters with {lead['subscribers']:,}+ subscribers are trading at 3-5x annual revenue right now. If you're monetized at even $5k/month, that's a ${lead['estimated_value']} asset.
+{lead['niche']} newsletters with {lead['subscribers']:,} subscribers are perfect for our rev share model. You keep writing (or take a break), we handle monetization.
 
-We're acquiring/operating 5-10 newsletters this quarter. Yours fits the profile perfectly.
+We're partnering with 5-10 newsletters this quarter. Yours fits the profile perfectly.
 
 Open to a 15-min exploratory call? No pitch — just seeing if there's mutual fit.
 
