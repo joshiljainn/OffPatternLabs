@@ -39,7 +39,12 @@ export default function SubmitDeal() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4">
+    <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4 relative z-10">
+      <style dangerouslySetInnerHTML={{ __html: `
+        .fixed, [class*="fixed"] { display: none !important; }
+        video { display: none !important; }
+        [style*="background:transparent"] { background: #0a0a0a !important; }
+      ` }} />
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#00ff88] to-[#00d4ff] bg-clip-text text-transparent">
           Submit Your Newsletter

@@ -62,7 +62,12 @@ export default function HowItWorks() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-[#0a0a0a] text-white relative z-10">
+      <style dangerouslySetInnerHTML={{ __html: `
+        .fixed, [class*="fixed"] { display: none !important; }
+        video { display: none !important; }
+        [style*="background:transparent"] { background: #0a0a0a !important; }
+      ` }} />
       {/* Hero */}
       <div className="bg-gradient-to-b from-[#111] to-[#0a0a0a] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
