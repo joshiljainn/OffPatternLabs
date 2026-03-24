@@ -27,7 +27,7 @@ export default function AmazonLaunchPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
-                                href="https://wa.me/918076958506?text=Hi,%20I'm%20interested%20in%20your%20Amazon%20launch%20service."
+                                href="https://wa.me/918076958506?text=Hi,%20I am%20interested%20in%20your%20Amazon%20launch%20service."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="button-primary"
@@ -173,14 +173,14 @@ export default function AmazonLaunchPage() {
                                 <div className="w-12 h-12 rounded-full bg-white border border-neutral-200 flex items-center justify-center shrink-0 font-bold text-xl">1</div>
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Amazon has strict standards</h3>
-                                    <p className="text-neutral-600">Most sellers fail because their visuals and structure don't meet what Amazon (and customers) expect. We ensure compliance from day one.</p>
+                                    <p className="text-neutral-600">Most sellers fail because their visuals and structure do not meet what Amazon (and customers) expect. We ensure compliance from day one.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6">
                                 <div className="w-12 h-12 rounded-full bg-white border border-neutral-200 flex items-center justify-center shrink-0 font-bold text-xl">2</div>
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Standardized systems outperform guesswork</h3>
-                                    <p className="text-neutral-600">We don't guess. We follow proven Amazon frameworks that we know work for ranking and conversion.</p>
+                                    <p className="text-neutral-600">We do not guess. We follow proven Amazon frameworks that we know work for ranking and conversion.</p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ export default function AmazonLaunchPage() {
                         <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 mb-12 text-left">
                             <form className="space-y-4">
                                 <Link
-                                    href="https://wa.me/918076958506?text=Hi,%20I'm%20interested%20in%20your%20Amazon%20launch%20service."
+                                    href="https://wa.me/918076958506?text=Hi,%20I am%20interested%20in%20your%20Amazon%20launch%20service."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-full button-primary flex items-center justify-center gap-2"

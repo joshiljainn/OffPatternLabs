@@ -1,0 +1,18 @@
+# SMALL NEWSLETTERS TO SCRAPE (<10K subs)
+# Found from "Rising" leaderboards and LinkedIn posts
+
+# These are GROWING but still small - perfect for sponsorship deals
+
+1. AI Women Rising - aiwomenrising.substack.com (hundreds of subs)
+2. Pithy Cyborg - AI News Made Simple (Rising Top 100)
+3. Beyond the AI Hype - LinkedIn mentioned (hundreds of subs)
+4. Rising Giant's Newsletter - risinggiants.substack.com (hundreds of subs)
+5. Rising Tide - Helen Toner, helentoner.substack.com (thousands of subs)
+
+# Also check these from our original list that are <10K:
+6. Enterprise AI Trends - @nextword (9.5K)
+7. Jacob's Tech Tavern - @jacobbartlett (9.1K)
+8. The Global Move - @relocateme (9.5K)
+
+# Need to find 20+ more small ones
+# Strategy: Check "Rising in Technology" leaderboard positions 50-100

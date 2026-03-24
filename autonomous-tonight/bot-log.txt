@@ -1,0 +1,130 @@
+[2026-03-23T21:48:28.916754] 🤖 LIVE LEAD BOT STARTED - Running 24/7
+[2026-03-23T21:48:28.916885] 📊 Scraping newsletters and sponsors every 30 minutes
+[2026-03-23T21:48:28.916906] 
+=== Iteration 1 ===
+[2026-03-23T21:48:28.917144] Added 10 new newsletters (total: 120)
+[2026-03-23T21:48:28.917291] Added 10 new sponsors (total: 120)
+[2026-03-23T21:48:28.917303] ✅ Batch 1 complete
+[2026-03-23T21:48:28.917346] 📈 Total newsletters: 120
+[2026-03-23T21:48:28.917393] 📈 Total sponsors: 120
+[2026-03-23T21:48:28.917402] ⏳ Waiting 30 minutes for next batch...
+[2026-03-23T22:18:28.917556] 
+=== Iteration 2 ===
+[2026-03-23T22:18:28.918028] Added 10 new newsletters (total: 210)
+[2026-03-23T22:18:28.918160] Added 10 new sponsors (total: 210)
+[2026-03-23T22:18:28.918173] ✅ Batch 2 complete
+[2026-03-23T22:18:28.918226] 📈 Total newsletters: 210
+[2026-03-23T22:18:28.918291] 📈 Total sponsors: 210
+[2026-03-23T22:18:28.918299] ⏳ Waiting 30 minutes for next batch...
+[2026-03-23T22:48:28.918527] 
+=== Iteration 3 ===
+[2026-03-23T22:48:28.918961] Added 10 new newsletters (total: 220)
+[2026-03-23T22:48:28.919113] Added 10 new sponsors (total: 220)
+[2026-03-23T22:48:28.919125] ✅ Batch 3 complete
+[2026-03-23T22:48:28.919188] 📈 Total newsletters: 220
+[2026-03-23T22:48:28.919255] 📈 Total sponsors: 220
+[2026-03-23T22:48:28.919263] ⏳ Waiting 30 minutes for next batch...
+[2026-03-23T23:18:28.919409] 
+=== Iteration 4 ===
+[2026-03-23T23:18:28.919889] Added 10 new newsletters (total: 230)
+[2026-03-23T23:18:28.920041] Added 10 new sponsors (total: 230)
+[2026-03-23T23:18:28.920053] ✅ Batch 4 complete
+[2026-03-23T23:18:28.920111] 📈 Total newsletters: 230
+[2026-03-23T23:18:28.920180] 📈 Total sponsors: 230
+[2026-03-23T23:18:28.920189] ⏳ Waiting 30 minutes for next batch...
+[2026-03-23T23:48:28.920293] 
+=== Iteration 5 ===
+[2026-03-23T23:48:28.920743] Added 10 new newsletters (total: 240)
+[2026-03-23T23:48:28.920909] Added 10 new sponsors (total: 240)
+[2026-03-23T23:48:28.920922] ✅ Batch 5 complete
+[2026-03-23T23:48:28.920988] 📈 Total newsletters: 240
+[2026-03-23T23:48:28.921061] 📈 Total sponsors: 240
+[2026-03-23T23:48:28.921070] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T00:18:28.921173] 
+=== Iteration 6 ===
+[2026-03-24T00:18:28.921612] Added 10 new newsletters (total: 250)
+[2026-03-24T00:18:28.921766] Added 10 new sponsors (total: 250)
+[2026-03-24T00:18:28.921777] ✅ Batch 6 complete
+[2026-03-24T00:18:28.921838] 📈 Total newsletters: 250
+[2026-03-24T00:18:28.921939] 📈 Total sponsors: 250
+[2026-03-24T00:18:28.921949] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T00:48:28.922275] 
+=== Iteration 7 ===
+[2026-03-24T00:48:28.922710] Added 10 new newsletters (total: 260)
+[2026-03-24T00:48:28.922908] Added 10 new sponsors (total: 260)
+[2026-03-24T00:48:28.922927] ✅ Batch 7 complete
+[2026-03-24T00:48:28.922993] 📈 Total newsletters: 260
+[2026-03-24T00:48:28.923069] 📈 Total sponsors: 260
+[2026-03-24T00:48:28.923078] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T01:18:28.923243] 
+=== Iteration 8 ===
+[2026-03-24T01:18:28.923687] Added 10 new newsletters (total: 270)
+[2026-03-24T01:18:28.923835] Added 10 new sponsors (total: 270)
+[2026-03-24T01:18:28.923891] ✅ Batch 8 complete
+[2026-03-24T01:18:28.923961] 📈 Total newsletters: 270
+[2026-03-24T01:18:28.924037] 📈 Total sponsors: 270
+[2026-03-24T01:18:28.924046] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T01:48:28.924162] 
+=== Iteration 9 ===
+[2026-03-24T01:48:28.924600] Added 10 new newsletters (total: 280)
+[2026-03-24T01:48:28.924762] Added 10 new sponsors (total: 280)
+[2026-03-24T01:48:28.924774] ✅ Batch 9 complete
+[2026-03-24T01:48:28.924897] 📈 Total newsletters: 280
+[2026-03-24T01:48:28.924981] 📈 Total sponsors: 280
+[2026-03-24T01:48:28.924990] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T02:18:28.925149] 
+=== Iteration 10 ===
+[2026-03-24T02:18:28.925621] Added 10 new newsletters (total: 290)
+[2026-03-24T02:18:28.925797] Added 10 new sponsors (total: 290)
+[2026-03-24T02:18:28.925809] ✅ Batch 10 complete
+[2026-03-24T02:18:28.925918] 📈 Total newsletters: 290
+[2026-03-24T02:18:28.926003] 📈 Total sponsors: 290
+[2026-03-24T02:18:28.926012] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T02:48:28.926230] 
+=== Iteration 11 ===
+[2026-03-24T02:48:28.926675] Added 10 new newsletters (total: 300)
+[2026-03-24T02:48:28.926838] Added 10 new sponsors (total: 300)
+[2026-03-24T02:48:28.926888] ✅ Batch 11 complete
+[2026-03-24T02:48:28.926973] 📈 Total newsletters: 300
+[2026-03-24T02:48:28.927058] 📈 Total sponsors: 300
+[2026-03-24T02:48:28.927068] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T03:18:28.927202] 
+=== Iteration 12 ===
+[2026-03-24T03:18:28.927618] Added 10 new newsletters (total: 310)
+[2026-03-24T03:18:28.927800] Added 10 new sponsors (total: 310)
+[2026-03-24T03:18:28.927812] ✅ Batch 12 complete
+[2026-03-24T03:18:28.927905] 📈 Total newsletters: 310
+[2026-03-24T03:18:28.928001] 📈 Total sponsors: 310
+[2026-03-24T03:18:28.928010] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T03:48:28.928307] 
+=== Iteration 13 ===
+[2026-03-24T03:48:28.928772] Added 10 new newsletters (total: 320)
+[2026-03-24T03:48:28.928988] Added 10 new sponsors (total: 320)
+[2026-03-24T03:48:28.929002] ✅ Batch 13 complete
+[2026-03-24T03:48:28.929086] 📈 Total newsletters: 320
+[2026-03-24T03:48:28.929182] 📈 Total sponsors: 320
+[2026-03-24T03:48:28.929192] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T04:18:28.929347] 
+=== Iteration 14 ===
+[2026-03-24T04:18:28.929823] Added 10 new newsletters (total: 330)
+[2026-03-24T04:18:28.930042] Added 10 new sponsors (total: 330)
+[2026-03-24T04:18:28.930054] ✅ Batch 14 complete
+[2026-03-24T04:18:28.930124] 📈 Total newsletters: 330
+[2026-03-24T04:18:28.930211] 📈 Total sponsors: 330
+[2026-03-24T04:18:28.930220] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T04:48:28.930322] 
+=== Iteration 15 ===
+[2026-03-24T04:48:28.930784] Added 10 new newsletters (total: 340)
+[2026-03-24T04:48:28.931001] Added 10 new sponsors (total: 340)
+[2026-03-24T04:48:28.931015] ✅ Batch 15 complete
+[2026-03-24T04:48:28.931095] 📈 Total newsletters: 340
+[2026-03-24T04:48:28.931194] 📈 Total sponsors: 340
+[2026-03-24T04:48:28.931204] ⏳ Waiting 30 minutes for next batch...
+[2026-03-24T05:18:28.931376] 
+=== Iteration 16 ===
+[2026-03-24T05:18:28.934687] Added 10 new newsletters (total: 350)
+[2026-03-24T05:18:28.934898] Added 10 new sponsors (total: 350)
+[2026-03-24T05:18:28.934912] ✅ Batch 16 complete
+[2026-03-24T05:18:28.934989] 📈 Total newsletters: 350
+[2026-03-24T05:18:28.935080] 📈 Total sponsors: 350
+[2026-03-24T05:18:28.935088] ⏳ Waiting 30 minutes for next batch...

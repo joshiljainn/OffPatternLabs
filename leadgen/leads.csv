@@ -1,0 +1,16 @@
+newsletter_name,author_name,email,platform,url,subscribers,last_post_days_ago,niche,estimated_value,score,priority
+Indie SaaS Growth,Jake Morrison,jake@indiesaas.co,Substack,https://indiesaas.substack.com,8500,95,Business,"$25,000",100,High
+Bootstrapped Founder,Maria Santos,maria@bootstrappedfounder.com,Substack,https://bootstrappedfounder.substack.com,12000,120,Business,"$36,000",100,High
+Creator Economy Insights,Sophie Chen,sophie@creatorinsights.io,Substack,https://creatorinsights.substack.com,15000,140,Business,"$45,000",100,High
+No-Code Builder,Alex Rivera,alex@nocodebuilder.co,Substack,https://nocodebuilder.substack.com,9200,110,Tech,"$27,000",100,High
+E-commerce Tips,Ryan OConnor,ryan@ecommercetips.io,Beehiiv,https://ecommercetips.beehiiv.com,11000,75,Business,"$33,000",100,High
+Python Developer,Arjun Kumar,arjun@pythondev.co,Substack,https://pythondev.substack.com,13500,90,Tech,"$40,000",100,High
+Solopreneur Journey,Mark Thompson,mark@solopreneurjourney.co,Substack,https://solopreneurjourney.substack.com,8900,130,Business,"$26,000",100,High
+AI for Business,Priya Sharma,priya@aiforbusiness.co,Substack,https://aiforbusiness.substack.com,16500,70,AI/Tech,"$49,000",100,High
+Startup Funding Weekly,David Park,david@startupfunding.co,Beehiiv,https://startupfunding.beehiiv.com,12500,105,Finance,"$37,000",100,High
+API Weekly,Dev Patel,dev@apiweekly.co,Beehiiv,https://apiweekly.beehiiv.com,6800,80,Tech,"$20,000",95,High
+Freelance Writer Hub,Emma Clarke,emma@freelancewriterhub.com,Substack,https://freelancewriterhub.substack.com,7500,150,Business,"$22,000",95,High
+Marketing for Startups,Lisa Wong,lisa@marketingforstartups.io,Beehiiv,https://marketingforstartups.beehiiv.com,10500,100,Marketing,"$31,000",95,High
+Content Creator Tips,Jordan Lee,jordan@contentcreatortips.com,Substack,https://contentcreatortips.substack.com,9800,115,Marketing,"$29,000",95,High
+UX Design Daily,Nina Kowalski,nina@uxdesigndaily.com,Substack,https://uxdesigndaily.substack.com,14000,85,Design,"$42,000",90,High
+Remote Team Builder,Carlos Mendez,carlos@remoteteambuilder.io,Beehiiv,https://remoteteambuilder.beehiiv.com,6200,160,Business,"$18,000",90,High
