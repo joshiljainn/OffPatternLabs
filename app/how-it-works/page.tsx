@@ -11,7 +11,7 @@ export default function HowItWorks() {
     {
       num: '02',
       title: 'Get Free Valuation',
-      desc: 'Within 48 hours, you'll receive a confidential valuation based on your list size, niche, and engagement.',
+      desc: 'Within 48 hours, you will receive a confidential valuation based on your list size, niche, and engagement.',
       icon: '💰'
     },
     {
