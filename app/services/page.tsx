@@ -10,7 +10,7 @@ export default function ServicesPage() {
   const services = [
     {
       name: "Newsletter Revival",
-      price: "₹1,00,000",
+      price: "$600",
       description: "Transform your dormant newsletter into a cash-flowing asset",
       features: [
         "Complete content audit & strategy",
@@ -19,14 +19,14 @@ export default function ServicesPage() {
         "Monetization integration (ads/sponsors)",
         "Growth automation systems",
         "30-day delivery",
-        "₹20K-50K/month revenue potential"
+        "$500-1,500/month revenue potential"
       ],
       cta: "Revive My Newsletter",
       popular: false
     },
     {
       name: "Content Site Build",
-      price: "₹1,50,000",
+      price: "$1,200",
       description: "We build a complete content site from scratch to revenue",
       features: [
         "Niche research & validation",
@@ -35,14 +35,14 @@ export default function ServicesPage() {
         "AdSense integration & optimization",
         "3-month content calendar",
         "60-day delivery",
-        "₹30K-80K/month revenue potential"
+        "$1,000-2,500/month revenue potential"
       ],
       cta: "Build My Site",
       popular: true
     },
     {
       name: "Complete Asset Operation",
-      price: "₹2,50,000",
+      price: "$2,400",
       description: "Full operation & growth of your digital asset for 6 months",
       features: [
         "Everything in Content Site Build",
@@ -51,7 +51,7 @@ export default function ServicesPage() {
         "Link building & authority building",
         "Monthly performance reports",
         "Revenue share: You keep 70%",
-        "₹1L+/month revenue potential"
+        "$3,000+/month revenue potential"
       ],
       cta: "Let's Partner",
       popular: false
