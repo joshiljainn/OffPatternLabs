@@ -1,0 +1,269 @@
+INFO     [service] Using anonymized telemetry, see https://docs.browser-use.com/development/monitoring/telemetry.
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@wyndo, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@wyndo and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@lancaric, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@lancaric and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@lifearchitect, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@lifearchitect and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@banc, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@banc and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@nextword, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@nextword and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@bnjmnmarie, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@bnjmnmarie and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@jacobbartlett, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@jacobbartlett and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@relocateme, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@relocateme and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@rfleury, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@rfleury and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@migueloteropedrido, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@migueloteropedrido and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@thezvi, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@thezvi and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 🔗 Found URL in task: https://substack.com/@seattledataguy, adding as initial action...
+INFO     [Agent] [34m🎯 Task: Go to https://substack.com/@seattledataguy and extract:
+- Newsletter name
+- Author name  
+- Subscriber count (look for "XK subscribers")
+- Contact email (check About page or header)
+- Whether they have sponsors
+
+Return as JSON.[0m
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [Agent] 📦 Newer version available: 0.12.3 (current: 0.12.2). Upgrade with: uv add browser-use==0.12.3
+INFO     [Agent] Starting a browser-use agent with version 0.12.2, with provider=openai and model=qwen3.5-plus
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+WARNING  [bubus] ⚠️ EventBus_8a0ac359🟢(⏳ 0 | ▶️ 1 | ✅ 1 ➡️ 31 👂) handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent() has been running for >15s on event. Possible slow processing or deadlock.
+(handler could be trying to await its own result or could be blocked by another async task).
+browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(?▶ BrowserStartEvent#a152 🏃)
+WARNING  [bubus] ⚠️ EventBus_455e26a6🟢(⏳ 1 | ▶️ 1 | ✅ 0 ➡️ 31 👂) handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent() has been running for >15s on event. Possible slow processing or deadlock.
+(handler could be trying to await its own result or could be blocked by another async task).
+browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(?▶ BrowserStartEvent#55fe 🏃)
+WARNING  [bubus] ================================================================================
+WARNING  [bubus] ⏱️  TIMEOUT ERROR - Handling took more than 30.0s for EventBus_8a0ac359.browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(?▶ BrowserStartEvent#a152 ✅)
+WARNING  [bubus] ================================================================================
+WARNING  [bubus] 📣 BrowserStartEvent#a152                                              [91m30s[0m
+WARNING  [bubus]    ⏰ browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(#a152) ⌛️ [91m30s[0m/[91m30s[0m   ⬅️ [91mTIMEOUT HERE[0m ⏰
+WARNING  [bubus]       📣 BrowserLaunchEvent#ab81                                       [93m29s[0m
+WARNING  [bubus]          ☑️ browser_use.browser.watchdog_base.DownloadsWatchdog.on_BrowserLaunchEvent(#ab81)    [92m 0s[0m/30s   ✓
+WARNING  [bubus]          ☑️ browser_use.browser.watchdog_base.LocalBrowserWatchdog.on_BrowserLaunchEvent(#ab81)    [92m 0s[0m/30s   ✓
+WARNING  [bubus] 
+================================================================================
+
+ERROR    [Agent] Agent run failed with exception: Event handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent#0368(?▶ BrowserStartEvent#a152 🏃) timed out after 30.0s and interrupted any processing of 1 child events
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1128, in execute_handler
+    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/browser/watchdog_base.py", line 153, in unique_handler
+    result = await actual_handler(event)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/observability.py", line 73, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/browser/session.py", line 763, in on_BrowserStartEvent
+    BrowserLaunchResult, await launch_event.event_result(raise_if_none=True, raise_if_any=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 574, in event_result
+    valid_results = await self.event_results_filtered(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 485, in event_results_filtered
+    await asyncio.wait_for(self.event_completed_signal.wait(), timeout=timeout or self.event_timeout)
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/browser/watchdog_base.py", line 153, in unique_handler
+    result = await actual_handler(event)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/observability.py", line 73, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/browser/session.py", line 759, in on_BrowserStartEvent
+    await launch_event
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 313, in wait_for_handlers_to_complete_then_return_event
+    await bus.process_event(event)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 976, in process_event
+    await self._execute_handlers(event, handlers=applicable_handlers, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1070, in _execute_handlers
+    await self.execute_handler(event, handler, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1174, in execute_handler
+    raise handler_interrupted_error from e
+asyncio.exceptions.CancelledError: Event handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent#8624(?▶ BrowserStartEvent#55fe 🏃) was interrupted because of a parent timeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1128, in execute_handler
+    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "/usr/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/agent/service.py", line 2525, in run
+    await self.browser_session.start()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/observability.py", line 73, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/browser_use/browser/session.py", line 676, in start
+    await start_event.event_result(raise_if_any=True, raise_if_none=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 574, in event_result
+    valid_results = await self.event_results_filtered(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 516, in event_results_filtered
+    raise original_error
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 490, in event_results_filtered
+    await event_result
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/models.py", line 889, in wait_for_handler_to_complete_and_return_result
+    raise self.error if isinstance(self.error, BaseException) else Exception(self.error)  # pyright: ignore[reportUnnecessaryIsInstance]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1070, in _execute_handlers
+    await self.execute_handler(event, handler, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/bubus/service.py", line 1194, in execute_handler
+    raise handler_timeout_error from e
+TimeoutError: Event handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent#0368(?▶ BrowserStartEvent#a152 🏃) timed out after 30.0s and interrupted any processing of 1 child events
+INFO     [Agent] 
+INFO     [Agent] Did the Agent not work as expected? Let us fix this!
+INFO     [Agent]    Open a short issue on GitHub: https://github.com/browser-use/browser-use/issues
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@lifearchitect, [35mnew_tab[0m: False
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@banc, [35mnew_tab[0m: False
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@nextword, [35mnew_tab[0m: False
+INFO     [Agent] 
+INFO     [Agent] Did the Agent not work as expected? Let us fix this!
+INFO     [Agent]    Open a short issue on GitHub: https://github.com/browser-use/browser-use/issues
+WARNING  [bubus] ⌛️ Agent_63f5🟢(⏳ 1 | ▶️ 0 | ✅ 2 ➡️ 0 👂) Timeout waiting for event bus to be idle after 3.0s (processing: 0)
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+WARNING  [bubus] ⌛️ Agent_8725🟢(⏳ 1 | ▶️ 0 | ✅ 2 ➡️ 0 👂) Timeout waiting for event bus to be idle after 3.0s (processing: 0)
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@rfleury, [35mnew_tab[0m: False
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@migueloteropedrido, [35mnew_tab[0m: False
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@thezvi, [35mnew_tab[0m: False
+INFO     [BrowserSession] Setting viewport to 1920x1080 with device scale factor 1.0 whereas original device scale factor was 1.0
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: https://substack.com/@bnjmnmarie, [35mnew_tab[0m: False
+WARNING  [bubus] ⚠️ EventBus_c913ab0f🟢(⏳ 0 | ▶️ 2 | ✅ 0 ➡️ 31 👂) handler browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent() has been running for >15s on event. Possible slow processing or deadlock.
+(handler could be trying to await its own result or could be blocked by another async task).
+browser_use.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(?▶ BrowserStartEvent#295c 🏃)
+WARNING  [bubus] ⚠️ EventBus_c913ab0f🟢(⏳ 0 | ▶️ 2 | ✅ 0 ➡️ 31 👂) handler browser_use.browser.watchdog_base.LocalBrowserWatchdog.on_BrowserLaunchEvent() has been running for >15s on event. Possible slow processing or deadlock.
+(handler could be trying to await its own result or could be blocked by another async task).
+browser_use.browser.watchdog_base.LocalBrowserWatchdog.on_BrowserLaunchEvent(?▶ BrowserLaunchEvent#738f 🏃)
