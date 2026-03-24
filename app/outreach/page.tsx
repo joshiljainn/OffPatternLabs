@@ -9,7 +9,7 @@ export default function OutreachDashboard() {
     { name: 'Bootstrapped Founder', author: 'Maria Santos', email: 'maria@bootstrappedfounder.com', subs: 12000, niche: 'Business', score: 90, platform: 'Substack' },
     { name: 'Python Developer', author: 'Arjun Kumar', email: 'arjun@pythondev.co', subs: 13500, niche: 'Tech', score: 85, platform: 'Substack' },
     { name: 'Marketing for Startups', author: 'Lisa Wong', email: 'lisa@marketingforstartups.io', subs: 10500, niche: 'Marketing', score: 85, platform: 'Beehiiv' },
-    { name: 'E-commerce Tips', author: 'Ryan O'Connor', email: 'ryan@ecommercetips.io', subs: 11000, niche: 'Business', score: 85, platform: 'Beehiiv' },
+    { name: 'E-commerce Tips', author: 'Ryan OConnor', email: 'ryan@ecommercetips.io', subs: 11000, niche: 'Business', score: 85, platform: 'Beehiiv' },
     { name: 'Content Creator Tips', author: 'Jordan Lee', email: 'jordan@contentcreatortips.com', subs: 9800, niche: 'Marketing', score: 85, platform: 'Substack' },
     { name: 'No-Code Builder', author: 'Alex Rivera', email: 'alex@nocodebuilder.co', subs: 9200, niche: 'Tech', score: 85, platform: 'Substack' },
     { name: 'Solopreneur Journey', author: 'Mark Thompson', email: 'mark@solopreneurjourney.co', subs: 8900, niche: 'Business', score: 80, platform: 'Substack' },
