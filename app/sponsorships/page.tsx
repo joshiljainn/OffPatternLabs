@@ -10,7 +10,7 @@ export default function SponsorshipsPage() {
     const handleSponsorClick = (e: React.MouseEvent) => {
         if (companyName || budget || audience) {
             e.preventDefault();
-            const message = `Hi! I'm interested in sponsoring newsletters through OffPattern Labs. Here's some info:
+            const message = `Hi! I am interested in sponsoring newsletters through OffPattern Labs. Here is some info:
 
 Company: ${companyName || "Not specified"}
 Budget: ${budget || "Not specified"}

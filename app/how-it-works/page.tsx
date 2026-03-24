@@ -53,7 +53,7 @@ export default function HowItWorks() {
     },
     {
       q: 'Is there any upfront cost?',
-      a: 'Zero. We only make money when you make money. If we can't grow your revenue, you don't pay anything.'
+      a: 'Zero. We only make money when you make money. If we cannot grow your revenue, you do not pay anything.'
     },
     {
       q: 'How long does the process take?',

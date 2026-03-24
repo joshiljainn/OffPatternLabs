@@ -26,7 +26,7 @@ Hey ${lead.author.split(' ')[0]},
 
 Been following ${lead.name} for a while — really loved your recent content.
 
-Noticed you haven't posted in a while. Totally get it — running a newsletter is a grind.
+Noticed you have not posted in a while. Totally get it — running a newsletter is a grind.
 
 I run OffPattern Labs. We revive dormant newsletters like yours (${lead.subs.toLocaleString()} subs in ${lead.niche}), monetize them, and split the revenue. You keep ownership. Zero upfront cost.
 

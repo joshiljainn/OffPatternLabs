@@ -21,7 +21,7 @@ export default function SubmitDeal() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // In production, this would POST to an API endpoint
-    // For now, we'll just show success message
+    // For now, we will just show success message
     setSubmitted(true);
     
     // Save to localStorage for demo
