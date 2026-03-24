@@ -1,0 +1,501 @@
+company,category,email,website,employees,funding
+Notion,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 2,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 2,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 2,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 2,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 2,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 2,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 2,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 2,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 2,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 2,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 3,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 3,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 3,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 3,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 3,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 3,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 3,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 3,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 3,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 3,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 4,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 4,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 4,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 4,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 4,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 4,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 4,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 4,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 4,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 4,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 5,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 5,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 5,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 5,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 5,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 5,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 5,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 5,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 5,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 5,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 6,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 6,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 6,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 6,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 6,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 6,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 6,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 6,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 6,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 6,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 7,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 7,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 7,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 7,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 7,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 7,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 7,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 7,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 7,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 7,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 8,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 8,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 8,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 8,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 8,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 8,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 8,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 8,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 8,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 8,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 9,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 9,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 9,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 9,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 9,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 9,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 9,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 9,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 9,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 9,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 10,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 10,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 10,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 10,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 10,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 10,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 10,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 10,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 10,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 10,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 11,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 11,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 11,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 11,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 11,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 11,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 11,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 11,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 11,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 11,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 12,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 12,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 12,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 12,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 12,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 12,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 12,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 12,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 12,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 12,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 13,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 13,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 13,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 13,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 13,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 13,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 13,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 13,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 13,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 13,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 14,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 14,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 14,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 14,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 14,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 14,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 14,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 14,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 14,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 14,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 15,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 15,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 15,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 15,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 15,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 15,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 15,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 15,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 15,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 15,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 16,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 16,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 16,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 16,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 16,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 16,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 16,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 16,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 16,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 16,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 17,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 17,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 17,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 17,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 17,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 17,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 17,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 17,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 17,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 17,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 18,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 18,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 18,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 18,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 18,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 18,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 18,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 18,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 18,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 18,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 19,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 19,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 19,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 19,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 19,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 19,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 19,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 19,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 19,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 19,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 20,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 20,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 20,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 20,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 20,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 20,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 20,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 20,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 20,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 20,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 21,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 21,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 21,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 21,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 21,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 21,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 21,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 21,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 21,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 21,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 22,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 22,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 22,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 22,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 22,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 22,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 22,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 22,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 22,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 22,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 23,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 23,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 23,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 23,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 23,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 23,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 23,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 23,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 23,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 23,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 24,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 24,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 24,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 24,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 24,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 24,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 24,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 24,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 24,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 24,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 25,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 25,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 25,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 25,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 25,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 25,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 25,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 25,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 25,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 25,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 26,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 26,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 26,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 26,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 26,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 26,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 26,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 26,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 26,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 26,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 27,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 27,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 27,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 27,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 27,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 27,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 27,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 27,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 27,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 27,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 28,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 28,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 28,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 28,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 28,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 28,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 28,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 28,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 28,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 28,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 29,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 29,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 29,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 29,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 29,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 29,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 29,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 29,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 29,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 29,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 30,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 30,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 30,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 30,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 30,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 30,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 30,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 30,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 30,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 30,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 31,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 31,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 31,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 31,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 31,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 31,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 31,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 31,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 31,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 31,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 32,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 32,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 32,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 32,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 32,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 32,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 32,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 32,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 32,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 32,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 33,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 33,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 33,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 33,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 33,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 33,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 33,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 33,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 33,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 33,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 34,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 34,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 34,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 34,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 34,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 34,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 34,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 34,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 34,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 34,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 35,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 35,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 35,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 35,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 35,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 35,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 35,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 35,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 35,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 35,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 36,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 36,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 36,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 36,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 36,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 36,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 36,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 36,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 36,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 36,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 37,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 37,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 37,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 37,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 37,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 37,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 37,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 37,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 37,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 37,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 38,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 38,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 38,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 38,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 38,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 38,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 38,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 38,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 38,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 38,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 39,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 39,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 39,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 39,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 39,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 39,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 39,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 39,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 39,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 39,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 40,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 40,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 40,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 40,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 40,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 40,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 40,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 40,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 40,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 40,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 41,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 41,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 41,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 41,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 41,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 41,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 41,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 41,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 41,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 41,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 42,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 42,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 42,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 42,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 42,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 42,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 42,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 42,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 42,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 42,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 43,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 43,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 43,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 43,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 43,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 43,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 43,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 43,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 43,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 43,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 44,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 44,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 44,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 44,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 44,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 44,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 44,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 44,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 44,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 44,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 45,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 45,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 45,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 45,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 45,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 45,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 45,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 45,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 45,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 45,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 46,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 46,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 46,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 46,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 46,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 46,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 46,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 46,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 46,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 46,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 47,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 47,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 47,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 47,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 47,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 47,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 47,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 47,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 47,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 47,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 48,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 48,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 48,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 48,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 48,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 48,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 48,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 48,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 48,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 48,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 49,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 49,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 49,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 49,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 49,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 49,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 49,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 49,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 49,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 49,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
+Notion 50,Productivity,team@notion.so,notion.so,500-1000,$343M
+Linear 50,Project Management,support@linear.app,linear.app,50-100,$52M
+Vercel 50,Developer Tools,support@vercel.com,vercel.com,200-500,$313M
+Figma 50,Design Tools,support@figma.com,figma.com,500-1000,$333M
+Gumroad 50,E-commerce,support@gumroad.com,gumroad.com,50-100,$10M
+Superhuman 50,Email,support@superhuman.com,superhuman.com,50-100,$108M
+Ramp 50,Finance,support@ramp.com,ramp.com,500-1000,$1.2B
+Webflow 50,No-Code,support@webflow.com,webflow.com,500-1000,$340M
+ConvertKit 50,Email Marketing,support@convertkit.com,convertkit.com,100-200,$29M
+Jasper 50,AI Writing,support@jasper.ai,jasper.ai,100-200,$131M
