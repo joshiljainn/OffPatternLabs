@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OffPattern Labs - We Operate Your Newsletter. You Get Paid.",
-  description: "We turn dormant newsletters into cash flow assets. OffPattern Labs operates, monetizes, and scales your publication — no upfront cost, shared upside.",
+  title: "OffPattern Labs - Voice AI That Sounds Human",
+  description: "Build, deploy, and scale AI voice agents that handle calls, conversations, and customer interactions with human-like intelligence.",
   keywords: [
-    "newsletter monetization",
-    "dormant newsletter revival",
-    "newsletter acquisition",
-    "newsletter operator",
-    "passive income newsletter",
-    "Substack monetization",
-    "Beehiiv monetization",
-    "micro-acquisition newsletters",
+    "voice AI",
+    "AI voice agents",
+    "conversational AI",
+    "voice automation",
+    "AI caller",
+    "customer service AI",
+    "voice bot",
+    "AI phone calls",
     "OffPattern Labs",
   ],
   authors: [{ name: "Joshil Jain" }],
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   publisher: "OffPattern Labs",
   metadataBase: new URL("https://offpatternlabs.com"),
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   alternates: {
     canonical: "/",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://offpatternlabs.com",
     siteName: "OffPattern Labs",
-    title: "OffPattern Labs — We Operate Your Newsletter. You Get Paid.",
-    description: "Turn your dormant list into a cash-flowing asset. We operate, monetize, and grow your newsletter — no upfront cost.",
+    title: "OffPattern Labs — Voice AI That Sounds Human",
+    description: "Build, deploy, and scale AI voice agents with human-like intelligence.",
     images: [
       {
         url: "/og-image.png",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffPattern Labs — We Operate Your Newsletter. You Get Paid.",
-    description: "Turn your dormant list into a cash-flowing asset. No upfront cost, shared upside.",
+    title: "OffPattern Labs — Voice AI That Sounds Human",
+    description: "Build, deploy, and scale AI voice agents with human-like intelligence.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -62,8 +62,6 @@ export const metadata: Metadata = {
   },
 };
 
-import GlobalVideoBackground from "@/components/GlobalVideoBackground";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,9 +69,9 @@ export default function RootLayout({
 }>) {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": "OffPattern Labs",
-    "description": "We turn dormant newsletters into cash flow assets. We operate, monetize, and scale your publication.",
+    "description": "Voice AI platform for building human-like AI voice agents",
     "url": "https://offpatternlabs.com",
     "founder": {
       "@type": "Person",
@@ -87,11 +85,12 @@ export default function RootLayout({
     "sameAs": [
       "https://www.linkedin.com/company/offpatternlabs"
     ],
-    "email": "joshil@offpatternlabs.com"
+    "email": "joshil@offpatternlabs.com",
+    "knowsAbout": ["Voice AI", "Conversational AI", "AI Agents", "Machine Learning"]
   };
 
   return (
-    <html lang="en" style={{ background: "transparent" }}>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,9 +100,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
-      <body style={{ background: "transparent" }}>
-        {/* Global scroll-scrubbed video — fixed z-0 wrapper behind all z-10 content */}
-        <GlobalVideoBackground />
+      <body suppressHydrationWarning>
         {children}
       </body>
     </html>

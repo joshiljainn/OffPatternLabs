@@ -1,148 +1,259 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, ChevronDown, Play } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function LandingHero() {
-    const [niche, setNiche] = useState("");
-    const [subscribers, setSubscribers] = useState("");
-    const [status, setStatus] = useState("");
+  const [inputValue, setInputValue] = useState("");
 
-    const handleAuditClick = (e: React.MouseEvent) => {
-        // If they filled anything, pre-fill WhatsApp. 
-        // Otherwise, just scroll to the audit section.
-        if (niche || subscribers || status) {
-            e.preventDefault();
-            const message = `Hi! I'd like to get an audit for my newsletter. Here are some details from your hero section:
-      
-Niche: ${niche || "Not specified"}
-Subscribers: ${subscribers || "Not specified"}
-Status: ${status || "Not specified"}`;
+  return (
+    <section className="relative w-full min-h-screen flex flex-col px-6 md:px-12 pt-6">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FDFCF8] border-b border-[#E5E5E0]">
+        <div className="max-w-7xl mx-auto flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/favicon.svg"
+              alt="OffPattern Labs"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+              priority
+            />
+            <span className="font-semibold text-xl tracking-tight">OffPattern Labs</span>
+          </Link>
 
-            const whatsappUrl = `https://wa.me/918076958506?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, "_blank");
-        }
-    };
+          {/* Nav Links */}
+          <div className="hidden md:flex items-center gap-8">
+            <Link href="#features" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Features
+            </Link>
+            <Link href="#demo" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Demo
+            </Link>
+            <Link href="#pricing" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Pricing
+            </Link>
+            <Link href="#enterprise" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Enterprise
+            </Link>
+          </div>
 
-    return (
-        <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-transparent px-4 py-24">
-            {/* ── Floating Pill Navigation ───────────────────────────────── */}
-            <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 bg-[#FDFBF7] rounded-full border-2 border-black shadow-[4px_4px_0px_#111] px-6 py-3 flex justify-between items-center">
-                {/* Logo — uses img tag with text fallback via onError */}
-                <img
-                    src="/logo.svg"
-                    alt="OffPattern Labs"
-                    className="h-10 md:h-14 w-auto object-contain drop-shadow-sm"
-                    onError={(e) => {
-                        const target = e.currentTarget;
-                        target.style.display = "none";
-                        const fallback = target.nextElementSibling as HTMLElement | null;
-                        if (fallback) fallback.style.display = "block";
-                    }}
-                />
-                <span
-                    className="font-bold text-lg tracking-tighter text-[#0B132B] hidden"
-                    style={{ lineHeight: 1.1 }}
-                    aria-hidden="true"
-                >
-                    OFFPATTERN<br />LABS
-                </span>
+          {/* CTA */}
+          <div className="flex items-center gap-3">
+            <Link href="#" className="text-sm font-medium hover:text-[#1A1A1A]">
+              Sign in
+            </Link>
+            <button className="btn-primary">
+              Start Building
+            </button>
+          </div>
+        </div>
+      </nav>
 
-                {/* Nav links */}
-                <div className="flex items-center gap-4">
-                    <Link
-                        href="#how-it-works"
-                        className="text-xs font-semibold uppercase tracking-widest text-[#0B132B] hover:text-[#E07A5F] transition-colors"
-                    >
-                        How It Works
-                    </Link>
-                    <Link
-                        href="#audit"
-                        className="btn-retro-orange"
-                        style={{ padding: "0.4rem 1.1rem", fontSize: "0.75rem" }}
-                    >
-                        Free Audit
-                    </Link>
-                </div>
-            </nav>
-
-            {/* ── Hero Card ─────────────────────────────────────────────── */}
-            <div
-                className="w-full bg-[#FDFBF7] border-2 border-black rounded-[24px] shadow-[8px_8px_0px_#111] p-12 flex flex-col items-center text-center relative z-10"
-                style={{ maxWidth: "850px" }}
+      {/* Hero Content */}
+      <div className="flex-1 flex items-center pt-24">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          {/* Left: Copy */}
+          <div className="flex flex-col justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-                <p className="text-xs font-bold tracking-[0.22em] uppercase mb-5" style={{ color: "#E07A5F" }}>
-                    Newsletter Acquisition &amp; Operations
-                </p>
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#E03E3E] mb-6">
+                Voice AI Platform
+              </span>
+            </motion.div>
 
-                <h1
-                    className="font-display font-bold leading-[1.05] mb-6 text-balance"
-                    style={{ color: "#0B132B", fontSize: "clamp(2rem, 5vw, 3.4rem)" }}
-                >
-                    Your Dormant Newsletter
-                    <br />Is&nbsp;Printing Money
-                    <br /><span style={{ color: "#E07A5F" }}>for Someone Else.</span>
-                </h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6"
+            >
+              Build AI voice agents that sound human
+            </motion.h1>
 
-                <p
-                    className="text-base md:text-lg leading-relaxed mb-10 max-w-xl"
-                    style={{ color: "#0B132B", opacity: 0.75 }}
-                >
-                    We operate, monetize, and grow your publication.
-                    <br />
-                    You keep ownership — and the upside.{" "}
-                    <span className="font-semibold" style={{ opacity: 1 }}>No upfront cost.</span>
-                </p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg text-[#6B6B6B] mb-8 max-w-xl"
+            >
+              OffPattern Labs helps you build, deploy, and scale AI voice agents
+              that handle real phone calls with unprecedented realism and reliability.
+            </motion.p>
 
-                {/* Pill Input Row Restored */}
-                <div
-                    className="w-full bg-white border-2 border-black rounded-full px-4 py-3 flex flex-col sm:flex-row items-center gap-3"
-                    style={{ boxShadow: "4px 4px 0px #111", maxWidth: "700px" }}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-4 mb-8"
+            >
+              {/* Input box */}
+              <div className="flex-1 flex items-center gap-2 bg-white border border-[#E5E5E0] rounded-lg p-2">
+                <input
+                  type="text"
+                  placeholder="Describe your use case..."
+                  className="flex-1 outline-none text-sm px-3"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                />
+                <button className="bg-[#E03E3E] text-white p-2 rounded-md hover:bg-[#C43535] transition-colors">
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex flex-wrap gap-3"
+            >
+              {["Customer support agent", "Lead qualification bot", "Appointment setter", "Sales caller"].map((suggestion) => (
+                <button
+                  key={suggestion}
+                  className="text-xs px-4 py-2 bg-white border border-[#E5E5E0] rounded-full hover:border-[#1A1A1A] transition-colors"
                 >
-                    <input
-                        type="text"
-                        placeholder="Your newsletter niche…"
-                        className="flex-1 bg-transparent outline-none text-sm font-medium placeholder:text-[#0B132B]/40 text-[#0B132B] px-2 w-full sm:w-auto"
-                        value={niche}
-                        onChange={(e) => setNiche(e.target.value)}
-                    />
-                    <div className="w-full sm:w-px sm:h-6 h-px bg-black/10" />
-                    <select
-                        className="flex-1 bg-transparent outline-none text-sm font-medium text-[#0B132B] cursor-pointer w-full sm:w-auto px-2"
-                        value={subscribers}
-                        onChange={(e) => setSubscribers(e.target.value)}
-                    >
-                        <option value="" disabled>Subscribers…</option>
-                        <option value="1k-5k">1,000 – 5,000</option>
-                        <option value="5k-10k">5,000 – 10,000</option>
-                        <option value="10k-50k">10,000 – 50,000</option>
-                        <option value="50k+">50,000+</option>
-                    </select>
-                    <div className="w-full sm:w-px sm:h-6 h-px bg-black/10" />
-                    <select
-                        className="flex-1 bg-transparent outline-none text-sm font-medium text-[#0B132B] cursor-pointer w-full sm:w-auto px-2"
-                        value={status}
-                        onChange={(e) => setStatus(e.target.value)}
-                    >
-                        <option value="" disabled>Status…</option>
-                        <option value="dormant">Dormant (3+ months)</option>
-                        <option value="active">Active, not monetized</option>
-                        <option value="monetized">Monetized, want to scale</option>
-                    </select>
-                    <Link
-                        href="#audit"
-                        onClick={handleAuditClick}
-                        className="btn-retro-orange whitespace-nowrap"
-                        style={{ padding: "0.65rem 1.4rem" }}
-                    >
-                        Get My Audit →
-                    </Link>
+                  {suggestion}
+                </button>
+              ))}
+            </motion.div>
+
+            {/* Social proof */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-12 pt-8 border-t border-[#E5E5E0]"
+            >
+              <p className="text-xs text-[#9B9B9B] uppercase tracking-widest mb-4">
+                Trusted by teams at
+              </p>
+              <div className="flex flex-wrap gap-6 opacity-60">
+                {["Vercel", "Perplexity", "Cofactor", "Pico", "Cline", "Typeface"].map((company) => (
+                  <span key={company} className="text-sm font-semibold text-[#1A1A1A]">
+                    {company}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Right: Demo Box */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="relative"
+          >
+            <div className="sticky top-24">
+              {/* Main Demo Card */}
+              <div className="bg-white border border-[#E5E5E0] rounded-2xl p-6 shadow-sm">
+                {/* Header */}
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-[#E5E5E0]">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#F5F5F0] rounded-full flex items-center justify-center">
+                      <Play className="w-4 h-4 text-[#1A1A1A]" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium">Dental Appointment Booking</p>
+                      <p className="text-xs text-[#9B9B9B]">Sample call transcript</p>
+                    </div>
+                  </div>
+                  <span className="text-xs px-3 py-1 bg-[#F5F5F0] rounded-full">
+                    2:34
+                  </span>
                 </div>
 
-                <p className="mt-5 text-xs" style={{ color: "#0B132B", opacity: 0.45 }}>
-                    Works with Substack, Beehiiv, and WordPress blogs with 5k+ subscribers.
-                    <br />Zero obligation. Completely confidential.
-                </p>
+                {/* Transcript */}
+                <div className="space-y-4 mb-6">
+                  <div className="flex gap-3">
+                    <div className="w-8 h-8 bg-[#E03E3E] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-bold">AI</span>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs text-[#9B9B9B] mb-1">AI Agent</p>
+                      <div className="bg-[#F5F5F0] rounded-lg rounded-tl-none p-3">
+                        <p className="text-sm">Hi! This is Sarah from Bright Smile Dental. I'm calling to confirm your teeth whitening appointment scheduled for tomorrow at 3 PM. Will you be able to make it?</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="w-8 h-8 bg-[#1A1A1A] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-bold">U</span>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs text-[#9B9B9B] mb-1">User</p>
+                      <div className="bg-[#1A1A1A] text-white rounded-lg rounded-tl-none p-3">
+                        <p className="text-sm">Yes, I'll be there. Do I need to arrive early for any paperwork?</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="w-8 h-8 bg-[#E03E3E] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-bold">AI</span>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs text-[#9B9B9B] mb-1">AI Agent</p>
+                      <div className="bg-[#F5F5F0] rounded-lg rounded-tl-none p-3">
+                        <p className="text-sm">Great! Please arrive 10 minutes early to complete any remaining forms. Also, avoid drinking coffee or tea right before your appointment for best results. See you tomorrow!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Waveform */}
+                <div className="flex items-center justify-center gap-0.5 h-12 mb-4">
+                  {Array.from({ length: 60 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="w-1 bg-[#E03E3E] rounded-full"
+                      style={{
+                        height: `${Math.random() * 100}%`,
+                        opacity: 0.3 + Math.random() * 0.7,
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Controls */}
+                <div className="flex items-center justify-between pt-4 border-t border-[#E5E5E0]">
+                  <button className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A]">
+                    View full transcript
+                  </button>
+                  <button className="text-sm font-medium text-[#E03E3E] hover:text-[#C43535]">
+                    Try it yourself →
+                  </button>
+                </div>
+              </div>
+
+              {/* Stats Cards */}
+              <div className="grid grid-cols-3 gap-3 mt-4">
+                <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
+                  <p className="text-2xl font-semibold mb-1">94%</p>
+                  <p className="text-xs text-[#9B9B9B]">Resolution rate</p>
+                </div>
+                <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
+                  <p className="text-2xl font-semibold mb-1">&lt;500ms</p>
+                  <p className="text-xs text-[#9B9B9B]">Latency</p>
+                </div>
+                <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
+                  <p className="text-2xl font-semibold mb-1">10M+</p>
+                  <p className="text-xs text-[#9B9B9B]">Calls handled</p>
+                </div>
+              </div>
             </div>
-        </section>
-    );
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 }
