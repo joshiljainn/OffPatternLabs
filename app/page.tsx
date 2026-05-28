@@ -2,7 +2,6 @@ import LandingHero from "@/components/landing/LandingHero";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import StickerShowcase from "@/components/landing/StickerShowcase";
 import SocialProof from "@/components/landing/SocialProof";
-import PricingSection from "@/components/landing/PricingSection";
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 
@@ -13,7 +12,6 @@ export default function Home() {
       <FeaturesSection />
       <StickerShowcase />
       <SocialProof />
-      <PricingSection />
       <CTASection />
       <Footer />
     </main>
