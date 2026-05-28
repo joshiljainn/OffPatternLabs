@@ -5,7 +5,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="section-padding border-t border-[#E5E5E0]">
+    <section id="contact" className="section-padding border-t border-[#E5E5E0]">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,21 +20,21 @@ export default function CTASection() {
           </div>
 
           <h2 className="font-display font-semibold text-4xl md:text-5xl lg:text-6xl mb-6">
-            Ready to transform your voice operations?
+            Ready to make your packaging unforgettable?
           </h2>
 
           <p className="text-lg text-[#6B6B6B] mb-8">
-            Join 500+ companies using OffPattern Labs to deliver human-like voice AI at scale.
+            Join 500+ DTC brands using OffPattern Labs for premium UV stickers that sell.
           </p>
 
           <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
             <input
               type="email"
-              placeholder="Enter your work email"
+              placeholder="Enter your email"
               className="flex-1 px-4 py-3 bg-white border border-[#E5E5E0] rounded-lg outline-none focus:border-[#1A1A1A] transition-colors"
             />
             <button type="submit" className="btn-primary whitespace-nowrap flex items-center justify-center gap-2">
-              Start free trial
+              Get a free quote
               <ArrowRight className="w-4 h-4" />
             </button>
           </form>
@@ -46,11 +46,11 @@ export default function CTASection() {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500" />
-              <span>14-day free trial</span>
+              <span>Free proof with every order</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500" />
-              <span>Cancel anytime</span>
+              <span>Ships in 48 hours</span>
             </div>
           </div>
         </motion.div>

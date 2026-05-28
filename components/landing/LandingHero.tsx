@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ChevronDown, Play } from "lucide-react";
+import { ArrowRight, ChevronDown, Upload, Sparkles, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function LandingHero() {
@@ -31,24 +31,24 @@ export default function LandingHero() {
             <Link href="#features" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Features
             </Link>
-            <Link href="#demo" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
-              Demo
+            <Link href="#showcase" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Showcase
             </Link>
             <Link href="#pricing" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Pricing
             </Link>
-            <Link href="#enterprise" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
-              Enterprise
+            <Link href="#contact" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+              Contact
             </Link>
           </div>
 
           {/* CTA */}
           <div className="flex items-center gap-3">
-            <Link href="#" className="text-sm font-medium hover:text-[#1A1A1A]">
-              Sign in
+            <Link href="#upload" className="text-sm font-medium hover:text-[#1A1A1A]">
+              Upload Art
             </Link>
             <button className="btn-primary">
-              Start Building
+              Get a Quote
             </button>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function LandingHero() {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#E03E3E] mb-6">
-                Voice AI Platform
+                DTC UV Sticker Printing
               </span>
             </motion.div>
 
@@ -75,7 +75,7 @@ export default function LandingHero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6"
             >
-              Build AI voice agents that sound human
+              Premium UV stickers that make your brand unforgettable
             </motion.h1>
 
             <motion.p
@@ -84,8 +84,8 @@ export default function LandingHero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg text-[#6B6B6B] mb-8 max-w-xl"
             >
-              OffPattern Labs helps you build, deploy, and scale AI voice agents
-              that handle real phone calls with unprecedented realism and reliability.
+              OffPattern Labs prints waterproof, fade-proof UV stickers for product
+              packaging, bottles, and boxes. Vibrant colors. Zero setup fees. Ships in 48 hours.
             </motion.p>
 
             <motion.div
@@ -98,7 +98,7 @@ export default function LandingHero() {
               <div className="flex-1 flex items-center gap-2 bg-white border border-[#E5E5E0] rounded-lg p-2">
                 <input
                   type="text"
-                  placeholder="Describe your use case..."
+                  placeholder="What are you sticking them on..."
                   className="flex-1 outline-none text-sm px-3"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
@@ -115,7 +115,7 @@ export default function LandingHero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-wrap gap-3"
             >
-              {["Customer support agent", "Lead qualification bot", "Appointment setter", "Sales caller"].map((suggestion) => (
+              {["Candle jars", "Cosmetic bottles", "Food packaging", "Water bottles"].map((suggestion) => (
                 <button
                   key={suggestion}
                   className="text-xs px-4 py-2 bg-white border border-[#E5E5E0] rounded-full hover:border-[#1A1A1A] transition-colors"
@@ -133,10 +133,10 @@ export default function LandingHero() {
               className="mt-12 pt-8 border-t border-[#E5E5E0]"
             >
               <p className="text-xs text-[#9B9B9B] uppercase tracking-widest mb-4">
-                Trusted by teams at
+                Trusted by DTC brands
               </p>
               <div className="flex flex-wrap gap-6 opacity-60">
-                {["Vercel", "Perplexity", "Cofactor", "Pico", "Cline", "Typeface"].map((company) => (
+                {["Brew & Bloom", "Glow Skin Co", "Farm Fresh", "Sip Society", "Pure Home", "Craft Box"].map((company) => (
                   <span key={company} className="text-sm font-semibold text-[#1A1A1A]">
                     {company}
                   </span>
@@ -159,78 +159,80 @@ export default function LandingHero() {
                 <div className="flex items-center justify-between mb-4 pb-4 border-b border-[#E5E5E0]">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-[#F5F5F0] rounded-full flex items-center justify-center">
-                      <Play className="w-4 h-4 text-[#1A1A1A]" />
+                      <Layers className="w-4 h-4 text-[#1A1A1A]" />
                     </div>
                     <div>
-                      <p className="text-sm font-medium">Dental Appointment Booking</p>
-                      <p className="text-xs text-[#9B9B9B]">Sample call transcript</p>
+                      <p className="text-sm font-medium">Your UV Sticker Preview</p>
+                      <p className="text-xs text-[#9B9B9B]">High-quality 3D render</p>
                     </div>
                   </div>
                   <span className="text-xs px-3 py-1 bg-[#F5F5F0] rounded-full">
-                    2:34
+                    UV-Cured
                   </span>
                 </div>
 
-                {/* Transcript */}
+                {/* Sticker Preview */}
                 <div className="space-y-4 mb-6">
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 items-start">
                     <div className="w-8 h-8 bg-[#E03E3E] rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-xs font-bold">AI</span>
+                      <Sparkles className="w-4 h-4 text-white" />
                     </div>
                     <div className="flex-1">
-                      <p className="text-xs text-[#9B9B9B] mb-1">AI Agent</p>
+                      <p className="text-xs text-[#9B9B9B] mb-1">UV Coating</p>
                       <div className="bg-[#F5F5F0] rounded-lg rounded-tl-none p-3">
-                        <p className="text-sm">Hi! This is Sarah from Bright Smile Dental. I'm calling to confirm your teeth whitening appointment scheduled for tomorrow at 3 PM. Will you be able to make it?</p>
+                        <p className="text-sm">Glossy, waterproof finish that pops on any surface. Colors stay vivid for years.</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 items-start">
                     <div className="w-8 h-8 bg-[#1A1A1A] rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-xs font-bold">U</span>
+                      <Upload className="w-4 h-4 text-white" />
                     </div>
                     <div className="flex-1">
-                      <p className="text-xs text-[#9B9B9B] mb-1">User</p>
+                      <p className="text-xs text-[#9B9B9B] mb-1">Upload Process</p>
                       <div className="bg-[#1A1A1A] text-white rounded-lg rounded-tl-none p-3">
-                        <p className="text-sm">Yes, I'll be there. Do I need to arrive early for any paperwork?</p>
+                        <p className="text-sm">Upload your PNG or PDF. We check quality, optimize colors, and send a free proof within hours.</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 items-start">
                     <div className="w-8 h-8 bg-[#E03E3E] rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-xs font-bold">AI</span>
+                      <Sparkles className="w-4 h-4 text-white" />
                     </div>
                     <div className="flex-1">
-                      <p className="text-xs text-[#9B9B9B] mb-1">AI Agent</p>
+                      <p className="text-xs text-[#9B9B9B] mb-1">Delivery</p>
                       <div className="bg-[#F5F5F0] rounded-lg rounded-tl-none p-3">
-                        <p className="text-sm">Great! Please arrive 10 minutes early to complete any remaining forms. Also, avoid drinking coffee or tea right before your appointment for best results. See you tomorrow!</p>
+                        <p className="text-sm">Ships in 48 hours. Track every order. Bulk discounts available for 500+ units.</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Waveform */}
-                <div className="flex items-center justify-center gap-0.5 h-12 mb-4">
-                  {Array.from({ length: 60 }).map((_, i) => (
+                {/* Visual sticker strip */}
+                <div className="flex items-center justify-center gap-2 h-16 mb-4 bg-[#F5F5F0] rounded-xl px-4">
+                  {["Brand","Logo","Tag","Seal","Mark"].map((label, i) => (
                     <div
-                      key={i}
-                      className="w-1 bg-[#E03E3E] rounded-full"
+                      key={label}
+                      className="px-3 py-1.5 rounded-lg text-xs font-semibold text-white"
                       style={{
-                        height: `${Math.random() * 100}%`,
-                        opacity: 0.3 + Math.random() * 0.7,
+                        background: i % 2 === 0 ? '#E03E3E' : '#1A1A1A',
+                        transform: `rotate(${Math.random() * 6 - 3}deg)`,
                       }}
-                    />
+                    >
+                      {label}
+                    </div>
                   ))}
                 </div>
 
                 {/* Controls */}
                 <div className="flex items-center justify-between pt-4 border-t border-[#E5E5E0]">
                   <button className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A]">
-                    View full transcript
+                    View material options
                   </button>
                   <button className="text-sm font-medium text-[#E03E3E] hover:text-[#C43535]">
-                    Try it yourself →
+                    Upload your art →
                   </button>
                 </div>
               </div>
@@ -238,16 +240,16 @@ export default function LandingHero() {
               {/* Stats Cards */}
               <div className="grid grid-cols-3 gap-3 mt-4">
                 <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
-                  <p className="text-2xl font-semibold mb-1">94%</p>
-                  <p className="text-xs text-[#9B9B9B]">Resolution rate</p>
+                  <p className="text-2xl font-semibold mb-1">48h</p>
+                  <p className="text-xs text-[#9B9B9B]">Turnaround</p>
                 </div>
                 <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
-                  <p className="text-2xl font-semibold mb-1">&lt;500ms</p>
-                  <p className="text-xs text-[#9B9B9B]">Latency</p>
+                  <p className="text-2xl font-semibold mb-1">5yr+</p>
+                  <p className="text-xs text-[#9B9B9B]">UV life</p>
                 </div>
                 <div className="bg-white border border-[#E5E5E0] rounded-xl p-4">
-                  <p className="text-2xl font-semibold mb-1">10M+</p>
-                  <p className="text-xs text-[#9B9B9B]">Calls handled</p>
+                  <p className="text-2xl font-semibold mb-1">50k+</p>
+                  <p className="text-xs text-[#9B9B9B]">Stickers printed</p>
                 </div>
               </div>
             </div>

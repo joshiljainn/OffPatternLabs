@@ -5,54 +5,51 @@ import { Check, ArrowRight } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    description: "Perfect for testing and small-scale deployments",
-    price: "$0.15",
-    unit: "per minute",
+    name: "Starter Roll",
+    description: "Perfect for product samples and small batches",
+    price: "$0.18",
+    unit: "per sticker",
     features: [
-      "Up to 1,000 minutes/month",
-      "Standard voice quality",
-      "5 custom voice agents",
-      "Basic analytics",
+      "50–249 stickers",
+      "Vinyl or BOPP stock",
+      "Free digital proof",
+      "Die-cut any shape",
       "Email support",
-      "API access",
+      "48-hour turnaround",
     ],
-    cta: "Start free",
+    cta: "Get started",
     featured: false,
   },
   {
-    name: "Pro",
-    description: "For growing businesses with higher volume needs",
+    name: "Growth Pack",
+    description: "For DTC brands scaling their packaging",
     price: "$0.12",
-    unit: "per minute",
+    unit: "per sticker",
     features: [
-      "Up to 10,000 minutes/month",
-      "Premium voice quality",
-      "25 custom voice agents",
-      "Advanced analytics & reporting",
+      "250–2,499 stickers",
+      "Vinyl, BOPP, or holographic",
+      "Free digital + physical proof",
+      "Die-cut or kiss-cut",
       "Priority support",
-      "CRM integrations",
-      "Custom prompts & fine-tuning",
-      "Webhook support",
+      "Color matching included",
+      "Bulk roll or sheet format",
     ],
-    cta: "Get started",
+    cta: "Most popular",
     featured: true,
   },
   {
-    name: "Enterprise",
-    description: "For large-scale operations with custom requirements",
+    name: "Wholesale",
+    description: "For large-scale operations and agencies",
     price: "Custom",
     unit: "volume pricing",
     features: [
-      "Unlimited minutes",
-      "Ultra-realistic voices",
-      "Unlimited voice agents",
-      "Custom voice cloning",
-      "Dedicated success manager",
-      "SLA guarantee",
-      "On-premise deployment",
-      "Custom integrations",
-      "SSO & advanced security",
+      "2,500+ stickers",
+      "All materials + custom finishes",
+      "Dedicated account manager",
+      "White-label shipping",
+      "API + webhook integrations",
+      "Net-30 billing available",
+      "Free storage & fulfillment",
     ],
     cta: "Contact sales",
     featured: false,
@@ -78,7 +75,7 @@ export default function PricingSection() {
             Simple, transparent pricing
           </h2>
           <p className="text-lg text-[#6B6B6B]">
-            Start free, scale as you grow. No hidden fees, no surprises.
+            No setup fees. No hidden charges. Just high-quality UV stickers at fair prices.
           </p>
         </motion.div>
 

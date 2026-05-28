@@ -3,23 +3,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
-const logos = ["Vercel", "Perplexity", "Cofactor", "Pico", "Cline", "Typeface", "Ramp", "Mercury"];
+const logos = ["Brew & Bloom", "Glow Skin Co", "Farm Fresh", "Sip Society", "Candle Craft", "Pure Home", "Fit Fuel", "Bloom Box"];
 
 const testimonials = [
   {
-    quote: "OffPattern's voice AI handled 10,000 calls in our first month with 94% customer satisfaction.",
+    quote: "The UV stickers on our candle jars look absolutely stunning. Zero fading after 6 months on store shelves.",
     author: "Sarah Chen",
-    role: "VP of Sales, TechCorp",
+    role: "Founder, Brew & Bloom",
   },
   {
-    quote: "We replaced our entire call center. Same results, 1/10th the cost.",
+    quote: "We switched from paper labels to OffPattern's UV stickers. Customer complaints about peeling dropped to zero.",
     author: "Marcus Rodriguez",
-    role: "Founder, HealthPlus",
+    role: "CEO, Glow Skin Co",
   },
   {
-    quote: "The realism is uncanny. Conversion rates are up 40%.",
+    quote: "Turnaround is insane. Uploaded Monday morning, had 2,000 waterproof labels by Wednesday afternoon.",
     author: "Emily Watson",
-    role: "CMO, FinanceFlow",
+    role: "Ops Lead, Farm Fresh",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function SocialProof() {
           className="mb-16"
         >
           <p className="text-xs text-[#9B9B9B] uppercase tracking-widest mb-6 text-center">
-            Trusted by innovative companies worldwide
+            Trusted by DTC brands worldwide
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
             {logos.map((logo) => (
@@ -59,10 +59,10 @@ export default function SocialProof() {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 p-8 bg-white border border-[#E5E5E0] rounded-2xl"
         >
           {[
-            { value: "50M+", label: "Calls handled" },
-            { value: "99.9%", label: "Uptime" },
-            { value: "500+", label: "Enterprise clients" },
-            { value: "<30s", label: "Avg setup time" },
+            { value: "50k+", label: "Stickers printed" },
+            { value: "99.2%", label: "Color accuracy" },
+            { value: "500+", label: "DTC brands" },
+            { value: "48h", label: "Avg turnaround" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl md:text-4xl font-semibold mb-2">{stat.value}</div>

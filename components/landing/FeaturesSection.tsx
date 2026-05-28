@@ -1,38 +1,38 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Headphones, Globe, Zap, Shield, BarChart3, Plug } from "lucide-react";
+import { Droplets, Sun, Zap, Shield, Palette, Truck } from "lucide-react";
 
 const features = [
   {
-    icon: Headphones,
-    title: "Human-like voices",
-    description: "Ultra-realistic AI voices with natural intonation, pauses, and emotional range that's indistinguishable from humans.",
+    icon: Droplets,
+    title: "100% Waterproof",
+    description: "UV-cured ink bonds permanently to the material. Stick them on bottles, jars, or outdoor gear — they never peel or fade.",
   },
   {
-    icon: Globe,
-    title: "100+ languages",
-    description: "Deploy voice agents in any language with native accents and cultural context built-in.",
+    icon: Sun,
+    title: "Fade-Resistant for 5+ Years",
+    description: "Ultraviolet coating blocks sun damage. Your brand colors stay punchy and bright, even after years of exposure.",
   },
   {
     icon: Zap,
-    title: "<500ms latency",
-    description: "Sub-500ms response time for natural conversation flow. No awkward pauses or delays.",
+    title: "48-Hour Turnaround",
+    description: "Upload your art today, get a free proof within hours, and receive your stickers in 2 days. No more waiting weeks.",
   },
   {
     icon: Shield,
-    title: "Enterprise security",
-    description: "SOC 2 compliant, end-to-end encryption, and on-premise deployment options for sensitive use cases.",
+    title: "Scratch & Tear Proof",
+    description: "Our polypropylene and vinyl stocks stand up to scraping, rubbing, and daily abuse. Built for real-world products.",
   },
   {
-    icon: BarChart3,
-    title: "Deep analytics",
-    description: "Track call outcomes, sentiment, and conversion metrics. Get insights that drive business decisions.",
+    icon: Palette,
+    title: "Vivid CMYK Colors",
+    description: "True-to-design color matching with UV LED curing. Your gradients, logos, and fine details print razor-sharp.",
   },
   {
-    icon: Plug,
-    title: "Easy integration",
-    description: "Connect with your CRM, calendar, and tools in minutes. REST API and webhooks included.",
+    icon: Truck,
+    title: "No Minimum Order",
+    description: "Order 50 stickers or 50,000. We scale with you. Bulk pricing kicks in at 500 units for serious savings.",
   },
 ];
 
@@ -49,14 +49,14 @@ export default function FeaturesSection() {
           className="max-w-3xl mb-16"
         >
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#E03E3E] mb-4">
-            Capabilities
+            Why UV Printing
           </span>
           <h2 className="font-display font-semibold text-4xl md:text-5xl lg:text-6xl mb-6">
-            Automate calls without sacrificing quality
+            Stickers that survive the real world
           </h2>
           <p className="text-lg text-[#6B6B6B]">
-            Our AI voice agents handle complex conversations with precision,
-            empathy, and professionalism—every single time.
+            UV printing is the gold standard for product labels. Our stickers
+            handle water, sun, scratches, and time — without losing their looks.
           </p>
         </motion.div>
 
