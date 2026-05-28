@@ -2,23 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OffPattern Labs - Voice AI That Sounds Human",
-  description: "Build, deploy, and scale AI voice agents that handle calls, conversations, and customer interactions with human-like intelligence.",
+  title: "VarnishRoll — Thick, Shiny 3D Stickers for Your Brand",
+  description: "We print beautiful 3D logo stickers for your cups, boxes, and jars. Fast 4-day shipping. Upload your art and get a free 3D proof.",
   keywords: [
-    "voice AI",
-    "AI voice agents",
-    "conversational AI",
-    "voice automation",
-    "AI caller",
-    "customer service AI",
-    "voice bot",
-    "AI phone calls",
-    "OffPattern Labs",
+    "3D stickers",
+    "bulk sticker printing",
+    "logo stickers",
+    "custom stickers",
+    "varnish stickers",
+    "brand stickers",
+    "VarnishRoll",
   ],
-  authors: [{ name: "Joshil Jain" }],
-  creator: "OffPattern Labs",
-  publisher: "OffPattern Labs",
-  metadataBase: new URL("https://offpatternlabs.com"),
+  authors: [{ name: "VarnishRoll" }],
+  creator: "VarnishRoll",
+  publisher: "VarnishRoll",
+  metadataBase: new URL("https://varnishroll.com"),
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
@@ -29,24 +27,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
-    url: "https://offpatternlabs.com",
-    siteName: "OffPattern Labs",
-    title: "OffPattern Labs — Voice AI That Sounds Human",
-    description: "Build, deploy, and scale AI voice agents with human-like intelligence.",
+    locale: "en_US",
+    url: "https://varnishroll.com",
+    siteName: "VarnishRoll",
+    title: "VarnishRoll — Thick, Shiny 3D Stickers for Your Brand",
+    description: "Beautiful 3D logo stickers with fast 4-day shipping. Upload your art and get a free 3D proof.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "OffPattern Labs",
+        alt: "VarnishRoll",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffPattern Labs — Voice AI That Sounds Human",
-    description: "Build, deploy, and scale AI voice agents with human-like intelligence.",
+    title: "VarnishRoll — Thick, Shiny 3D Stickers for Your Brand",
+    description: "Beautiful 3D logo stickers with fast 4-day shipping.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -67,40 +65,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "OffPattern Labs",
-    "description": "Voice AI platform for building human-like AI voice agents",
-    "url": "https://offpatternlabs.com",
-    "founder": {
-      "@type": "Person",
-      "name": "Joshil Jain",
-      "email": "joshil@offpatternlabs.com"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "India"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/offpatternlabs"
-    ],
-    "email": "joshil@offpatternlabs.com",
-    "knowsAbout": ["Voice AI", "Conversational AI", "AI Agents", "Machine Learning"]
-  };
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className="bg-[#09090b] text-white">
         {children}
       </body>
     </html>
