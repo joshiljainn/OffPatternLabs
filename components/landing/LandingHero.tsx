@@ -1,13 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ChevronDown, Upload, Sparkles, Layers } from "lucide-react";
+import { ChevronDown, Upload, Sparkles, Layers, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function LandingHero() {
-  const [inputValue, setInputValue] = useState("");
-
   return (
     <section className="relative w-full min-h-screen flex flex-col px-6 md:px-12 pt-6">
       {/* Navigation */}
@@ -92,21 +90,17 @@ export default function LandingHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 mb-8"
+              className="mb-8"
             >
-              {/* Input box */}
-              <div className="flex-1 flex items-center gap-2 bg-white border border-[#E5E5E0] rounded-lg p-2">
-                <input
-                  type="text"
-                  placeholder="What are you sticking them on..."
-                  className="flex-1 outline-none text-sm px-3"
-                  value={inputValue}
-                  onChange={(e) => setInputValue(e.target.value)}
-                />
-                <button className="bg-[#E03E3E] text-white p-2 rounded-md hover:bg-[#C43535] transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+              <a
+                href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#1DA851] transition-colors shadow-lg hover:shadow-xl"
+              >
+                <MessageCircle className="w-6 h-6" />
+                Order on WhatsApp
+              </a>
             </motion.div>
 
             <motion.div
