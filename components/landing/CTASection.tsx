@@ -32,7 +32,7 @@ export default function CTASection() {
               href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white w-full px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#1DA851] transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-3 bg-[#E03E3E] text-white w-full px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#C43535] transition-colors shadow-lg hover:shadow-xl"
             >
               <MessageCircle className="w-6 h-6" />
               Order on WhatsApp

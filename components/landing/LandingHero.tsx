@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Upload, Sparkles, Layers, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ export default function LandingHero() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FDFCF8] border-b border-[#E5E5E0]">
         <div className="max-w-7xl mx-auto flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <Image
               src="/favicon.svg"
               alt="OffPattern Labs"
@@ -22,32 +21,42 @@ export default function LandingHero() {
               priority
             />
             <span className="font-semibold text-xl tracking-tight">OffPattern Labs</span>
-          </Link>
+          </a>
 
           {/* Nav Links */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="#features" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+            <a href="#features" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Features
-            </Link>
-            <Link href="#showcase" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+            </a>
+            <a href="#showcase" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Showcase
-            </Link>
-            <Link href="#pricing" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+            </a>
+            <a href="#pricing" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Pricing
-            </Link>
-            <Link href="#contact" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
+            </a>
+            <a href="#contact" className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors">
               Contact
-            </Link>
+            </a>
           </div>
 
           {/* CTA */}
           <div className="flex items-center gap-3">
-            <Link href="#upload" className="text-sm font-medium hover:text-[#1A1A1A]">
+            <a
+              href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium hover:text-[#1A1A1A]"
+            >
               Upload Art
-            </Link>
-            <button className="btn-primary">
+            </a>
+            <a
+              href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Get a Quote
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -96,7 +105,7 @@ export default function LandingHero() {
                 href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#1DA851] transition-colors shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-3 bg-[#E03E3E] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#C43535] transition-colors shadow-lg hover:shadow-xl"
               >
                 <MessageCircle className="w-6 h-6" />
                 Order on WhatsApp
@@ -225,9 +234,14 @@ export default function LandingHero() {
                   <button className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A]">
                     View material options
                   </button>
-                  <button className="text-sm font-medium text-[#E03E3E] hover:text-[#C43535]">
+                  <a
+                    href="https://wa.me/918076958506?text=Hey%2C%20I%20want%20to%20buy%20UV%20DTF%20Stickers."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-[#E03E3E] hover:text-[#C43535]"
+                  >
                     Upload your art →
-                  </button>
+                  </a>
                 </div>
               </div>
 
