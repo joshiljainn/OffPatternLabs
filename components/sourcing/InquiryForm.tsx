@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, FormEvent } from "react"
-import { Send } from "lucide-react"
+import { MessageCircle } from "lucide-react"
 
 const productOptions = [
   "Premium Tea & Drinks",
@@ -10,11 +10,25 @@ const productOptions = [
   "Other / Multiple",
 ]
 
+const WA_NUMBER = "918076958506"
+
 interface FormData {
   name: string
   email: string
   product: string
   message: string
+}
+
+function buildWhatsAppUrl(data: FormData): string {
+  const lines = [
+    `*New Inquiry from OffPattern Sourcing*`,
+    ``,
+    `*Name:* ${data.name}`,
+    `*Email:* ${data.email}`,
+    `*Product Interest:* ${data.product}`,
+    `*Message:* ${data.message || "—"}`,
+  ]
+  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`
 }
 
 export default function InquiryForm() {
@@ -24,7 +38,6 @@ export default function InquiryForm() {
     product: "",
     message: "",
   })
-  const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState("")
 
   const handleChange = (field: keyof FormData, value: string) => {
@@ -40,28 +53,7 @@ export default function InquiryForm() {
       return
     }
 
-    console.log("Inquiry submitted:", form)
-    setSubmitted(true)
-  }
-
-  if (submitted) {
-    return (
-      <section id="inquiry" className="py-28 md:py-36 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="max-w-lg mx-auto text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 mb-6">
-              <Send size={28} />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
-              Thank You
-            </h2>
-            <p className="text-lg text-slate-600">
-              Your inquiry has been received. Our team will reach out within 24 hours.
-            </p>
-          </div>
-        </div>
-      </section>
-    )
+    window.open(buildWhatsAppUrl(form), "_blank")
   }
 
   return (
@@ -69,56 +61,56 @@ export default function InquiryForm() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
               Start Sourcing with Us
             </h2>
-            <p className="mt-4 text-lg text-slate-500">
-              Tell us what you need and we&apos;ll get back to you with a quote.
+            <p className="mt-4 text-lg text-gray-500">
+              Fill in your details and we&apos;ll open WhatsApp with your inquiry pre-filled.
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6" noValidate>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1.5">
+                <label htmlFor="wa-name" className="block text-sm font-medium text-gray-700 mb-1.5">
                   Full Name <span className="text-red-500">*</span>
                 </label>
                 <input
-                  id="name"
+                  id="wa-name"
                   type="text"
                   required
                   value={form.name}
                   onChange={(e) => handleChange("name", e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-shadow"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 bg-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-gray-900 transition-shadow"
                   placeholder="Your full name"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1.5">
+                <label htmlFor="wa-email" className="block text-sm font-medium text-gray-700 mb-1.5">
                   Company Email <span className="text-red-500">*</span>
                 </label>
                 <input
-                  id="email"
+                  id="wa-email"
                   type="email"
                   required
                   value={form.email}
                   onChange={(e) => handleChange("email", e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-shadow"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 bg-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-gray-900 transition-shadow"
                   placeholder="you@company.com"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="product" className="block text-sm font-medium text-slate-700 mb-1.5">
+              <label htmlFor="wa-product" className="block text-sm font-medium text-gray-700 mb-1.5">
                 Product Interest <span className="text-red-500">*</span>
               </label>
               <select
-                id="product"
+                id="wa-product"
                 required
                 value={form.product}
                 onChange={(e) => handleChange("product", e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-shadow appearance-none"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-gray-900 transition-shadow"
               >
                 <option value="" disabled>
                   Select a division...
@@ -132,15 +124,15 @@ export default function InquiryForm() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
+              <label htmlFor="wa-message" className="block text-sm font-medium text-gray-700 mb-1.5">
                 Message / Requirements
               </label>
               <textarea
-                id="message"
+                id="wa-message"
                 rows={4}
                 value={form.message}
                 onChange={(e) => handleChange("message", e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-shadow resize-none"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 bg-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-gray-900 transition-shadow resize-none"
                 placeholder="Describe what you're looking for, volumes, specs..."
               />
             </div>
@@ -153,9 +145,10 @@ export default function InquiryForm() {
 
             <button
               type="submit"
-              className="w-full sm:w-auto px-8 py-3.5 bg-emerald-700 text-white text-sm font-semibold rounded-lg hover:bg-emerald-800 transition-all shadow-lg shadow-emerald-700/20"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition-all shadow-lg"
             >
-              Submit Inquiry
+              <MessageCircle size={18} />
+              Send via WhatsApp
             </button>
           </form>
         </div>

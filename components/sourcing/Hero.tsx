@@ -1,29 +1,45 @@
 import Link from "next/link"
 
+const WA_LINK = "https://wa.me/918076958506?text=Hi%20OffPattern%20Sourcing%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20products."
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-slate-50 pt-20">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-50/60 via-slate-50 to-transparent pointer-events-none" />
+    <section className="relative min-h-screen flex items-center justify-center bg-white pt-20 overflow-hidden">
+      {/* Subtle grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px)",
+          backgroundSize: "64px 64px",
+        }}
+      />
+
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-center py-28 md:py-36">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-slate-900 leading-[1.05] tracking-tight text-balance max-w-5xl mx-auto">
+        <span className="inline-block text-xs font-semibold text-gray-400 uppercase tracking-[0.2em] mb-6">
+          India&apos;s Trusted Sourcing Partner
+        </span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-[1.05] tracking-tight text-balance max-w-5xl mx-auto">
           We find the best products in India and ship them to your business.
         </h1>
-        <p className="mt-8 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
           Safe, fast, and simple. We check the quality and handle the shipping so you don&apos;t have to worry.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="#divisions"
-            className="inline-flex items-center px-7 py-3.5 border-2 border-slate-300 text-slate-800 text-sm font-semibold rounded-lg hover:border-emerald-700 hover:text-emerald-700 transition-all"
+            className="inline-flex items-center px-7 py-3.5 border-2 border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:border-gray-900 hover:text-gray-900 transition-all"
           >
             View Our Divisions
           </Link>
-          <Link
-            href="#inquiry"
-            className="inline-flex items-center px-7 py-3.5 bg-emerald-700 text-white text-sm font-semibold rounded-lg hover:bg-emerald-800 transition-all shadow-lg shadow-emerald-700/20"
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-7 py-3.5 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition-all shadow-lg shadow-gray-900/20"
           >
             Get a Quote
-          </Link>
+          </a>
         </div>
       </div>
     </section>
