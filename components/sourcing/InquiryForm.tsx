@@ -4,6 +4,7 @@ import { useState, FormEvent } from "react"
 import { MessageCircle } from "lucide-react"
 
 const productOptions = [
+  "Handicrafts & Home Decor",
   "Premium Tea & Drinks",
   "Smart Packaging & Paper",
   "Strong Parts & Metal",

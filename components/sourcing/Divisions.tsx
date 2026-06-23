@@ -1,9 +1,16 @@
 "use client"
 
-import { Leaf, Package, Settings } from "lucide-react"
+import { Leaf, Package, Settings, Palmtree } from "lucide-react"
 import { motion } from "framer-motion"
 
 const divisions = [
+  {
+    icon: Palmtree,
+    title: "Handicrafts & Home Decor",
+    description:
+      "India's finest craftsmanship, shipped worldwide. We source authentic wooden decor, brass artifacts, textiles, pottery, and handmade treasures from artisan clusters across India.",
+    highlights: ["Zero extra certifications", "Low MOQ available", "Premium margins"],
+  },
   {
     icon: Leaf,
     title: "Premium Tea & Drinks",
@@ -43,10 +50,10 @@ export default function Divisions() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-            Our Three Specialties
+            Our Four Specialties
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            Three specialised sectors built for global supply chains.
+            Four specialised sectors built for global supply chains.
           </p>
         </div>
 
@@ -55,7 +62,7 @@ export default function Divisions() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid md:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {divisions.map((d) => {
             const Icon = d.icon

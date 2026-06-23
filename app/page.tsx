@@ -13,21 +13,24 @@ import Footer from "@/components/sourcing/Footer"
 export const metadata: Metadata = {
   title: "OffPattern Sourcing — India Sourcing & Global Trade Partner",
   description:
-    "We find the best products in India and ship them to your business. Premium tea, sustainable packaging, and industrial metal parts — with quality checks and seamless logistics.",
+    "We find the best products in India and ship them to your business. Handicrafts, home decor, premium tea, sustainable packaging, and industrial metal parts — with quality checks and seamless logistics.",
   keywords: [
     "India sourcing",
     "B2B sourcing India",
+    "handicrafts export India",
+    "home decor wholesale India",
     "tea export India",
     "packaging supplier India",
     "industrial fasteners India",
     "global trade",
     "procurement India",
     "India export partner",
+    "Indian handicrafts supplier",
   ],
   openGraph: {
     title: "OffPattern Sourcing — India Sourcing & Global Trade Partner",
     description:
-      "We find the best products in India and ship them to your business. Premium tea, sustainable packaging, and industrial metal parts.",
+      "We find the best products in India and ship them to your business. Handicrafts, home decor, premium tea, sustainable packaging, and industrial metal parts.",
     url: "https://offpatternlabs.com",
     siteName: "OffPattern Sourcing",
     type: "website",
